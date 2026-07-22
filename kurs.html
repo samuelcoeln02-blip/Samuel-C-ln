@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kursbereich – Kettlebell-Kurs von Samuel Coeln</title>
+  <meta name="description" content="Kursbereich des Kettlebell-Kurses von Samuel Coeln.">
+  <!-- Kursbereich nicht indexieren lassen -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand">SAMUEL COELN<span class="dot">.</span></a>
+      <a href="index.html" class="nav-cta" style="color:var(--text-grau);font-weight:600">← Startseite</a>
+    </div>
+  </header>
+
+  <!-- ==================== ZUGANGSCODE-GATE =========================== -->
+  <!-- Sichtbar, solange nicht freigeschaltet. -->
+  <div id="gate" class="gate">
+    <div class="gate-box">
+      <span class="eyebrow">Kursbereich</span>
+      <h1>Zugang freischalten</h1>
+      <p>Gib deinen Zugangscode ein, den du nach dem Kauf erhalten hast.</p>
+
+      <form id="codeForm" autocomplete="off">
+        <input type="text" id="codeInput" class="code-input"
+               placeholder="ZUGANGSCODE" aria-label="Zugangscode"
+               inputmode="text" autocapitalize="characters">
+        <div class="gate-error" id="codeError" role="alert"></div>
+        <button type="submit" class="btn btn-primary btn-block">Freischalten</button>
+      </form>
+
+      <p style="margin-top:18px; font-size:0.85rem">
+        Noch keinen Zugang? <a href="index.html#angebot">Kurs hier kaufen →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ==================== KURSINHALT (versteckt) ===================== -->
+  <!-- Wird erst nach korrektem Code sichtbar (hidden-Attribut wird entfernt). -->
+  <main id="courseContent" hidden>
+
+    <!-- Willkommen -->
+    <section style="padding-bottom:24px">
+      <div class="wrap">
+        <span class="eyebrow">Willkommen</span>
+        <h1 style="font-size:clamp(1.8rem,7vw,2.8rem)">Dein Kettlebell-Kurs</h1>
+        <p class="lead" style="margin-top:12px">Arbeite dich durch die drei Phasen.
+          Nimm dir für die Technik in Phase 1 wirklich Zeit – sie ist das
+          Fundament für alles Weitere.</p>
+      </div>
+    </section>
+
+    <!-- Phasen-Tabs -->
+    <section style="padding-top:0">
+      <div class="wrap">
+
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="phase1" role="tab">Phase 1 · Fundament</button>
+          <button class="tab" data-tab="phase2" role="tab">Phase 2 · Aufbau</button>
+          <button class="tab" data-tab="phase3" role="tab">Phase 3 · Leistung</button>
+        </div>
+
+        <!-- ================= PHASE 1: FUNDAMENT ===================== -->
+        <div class="tab-panel active" id="phase1" role="tabpanel">
+          <h2>Phase 1 · Fundament</h2>
+          <p class="lead" style="margin-bottom:24px">Die sechs Grundübungen mit
+            sauberer Technik. Hier lernst du den Hip-Hinge und den kontrollierten
+            Umgang mit der Kettlebell.</p>
+
+          <!-- ---------- Lektion: Swing ---------- -->
+          <article class="lesson">
+            <h3>1 · Swing</h3>
+            <div class="lesson-sub">Grundübung · Hip-Hinge</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Der Swing ist die Königsübung der Kettlebell. Die Kraft kommt aus
+              einer explosiven Hüftstreckung – nicht aus den Armen. Die Kettlebell
+              „schwebt“ durch den Schwung, du hebst sie nicht.</p>
+            <ol class="steps">
+              <li>Stelle dich hüftbreit hin, Kettlebell etwa eine Fußlänge vor dir.</li>
+              <li>Hip-Hinge: Hüfte nach hinten schieben, Rücken gerade, Kettlebell zwischen die Beine „hiken“.</li>
+              <li>Explosiv die Hüfte nach vorne strecken, Gesäß und Bauch anspannen.</li>
+              <li>Die Kettlebell schwingt durch den Impuls auf Brusthöhe – Arme bleiben locker.</li>
+              <li>Kontrolliert zurückführen und direkt in die nächste Wiederholung.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Aus den Armen ziehen und in die Kniebeuge gehen statt in den
+                Hip-Hinge. Der Swing ist kein Frontheben – die Hüfte macht die Arbeit.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Hüfte schnappt nach vorne wie eine Türklinke.“ Denk an einen
+                kraftvollen Beckenstoß, nicht an ein Heben.</p>
+            </div>
+          </article>
+
+          <!-- ---------- Lektion: Squat ---------- -->
+          <article class="lesson">
+            <h3>2 · Goblet Squat</h3>
+            <div class="lesson-sub">Grundübung · Beinkraft & Mobility</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Der Goblet Squat baut Beinkraft auf und verbessert gleichzeitig
+              deine Hock-Beweglichkeit. Die Kettlebell vor der Brust wirkt als
+              Gegengewicht und hilft dir, aufrecht zu bleiben.</p>
+            <ol class="steps">
+              <li>Halte die Kettlebell an den „Hörnern“ dicht vor der Brust.</li>
+              <li>Füße etwas breiter als hüftbreit, Zehen leicht nach außen.</li>
+              <li>Kontrolliert nach unten, Knie folgen der Fußrichtung, Brust bleibt aufrecht.</li>
+              <li>So tief wie sauber möglich, Fersen bleiben am Boden.</li>
+              <li>Aus den Fersen nach oben drücken, Gesäß oben anspannen.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Fersen heben sich oder die Knie fallen nach innen. Beides raubt
+                Stabilität und Kraft.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Ellbogen zwischen die Knie, Knie nach außen drücken.“ So bleibt
+                der Rumpf aufrecht und die Hüfte offen.</p>
+            </div>
+          </article>
+
+          <!-- ---------- Lektion: Clean ---------- -->
+          <article class="lesson">
+            <h3>3 · Clean</h3>
+            <div class="lesson-sub">Grundübung · Übergang in Rack-Position</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Der Clean bringt die Kettlebell aus dem Swing-Impuls sauber in die
+              Rack-Position (an Schulter/Unterarm). Er ist die Vorbereitung für
+              Press und Snatch.</p>
+            <ol class="steps">
+              <li>Starte wie beim Swing mit einem Hip-Hinge.</li>
+              <li>Beschleunige die Kettlebell aus der Hüfte eng am Körper nach oben.</li>
+              <li>„Fädele“ die Hand um die Kettlebell, statt sie zu greifen und zu schlagen.</li>
+              <li>Fange sie weich in der Rack-Position ab: Handrücken oben, Ellbogen am Körper.</li>
+              <li>Kontrolliert zurück in den Hip-Hinge.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Die Kettlebell „schlägt“ hart auf den Unterarm. Meist zu weiter
+                Bogen und zu spätes Umgreifen.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Zip up“ – ziehe die Kettlebell wie einen Reißverschluss eng am
+                Körper hoch und lasse die Hand hindurchgleiten.</p>
+            </div>
+          </article>
+
+          <!-- ---------- Lektion: Press ---------- -->
+          <article class="lesson">
+            <h3>4 · Press</h3>
+            <div class="lesson-sub">Grundübung · Schulterkraft</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Der Overhead Press baut Schulter- und Rumpfkraft auf. Aus der
+              Rack-Position drückst du die Kettlebell stabil über den Kopf.</p>
+            <ol class="steps">
+              <li>Beginne in der Rack-Position, Rumpf und Gesäß fest angespannt.</li>
+              <li>Drücke die Kettlebell gerade nach oben, Ellbogen unter dem Handgelenk.</li>
+              <li>Kopf leicht zurück, damit die Kettlebell frei passiert, dann wieder neutral.</li>
+              <li>Oben voll durchstrecken, Schulter aktiv nach unten ziehen.</li>
+              <li>Kontrolliert zurück in die Rack-Position.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Ins Hohlkreuz gehen, um mit dem Rücken zu „drücken“. Der Rumpf
+                muss stabil bleiben – lieber leichteres Gewicht.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Bauch fest wie vor einem Schlag, dann die Decke wegdrücken.“</p>
+            </div>
+          </article>
+
+          <!-- ---------- Lektion: Snatch ---------- -->
+          <article class="lesson">
+            <h3>5 · Snatch</h3>
+            <div class="lesson-sub">Grundübung · Explosivität</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Der Snatch bringt die Kettlebell in einer Bewegung vom Boden über
+              den Kopf. Er ist die explosivste Grundübung und ein starkes
+              Konditionswerkzeug – deshalb erst nach sauberem Swing und Clean.</p>
+            <ol class="steps">
+              <li>Starte mit einem kraftvollen Hip-Hinge wie beim Swing.</li>
+              <li>Beschleunige die Kettlebell explosiv aus der Hüfte nach oben.</li>
+              <li>Ziehe den Ellbogen hoch und „punch“ die Hand nach oben durch.</li>
+              <li>Fange die Kettlebell weich über dem Kopf ab, Arm gestreckt und stabil.</li>
+              <li>Kontrolliert zurück in den nächsten Hip-Hinge führen.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Die Kettlebell klatscht hart auf den Unterarm. Ursache ist meist
+                zu spätes „Durchpunchen“ der Hand.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Punch durch die Kettlebell hindurch“ – die Hand schießt im letzten
+                Moment nach oben, statt die Kugel um die Hand kippen zu lassen.</p>
+            </div>
+          </article>
+
+          <!-- ---------- Lektion: Row ---------- -->
+          <article class="lesson">
+            <h3>6 · Row</h3>
+            <div class="lesson-sub">Grundübung · Rückenkraft</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Die Row trainiert den oberen Rücken und die Zugmuskulatur – wichtig
+              als Ausgleich zu den vielen Druck- und Schwungbewegungen.</p>
+            <ol class="steps">
+              <li>Hip-Hinge-Position, Rücken gerade, eine Hand stützt oder hängt frei.</li>
+              <li>Kettlebell hängt gestreckt unter der Schulter.</li>
+              <li>Ziehe den Ellbogen eng am Körper nach hinten-oben.</li>
+              <li>Schulterblatt aktiv zur Wirbelsäule ziehen, kurz halten.</li>
+              <li>Kontrolliert absenken, Rumpf bleibt die ganze Zeit stabil.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Mit Schwung reißen und den Oberkörper aufrichten. Die Row ist eine
+                kontrollierte Zugbewegung, kein Ruck.</p>
+            </div>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Ellbogen in die Gesäßtasche ziehen“ und das Schulterblatt bewusst
+                zusammenführen.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ================= PHASE 2: AUFBAU ======================== -->
+        <div class="tab-panel" id="phase2" role="tabpanel">
+          <h2>Phase 2 · Aufbau</h2>
+          <p class="lead" style="margin-bottom:24px">Jetzt geht es um Progression:
+            mehr Gewicht, mehr Dichte, erste Komplexe und das Training mit zwei
+            Kettlebells.</p>
+
+          <!-- Lektion: Progression -->
+          <article class="lesson">
+            <h3>Gewichts-Progression</h3>
+            <div class="lesson-sub">So steigerst du sinnvoll</div>
+            <p>Steigere nicht wild, sondern in klaren Stufen. Wechsle erst zur
+              nächsten Stufe, wenn die aktuelle technisch sauber und mit voller
+              Kontrolle sitzt.</p>
+
+            <div class="progression">
+              <div class="prog-step"><span class="num">1</span><div><strong>Eine Kettlebell</strong><br><span>Technik & Grundlagen festigen</span></div></div>
+              <div class="prog-step"><span class="num">2</span><div><strong>2 × 12 kg</strong><br><span>beidseitig, symmetrische Belastung</span></div></div>
+              <div class="prog-step"><span class="num">3</span><div><strong>1 × 16 kg</strong><br><span>einseitig schwerer, mehr Rumpfarbeit</span></div></div>
+              <div class="prog-step"><span class="num">4</span><div><strong>2 × 16 kg</strong><br><span>hohe Gesamtlast, echte Kraftreize</span></div></div>
+              <div class="prog-step"><span class="num">5</span><div><strong>1 × 18 kg</strong><br><span>Feinschritt nach oben, einseitig</span></div></div>
+            </div>
+
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>Erst Technik, dann Gewicht. Eine sauber ausgeführte leichtere
+                Kettlebell bringt dich weiter als eine wackelige schwere.</p>
+            </div>
+          </article>
+
+          <!-- Lektion: Komplexe -->
+          <article class="lesson">
+            <h3>Komplexe & zwei Kettlebells</h3>
+            <div class="lesson-sub">Übungen aneinanderreihen</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>Ein Komplex verbindet mehrere Übungen ohne Ablegen der Kettlebell.
+              Das steigert Kraftausdauer und Dichte enorm. Mit zwei Kettlebells
+              verdoppelst du die Last und forderst deine Stabilität zusätzlich.</p>
+            <ol class="steps">
+              <li>Beginne mit leichten Kettlebells, um den Ablauf flüssig zu lernen.</li>
+              <li>Halte die Übergänge sauber – Technik geht vor Tempo.</li>
+              <li>Steigere erst Wiederholungen/Runden, dann das Gewicht.</li>
+            </ol>
+            <div class="box box-error">
+              <span class="box-label">Häufiger Fehler</span>
+              <p>Zu früh zu schwer. Bei Komplexen summiert sich die Ermüdung – die
+                Technik leidet als Erstes.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ================= PHASE 3: LEISTUNG ====================== -->
+        <div class="tab-panel" id="phase3" role="tabpanel">
+          <h2>Phase 3 · Leistung</h2>
+          <p class="lead" style="margin-bottom:24px">Explosivität, konditionelle
+            Formate und rundenbasiertes Training. Hier bringst du alles zusammen.</p>
+
+          <!-- Lektion: Rundenbasiertes Training -->
+          <article class="lesson">
+            <h3>Rundenbasiertes Training</h3>
+            <div class="lesson-sub">Kondition & Kraftausdauer</div>
+            <p>Rundenbasiertes Training hält Intensität und Herzfrequenz über
+              mehrere Sätze hoch. Das folgende Format kombiniert die Grundübungen
+              zu einem fordernden Komplex.</p>
+
+            <div class="complex-box">
+              <h3>Beispiel-Komplex</h3>
+              <p style="margin-top:6px">Alle Übungen nacheinander, je 5 Wiederholungen,
+                ohne die Kettlebell abzulegen:</p>
+              <div class="complex-list">
+                <span class="pill">Snatch × 5</span>
+                <span class="pill">Clean × 5</span>
+                <span class="pill">Press × 5</span>
+                <span class="pill">Squat × 5</span>
+                <span class="pill">Row × 5</span>
+              </div>
+              <p><strong style="color:#fff">5 Runden</strong> · ca. <strong style="color:#fff">90 Sekunden</strong>
+                Pause zwischen den Runden. Wähle ein Gewicht, mit dem alle Übungen
+                technisch sauber bleiben.</p>
+            </div>
+
+            <div class="box box-cue" style="margin-top:20px">
+              <span class="box-label">Coaching-Cue</span>
+              <p>Atme in den Pausen bewusst tief. Die 90 Sekunden sind Teil des
+                Trainings – nicht nur „Nichtstun“.</p>
+            </div>
+          </article>
+
+          <!-- Lektion: Explosivität -->
+          <article class="lesson">
+            <h3>Explosivität & fortgeschrittene Übungen</h3>
+            <div class="lesson-sub">Power entwickeln</div>
+            <div class="video-placeholder">
+              <div class="play">▶</div>
+              <small>VIDEO-PLATZHALTER (16:9) · hier später YouTube-unlisted oder Vimeo einbetten</small>
+            </div>
+            <p>In dieser Phase liegt der Fokus auf Schnellkraft: kraftvolle,
+              explosive Wiederholungen mit voller Absicht in jeder Bewegung.
+              Qualität schlägt Quantität – lieber wenige, richtig explosive
+              Wiederholungen als viele müde.</p>
+            <div class="box box-cue">
+              <span class="box-label">Coaching-Cue</span>
+              <p>„Jede Wiederholung mit maximaler Absicht.“ Explosivität trainierst
+                du nur, wenn du wirklich explosiv bewegst.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== COACHING-CTA ============================== -->
+    <section style="padding-top:0">
+      <div class="wrap">
+        <div class="coaching-cta">
+          <h3>Willst du 1:1-Coaching?</h3>
+          <p>Wenn du persönliche Betreuung und individuelles Feedback willst,
+            schreib mir auf Instagram eine DM mit dem Keyword
+            <span class="kw" data-keyword>LOCK IN</span>.</p>
+          <a href="#" class="btn btn-ghost" data-social="instagram" style="border-color:rgba(255,255,255,0.6)">
+            Auf Instagram schreiben →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-legal" style="border:none; padding-top:0; margin-top:0">
+        <p style="color:#7A8090">
+          <a href="impressum.html">Impressum</a> ·
+          <a href="datenschutz.html">Datenschutz</a> ·
+          © <span data-year>2026</span> Samuel Coeln
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= SCRIPTS ============================ -->
+  <script src="assets/js/config.js"></script>
+  <script>
+  /* ==========================================================================
+     kurs.html – Zugangscode-Gate + Tabs
+
+     ⚠️  SICHERHEITSHINWEIS (bewusst so gewählt für den Start):
+     Diese Zugangscode-Abfrage ist NUR eine leichte Hürde und bietet KEINE
+     echte Sicherheit. Der Code (CONFIG.ACCESS_CODE) steht im Klartext im
+     ausgelieferten JavaScript und ist für jeden im Browser-Quelltext lesbar.
+     Wer will, kommt also auch ohne Code rein. Für einen echten Schutz bräuchtest
+     du eine serverseitige Prüfung (Backend / Passwortschutz beim Hoster).
+     Fürs Erste ist das ein einfacher, kostenloser Kompromiss.
+     ======================================================================== */
+  (function () {
+
+    var STORAGE_KEY = "kb_kurs_freigeschaltet";   // localStorage-Schlüssel
+
+    var gate        = document.getElementById("gate");
+    var content     = document.getElementById("courseContent");
+    var form        = document.getElementById("codeForm");
+    var input       = document.getElementById("codeInput");
+    var errorEl     = document.getElementById("codeError");
+
+    /* --- Kurs sichtbar machen ------------------------------------------- */
+    function freischalten() {
+      gate.style.display = "none";
+      content.hidden = false;
+    }
+
+    /* --- 1) Beim Laden prüfen: schon einmal freigeschaltet? ------------- */
+    // localStorage merkt sich die Freischaltung, damit der Code nicht bei
+    // jedem Besuch neu eingegeben werden muss. Das ist technisch notwendig
+    // für die Funktion und setzt KEIN Tracking-Cookie -> kein Cookie-Banner nötig.
+    try {
+      if (localStorage.getItem(STORAGE_KEY) === "true") {
+        freischalten();
+      }
+    } catch (e) {
+      /* localStorage evtl. blockiert (z. B. Private Mode) – dann einfach
+         Code-Abfrage anzeigen, kein Abbruch. */
+    }
+
+    /* --- 2) Code-Eingabe prüfen ----------------------------------------- */
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var eingabe = input.value.trim();
+
+      // Vergleich unabhängig von Groß-/Kleinschreibung
+      if (eingabe.toUpperCase() === CONFIG.ACCESS_CODE.toUpperCase()) {
+        // Freischaltung merken
+        try { localStorage.setItem(STORAGE_KEY, "true"); } catch (e) {}
+        errorEl.textContent = "";
+        freischalten();
+        // nach oben scrollen, damit der Kurs von oben startet
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        errorEl.textContent = "Falscher Code. Bitte prüfe deine Eingabe.";
+        input.focus();
+        input.select();
+      }
+    });
+
+    /* --- 3) Phasen-Tabs -------------------------------------------------- */
+    var tabs   = document.querySelectorAll(".tab");
+    var panels = document.querySelectorAll(".tab-panel");
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        tabs.forEach(function (t) { t.classList.remove("active"); });
+        panels.forEach(function (p) { p.classList.remove("active"); });
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
+      });
+    });
+
+    /* --- 4) Werte aus config.js einsetzen -------------------------------- */
+    // Coaching-Keyword
+    document.querySelectorAll("[data-keyword]").forEach(function (el) {
+      el.textContent = CONFIG.COACHING_KEYWORD;
+    });
+    // Instagram-Links
+    document.querySelectorAll('[data-social="instagram"]').forEach(function (a) {
+      a.href = CONFIG.INSTAGRAM_URL; a.target = "_blank"; a.rel = "noopener";
+    });
+    // Jahreszahl
+    document.querySelectorAll("[data-year]").forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+
+  })();
+  </script>
+</body>
+</html>
