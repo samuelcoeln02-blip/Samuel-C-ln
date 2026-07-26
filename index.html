@@ -37,14 +37,17 @@
           Grund auf sauber, baue echte Progression auf und trainiere Kraft,
           Kondition und Athletik – überall, mit minimalem Equipment.
         </p>
-        <a href="#angebot" class="btn btn-primary">Kurs für nur 20 € sichern →</a>
+        <a href="#angebot" class="btn btn-primary">Jetzt entdecken →</a>
 
-        <!-- PLATZHALTER Hero-Bild/Video: hier später dein Aufnahme-Still oder
-             ein kurzes Loop-Video einsetzen. -->
+        <!-- Hero-Bild: sobald du assets/images/hero.jpg hochlädst, wird es
+             automatisch angezeigt. Fehlt die Datei, blendet onerror das Bild
+             aus und der Platzhalter-Text darunter bleibt sichtbar. -->
         <div class="media-placeholder">
+          <img src="assets/images/hero.jpg" alt="Samuel Coeln beim Kettlebell-Training"
+               onerror="this.remove()">
           <span class="ico">🎬</span>
-          <strong>PLATZHALTER: Hero-Bild oder -Video</strong>
-          <span>Hier später dein Foto/Video einsetzen (Empfehlung 16:10, hochwertig, ruhig)</span>
+          <strong>PLATZHALTER: Hero-Bild (assets/images/hero.jpg)</strong>
+          <span>Lädst du diese Datei hoch, erscheint sie hier automatisch (Empfehlung 16:10, hochwertig, ruhig)</span>
         </div>
       </div>
     </section>
@@ -255,11 +258,15 @@
     <section class="about">
       <div class="wrap about-grid">
         <div>
-          <!-- PLATZHALTER Foto von Samuel -->
+          <!-- Über-mich-Foto: sobald du assets/images/ueber-mich.jpg hochlädst,
+               wird es automatisch angezeigt. Fehlt die Datei, bleibt der
+               Platzhalter sichtbar. -->
           <div class="media-placeholder">
+            <img src="assets/images/ueber-mich.jpg" alt="Samuel Coeln"
+                 onerror="this.remove()">
             <span class="ico">📷</span>
-            <strong>PLATZHALTER: Foto von dir</strong>
-            <span>Hochformat (4:5) empfohlen</span>
+            <strong>PLATZHALTER: Foto (assets/images/ueber-mich.jpg)</strong>
+            <span>Lädst du diese Datei hoch, erscheint sie hier automatisch (Hochformat 4:5)</span>
           </div>
         </div>
         <div>
@@ -280,54 +287,7 @@
       </div>
     </section>
 
-    <!-- ======================= 8) ANGEBOT / PREIS ====================== -->
-    <section id="angebot" class="section-panel">
-      <div class="wrap center">
-        <span class="eyebrow">Das Angebot</span>
-        <h2>Kompletter Kettlebell-Kurs</h2>
-        <p class="lead">Einmal zahlen, für immer Zugang. Kein Abo, keine
-          versteckten Kosten.</p>
-
-        <div class="offer-card" style="margin-top:32px; text-align:left">
-          <div class="price-row">
-            <span class="price text-blau" data-price>20 €</span>
-            <span class="price-note">einmalig · lebenslanger Zugang</span>
-          </div>
-
-          <ul class="includes">
-            <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
-            <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
-            <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
-            <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
-            <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
-            <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
-          </ul>
-
-          <!-- PFLICHT-CHECKBOX Widerrufsrecht digitale Inhalte.
-               Der Kauf-Button ist erst aktiv, wenn diese Checkbox gesetzt ist.
-               RECHTLICHER HINWEIS: Formulierung an einen Fachkundigen / Anwalt
-               prüfen lassen. -->
-          <div class="consent">
-            <input type="checkbox" id="widerruf" aria-describedby="widerruf-text">
-            <label for="widerruf" id="widerruf-text">
-              Ich stimme ausdrücklich zu, dass mit dem Kauf sofort mit der
-              Ausführung begonnen wird (Zugang zu den digitalen Inhalten). Mir ist
-              bekannt, dass ich dadurch mein <strong>Widerrufsrecht</strong> mit
-              Beginn der Ausführung <strong>verliere</strong>.
-            </label>
-          </div>
-
-          <!-- Kauf-Button: führt auf CONFIG.STRIPE_PAYMENT_LINK.
-               Startet deaktiviert, bis die Checkbox gesetzt ist. -->
-          <button id="buyBtn" class="btn btn-gruen btn-block" disabled>
-            Jetzt für 20 € kaufen
-          </button>
-          <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================== 9) FAQ =========================== -->
+    <!-- ============================== 8) FAQ =========================== -->
     <section>
       <div class="wrap">
         <span class="eyebrow">FAQ</span>
@@ -337,9 +297,12 @@
           <div class="faq-item">
             <button class="faq-q">Brauche ich eine eigene Kettlebell? <span class="chev">+</span></button>
             <div class="faq-a"><div class="faq-a-inner">
-              Ja, für die Übungen brauchst du mindestens eine Kettlebell. Der Kurs
-              erklärt dir genau, welches Gewicht für den Einstieg sinnvoll ist und
-              wie du später sinnvoll aufstockst.
+              Eine eigene Kettlebell ist nicht zwingend nötig. Wer eine
+              Gym-Mitgliedschaft mit Kettlebells vor Ort hat, ist damit sogar im
+              Vorteil, weil dort meist eine größere Gewichtsauswahl verfügbar ist,
+              ohne selbst mehrere Kettlebells kaufen zu müssen. Eine eigene
+              Kettlebell lohnt sich vor allem für alle, die zuhause trainieren
+              wollen.
             </div></div>
           </div>
           <div class="faq-item">
@@ -380,6 +343,55 @@
       </div>
     </section>
 
+    <!-- ======================= 9) ANGEBOT / PREIS ======================
+         Ganz am Ende der Seite, direkt vor dem Footer. Der Preis wird
+         AUSSCHLIESSLICH hier genannt (nicht im Hero). -->
+    <section id="angebot" class="section-panel">
+      <div class="wrap center">
+        <span class="eyebrow">Das Angebot</span>
+        <h2>Kompletter Kettlebell-Kurs</h2>
+        <p class="lead">Einmal zahlen, für immer Zugang. Kein Abo, keine
+          versteckten Kosten.</p>
+
+        <div class="offer-card" style="margin-top:32px; text-align:left">
+          <div class="price-row">
+            <span class="price text-blau" data-price>20 €</span>
+            <span class="price-note">einmalig · lebenslanger Zugang</span>
+          </div>
+
+          <ul class="includes">
+            <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
+            <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
+            <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
+            <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
+            <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
+            <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
+          </ul>
+
+          <!-- PFLICHT-CHECKBOX Widerrufsrecht digitale Inhalte.
+               Der Kauf-Button ist erst aktiv, wenn diese Checkbox gesetzt ist
+               (nicht vorangehakt). Details siehe widerruf.html.
+               RECHTLICHER HINWEIS: vor Livegang rechtlich prüfen lassen. -->
+          <div class="consent">
+            <input type="checkbox" id="widerruf" aria-describedby="widerruf-text">
+            <label for="widerruf" id="widerruf-text">
+              Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
+              zugegriffen werden kann, und bin mir bewusst, dass mein
+              Widerrufsrecht dadurch erlischt.
+            </label>
+          </div>
+
+          <!-- Kauf-Button: führt auf CONFIG.STRIPE_PAYMENT_LINK.
+               Startet deaktiviert, bis die Checkbox gesetzt ist. -->
+          <button id="buyBtn" class="btn btn-gruen btn-block" disabled>
+            Jetzt für 20 € kaufen
+          </button>
+          <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
+            <a href="widerruf.html">Widerrufsbelehrung</a></p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================= FOOTER ============================= -->
@@ -400,6 +412,7 @@
           <ul class="footer-links">
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="widerruf.html">Widerrufsbelehrung</a></li>
           </ul>
         </div>
         <div>

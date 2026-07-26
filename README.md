@@ -10,16 +10,27 @@ Gehostet auf Netlify.
 .
 ├── index.html            # Landingpage / Funnel
 ├── kurs.html             # Kursbereich (Success-URL nach Stripe-Zahlung)
-├── impressum.html        # Rechtsseite (Grundgerüst mit Platzhaltern)
+├── impressum.html        # Rechtsseite
 ├── datenschutz.html      # Rechtsseite (Grundgerüst mit Platzhaltern)
+├── widerruf.html         # Rechtsseite: Widerrufsbelehrung
 ├── README.md             # diese Datei
 └── assets/
     ├── css/
     │   └── style.css     # gemeinsames Stylesheet (mobile-first)
     ├── js/
     │   └── config.js     # ⭐ ZENTRALE KONFIGURATION – hier trägst du alles ein
-    └── img/              # Platz für deine Bilder (Hero, Foto, ...)
+    └── images/           # Bilder NUR für die Landingpage (index.html):
+        ├── hero.jpg      #   Hero-Bereich (Empfehlung 16:10)
+        └── ueber-mich.jpg#   Über-mich-Bereich (Hochformat 4:5)
 ```
+
+### Bilder für die Landingpage
+
+Lege einfach `hero.jpg` und `ueber-mich.jpg` in `assets/images/` ab – sie werden
+in `index.html` **automatisch** angezeigt, sobald die Dateien vorhanden sind.
+Fehlt eine Datei, bleibt der jeweilige Platzhalter sichtbar (der `onerror`-Handler
+am `<img>` blendet das fehlende Bild aus). Die Video-/Bild-Platzhalter in
+`kurs.html` bleiben davon unberührt.
 
 ## ⭐ Wichtigste Datei zuerst: `assets/js/config.js`
 
@@ -138,16 +149,16 @@ Success-URL.
 Diese Seite enthält vorbereitete, aber **nicht rechtsverbindliche** Vorlagen:
 - **Impressum** (`impressum.html`) mit Hinweis auf Kleinunternehmerregelung § 19 UStG
 - **Datenschutzerklärung** (`datenschutz.html`) für eine statische Seite
+- **Widerrufsbelehrung** (`widerruf.html`) inkl. vorzeitigem Erlöschen bei digitalen Inhalten
 - **Pflicht-Checkbox** beim Kauf zum Erlöschen des Widerrufsrechts bei digitalen Inhalten
 
-➡️ **Lass Impressum, Datenschutz und die Kauf-/Widerrufs-Formulierung vor dem
-Livegang rechtlich prüfen** (Anwalt oder seriöser Generator). Alle Platzhalter
-sind im Code klar markiert.
+➡️ **Lass Impressum, Datenschutz, Widerrufsbelehrung und die Kauf-Checkbox vor dem
+Livegang rechtlich prüfen** (Anwalt oder seriöser Generator).
 
 ## Anpassen von Inhalten
 
 - **Texte/Design:** direkt in den HTML-Dateien bzw. `assets/css/style.css`.
-- **Bilder:** in `assets/img/` ablegen und die `media-placeholder`-Blöcke in
-  `index.html` / `kurs.html` durch echte `<img>`- oder Video-Einbettungen ersetzen.
+- **Bilder (Landingpage):** `hero.jpg` und `ueber-mich.jpg` in `assets/images/`
+  ablegen – sie erscheinen in `index.html` automatisch (siehe oben).
 - **Kurs-Videos:** In `kurs.html` sind 16:9-`video-placeholder`-Container
   vorbereitet. Ersetze sie später durch YouTube-unlisted- oder Vimeo-`<iframe>`s.

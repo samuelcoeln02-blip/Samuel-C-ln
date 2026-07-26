@@ -181,8 +181,13 @@ p + p { margin-top: 14px; }
 .hero .lead { margin-bottom: 28px; }
 .hero .btn { width: 100%; }
 
-/* Platzhalter für Hero-Bild/Video */
+/* Platzhalter für Hero-Bild/Video.
+   Enthält optional ein <img> (z. B. assets/images/hero.jpg). Ist die Bilddatei
+   vorhanden, deckt sie per position:absolute den ganzen Platzhalter ab; fehlt
+   sie, entfernt der onerror-Handler das <img> und der Platzhalter-Text bleibt sichtbar. */
 .media-placeholder {
+  position: relative;
+  overflow: hidden;
   margin-top: 34px;
   background: var(--panel);
   border: 2px dashed #C3CBDA;
@@ -196,6 +201,14 @@ p + p { margin-top: 14px; }
   color: var(--text-grau);
   padding: 24px;
   gap: 6px;
+}
+/* Hochgeladenes Bild überdeckt den Platzhalter formatfüllend */
+.media-placeholder img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .media-placeholder strong { color: var(--schwarz); font-size: 1rem; }
 .media-placeholder span { font-size: 0.85rem; }
