@@ -20,14 +20,16 @@ Gehostet auf Netlify.
     ├── js/
     │   └── config.js     # ⭐ ZENTRALE KONFIGURATION – hier trägst du alles ein
     └── images/           # Bilder NUR für die Landingpage (index.html):
-        ├── hero.jpg      #   Hero-Bereich (Empfehlung 16:10)
-        └── ueber-mich.jpg#   Über-mich-Bereich (Hochformat 4:5)
+        ├── hero.png      #   Hero-Bereich (Empfehlung 16:10)
+        └── ueber-mich.png#   Über-mich-Bereich (Hochformat 4:5)
 ```
 
 ### Bilder für die Landingpage
 
-Lege einfach `hero.jpg` und `ueber-mich.jpg` in `assets/images/` ab – sie werden
+Lege einfach `hero.png` und `ueber-mich.png` in `assets/images/` ab – sie werden
 in `index.html` **automatisch** angezeigt, sobald die Dateien vorhanden sind.
+Willst du andere Dateinamen/Formate (z. B. `.jpg`), passe die zwei `src`-Pfade
+der `<img>`-Tags in `index.html` entsprechend an.
 Fehlt eine Datei, bleibt der jeweilige Platzhalter sichtbar (der `onerror`-Handler
 am `<img>` blendet das fehlende Bild aus). Die Video-/Bild-Platzhalter in
 `kurs.html` bleiben davon unberührt.
@@ -158,7 +160,7 @@ Livegang rechtlich prüfen** (Anwalt oder seriöser Generator).
 ## Anpassen von Inhalten
 
 - **Texte/Design:** direkt in den HTML-Dateien bzw. `assets/css/style.css`.
-- **Bilder (Landingpage):** `hero.jpg` und `ueber-mich.jpg` in `assets/images/`
+- **Bilder (Landingpage):** `hero.png` und `ueber-mich.png` in `assets/images/`
   ablegen – sie erscheinen in `index.html` automatisch (siehe oben).
 - **Kurs-Videos:** In `kurs.html` sind 16:9-`video-placeholder`-Container
   vorbereitet. Ersetze sie später durch YouTube-unlisted- oder Vimeo-`<iframe>`s.
