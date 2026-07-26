@@ -299,7 +299,28 @@ p + p { margin-top: 14px; }
   color: var(--gruen); font-weight: 800;
 }
 
-/* Widerrufs-Checkbox */
+/* Formularfelder (Gratis-PDF-Anmeldung) */
+.field-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--schwarz);
+  margin: 14px 0 6px;
+}
+.field {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 13px 15px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  background: var(--weiss);
+  color: var(--schwarz);
+}
+.field:focus { border-color: var(--blau); }
+
+/* Widerrufs-/Einwilligungs-Checkbox */
 .consent {
   display: flex; gap: 12px; align-items: flex-start;
   background: var(--panel); border-radius: var(--radius-sm);

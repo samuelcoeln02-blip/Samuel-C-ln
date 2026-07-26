@@ -21,7 +21,7 @@
   <header class="site-header">
     <div class="wrap nav">
       <a href="index.html" class="brand">SAMUEL COELN<span class="dot">.</span></a>
-      <a href="#angebot" class="btn btn-primary nav-cta">Kurs sichern</a>
+      <a href="#freebie" class="btn btn-primary nav-cta">Gratis-PDF</a>
     </div>
   </header>
 
@@ -37,7 +37,7 @@
           Grund auf sauber, baue echte Progression auf und trainiere Kraft,
           Kondition und Athletik – überall, mit minimalem Equipment.
         </p>
-        <a href="#angebot" class="btn btn-primary">Jetzt entdecken →</a>
+        <a href="#freebie" class="btn btn-primary">Gratis-PDF sichern →</a>
 
         <!-- Hero-Bild: sobald du assets/images/hero.jpg hochlädst, wird es
              automatisch angezeigt. Fehlt die Datei, blendet onerror das Bild
@@ -287,13 +287,102 @@
       </div>
     </section>
 
-    <!-- ============================== 8) FAQ =========================== -->
+    <!-- =================== 8) GRATIS-PDF / ANMELDUNG ===================
+         Conversion-Punkt der Seite: Lead-Magnet. Sammelt Name + E-Mail und
+         verschickt (über dein E-Mail-Tool) automatisch das kostenlose PDF.
+         Das Formular postet an CONFIG.NEWSLETTER_ACTION. -->
+    <section id="freebie" class="section-panel">
+      <div class="wrap center">
+        <span class="eyebrow">Gratis für dich</span>
+        <h2>Hol dir den kostenlosen <span class="text-blau" data-pdf-title>Kettlebell Starter-Guide</span></h2>
+        <p class="lead">Trag dich ein und ich schicke dir das PDF direkt per
+          E-Mail – dein sauberer Einstieg ins Kettlebell-Training, ohne einen
+          Cent zu zahlen.</p>
+
+        <div class="offer-card" style="margin-top:32px; text-align:left">
+          <ul class="includes">
+            <li>Die sechs Grundübungen kompakt erklärt</li>
+            <li>Der saubere Hip-Hinge – Schritt für Schritt</li>
+            <li>Die häufigsten Technik-Fehler und wie du sie vermeidest</li>
+            <li>Empfehlung fürs richtige Einstiegsgewicht</li>
+          </ul>
+
+          <!-- Anmeldeformular. Feldnamen (name/email) werden per JS aus
+               config.js gesetzt, damit sie zu deinem E-Mail-Tool passen.
+               Der Button ist erst aktiv, wenn die DSGVO-Checkbox gesetzt ist. -->
+          <form id="leadForm" method="POST" novalidate>
+            <label class="field-label" for="leadName">Vorname</label>
+            <input class="field" type="text" id="leadName" name="name"
+                   placeholder="Dein Vorname" autocomplete="given-name" required>
+
+            <label class="field-label" for="leadEmail">E-Mail-Adresse</label>
+            <input class="field" type="email" id="leadEmail" name="email"
+                   placeholder="dein@email.de" autocomplete="email" required>
+
+            <!-- DSGVO-Einwilligung (nicht vorangehakt, Pflicht).
+                 RECHTLICHER HINWEIS: Einwilligungstext vor Livegang prüfen lassen. -->
+            <div class="consent" style="margin-top:16px">
+              <input type="checkbox" id="leadConsent" aria-describedby="leadConsent-text">
+              <label for="leadConsent" id="leadConsent-text">
+                Ich möchte den kostenlosen Guide erhalten und bin damit
+                einverstanden, dass mir Samuel Cöln das PDF sowie gelegentlich
+                E-Mails rund um Kettlebell-Training zusendet. Die Einwilligung
+                kann ich jederzeit widerrufen. Weitere Infos in der
+                <a href="datenschutz.html">Datenschutzerklärung</a>.
+              </label>
+            </div>
+
+            <button type="submit" id="leadBtn" class="btn btn-gruen btn-block" disabled>
+              Gratis-PDF anfordern
+            </button>
+            <p class="buy-hint" id="leadMsg">Kein Spam. Abmeldung jederzeit mit einem Klick.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== 9) FAQ ===========================
+         An den Gratis-PDF-Funnel angepasst. Steht bewusst UNTER der
+         Anmeldung, damit der Conversion-Punkt oben bleibt. -->
     <section>
       <div class="wrap">
         <span class="eyebrow">FAQ</span>
         <h2>Häufige Fragen</h2>
 
         <div style="margin-top:28px; max-width:760px">
+          <div class="faq-item">
+            <button class="faq-q">Was bekomme ich im kostenlosen PDF? <span class="chev">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Den Kettlebell Starter-Guide: die sechs Grundübungen kompakt erklärt,
+              den sauberen Hip-Hinge Schritt für Schritt, die häufigsten
+              Technik-Fehler und eine Empfehlung fürs richtige Einstiegsgewicht.
+              Ein idealer Einstieg, bevor du tiefer einsteigst.
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Ist das wirklich kostenlos? <span class="chev">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Ja, das PDF ist komplett gratis. Du trägst nur deinen Vornamen und
+              deine E-Mail-Adresse ein, damit ich dir den Guide zusenden kann.
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Wie bekomme ich das PDF? <span class="chev">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Nach dem Eintragen erhältst du eine E-Mail zur Bestätigung
+              (Double-Opt-in). Sobald du bestätigt hast, landet das PDF direkt in
+              deinem Postfach. Schau im Zweifel auch im Spam-Ordner nach.
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">Was passiert mit meiner E-Mail-Adresse? <span class="chev">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">
+              Deine Adresse nutze ich nur, um dir den Guide und gelegentlich
+              hilfreiche E-Mails rund ums Kettlebell-Training zu schicken. Kein
+              Spam, keine Weitergabe an Dritte – abmelden kannst du dich jederzeit
+              mit einem Klick. Details in der Datenschutzerklärung.
+            </div></div>
+          </div>
           <div class="faq-item">
             <button class="faq-q">Brauche ich eine eigene Kettlebell? <span class="chev">+</span></button>
             <div class="faq-a"><div class="faq-a-inner">
@@ -305,89 +394,6 @@
               wollen.
             </div></div>
           </div>
-          <div class="faq-item">
-            <button class="faq-q">Welches Gewicht sollte ich nehmen? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Für den Start reicht eine Kettlebell. Als grobe Orientierung starten
-              viele Einsteiger mit 12–16 kg. Im Kurs zeige ich dir den kompletten
-              Progressionsweg – von einer Kettlebell über zwei Kettlebells bis zu
-              schwereren Gewichten.
-            </div></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Wie lange dauert der Kurs? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Du bestimmst das Tempo selbst. Die Inhalte sind in drei Phasen
-              aufgebaut, die du in deinem eigenen Rhythmus durcharbeitest. Durch den
-              lebenslangen Zugang kannst du jederzeit zurückspringen und wiederholen.
-            </div></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Ist der Kurs für Anfänger geeignet? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Absolut. Phase 1 beginnt bei den absoluten Grundlagen inklusive
-              sauberem Hip-Hinge. Du brauchst keine Vorerfahrung – nur die
-              Bereitschaft, Technik geduldig zu üben.
-            </div></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Wie bekomme ich Zugang? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Nach dem Kauf über Stripe wirst du direkt zum Kursbereich
-              weitergeleitet und erhältst deinen Zugangscode. Mit diesem Code
-              schaltest du den Kurs frei – er bleibt in deinem Browser gespeichert,
-              sodass du ihn nicht jedes Mal neu eingeben musst.
-            </div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= 9) ANGEBOT / PREIS ======================
-         Ganz am Ende der Seite, direkt vor dem Footer. Der Preis wird
-         AUSSCHLIESSLICH hier genannt (nicht im Hero). -->
-    <section id="angebot" class="section-panel">
-      <div class="wrap center">
-        <span class="eyebrow">Das Angebot</span>
-        <h2>Kompletter Kettlebell-Kurs</h2>
-        <p class="lead">Einmal zahlen, für immer Zugang. Kein Abo, keine
-          versteckten Kosten.</p>
-
-        <div class="offer-card" style="margin-top:32px; text-align:left">
-          <div class="price-row">
-            <span class="price text-blau" data-price>20 €</span>
-            <span class="price-note">einmalig · lebenslanger Zugang</span>
-          </div>
-
-          <ul class="includes">
-            <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
-            <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
-            <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
-            <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
-            <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
-            <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
-          </ul>
-
-          <!-- PFLICHT-CHECKBOX Widerrufsrecht digitale Inhalte.
-               Der Kauf-Button ist erst aktiv, wenn diese Checkbox gesetzt ist
-               (nicht vorangehakt). Details siehe widerruf.html.
-               RECHTLICHER HINWEIS: vor Livegang rechtlich prüfen lassen. -->
-          <div class="consent">
-            <input type="checkbox" id="widerruf" aria-describedby="widerruf-text">
-            <label for="widerruf" id="widerruf-text">
-              Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
-              zugegriffen werden kann, und bin mir bewusst, dass mein
-              Widerrufsrecht dadurch erlischt.
-            </label>
-          </div>
-
-          <!-- Kauf-Button: führt auf CONFIG.STRIPE_PAYMENT_LINK.
-               Startet deaktiviert, bis die Checkbox gesetzt ist. -->
-          <button id="buyBtn" class="btn btn-gruen btn-block" disabled>
-            Jetzt für 20 € kaufen
-          </button>
-          <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
-            <a href="widerruf.html">Widerrufsbelehrung</a></p>
         </div>
       </div>
     </section>
@@ -418,7 +424,7 @@
         <div>
           <div style="color:#fff; font-weight:700; margin-bottom:10px">Kurs</div>
           <ul class="footer-links">
-            <li><a href="#angebot">Angebot</a></li>
+            <li><a href="#freebie">Gratis-PDF</a></li>
             <li><a href="kurs.html">Kursbereich</a></li>
           </ul>
         </div>
@@ -462,13 +468,10 @@
 
     /* --- 1) Werte aus config.js in die Seite schreiben -------------------- */
 
-    // Preis überall einsetzen (Elemente mit data-price)
-    document.querySelectorAll("[data-price]").forEach(function (el) {
-      el.textContent = CONFIG.PREIS_ANZEIGE;
+    // Titel des Gratis-PDFs einsetzen
+    document.querySelectorAll("[data-pdf-title]").forEach(function (el) {
+      el.textContent = CONFIG.FREE_PDF_TITEL;
     });
-    // Kauf-Button-Text mit Preis
-    var buyBtn = document.getElementById("buyBtn");
-    if (buyBtn) buyBtn.textContent = "Jetzt für " + CONFIG.PREIS_ANZEIGE + " kaufen";
 
     // Social-Links aus den Handles bauen
     document.querySelectorAll('[data-social="instagram"]').forEach(function (a) {
@@ -483,33 +486,44 @@
       el.textContent = new Date().getFullYear();
     });
 
-    /* --- 2) Widerruf-Checkbox aktiviert den Kauf-Button ------------------ */
-    var widerruf = document.getElementById("widerruf");
-    if (widerruf && buyBtn) {
-      widerruf.addEventListener("change", function () {
-        buyBtn.disabled = !widerruf.checked;
+    /* --- 2) Gratis-PDF-Formular ----------------------------------------- */
+    var leadForm    = document.getElementById("leadForm");
+    var leadBtn     = document.getElementById("leadBtn");
+    var leadConsent = document.getElementById("leadConsent");
+    var leadName    = document.getElementById("leadName");
+    var leadEmail   = document.getElementById("leadEmail");
+    var leadMsg     = document.getElementById("leadMsg");
+
+    if (leadForm) {
+      // Feldnamen an das E-Mail-Tool anpassen (aus config.js)
+      leadName.setAttribute("name", CONFIG.NEWSLETTER_FIELD_NAME);
+      leadEmail.setAttribute("name", CONFIG.NEWSLETTER_FIELD_EMAIL);
+
+      // Button erst aktiv, wenn die DSGVO-Checkbox gesetzt ist
+      leadConsent.addEventListener("change", function () {
+        leadBtn.disabled = !leadConsent.checked;
       });
-    }
 
-    /* --- 3) Kauf-Button -> Stripe Payment Link --------------------------- */
-    if (buyBtn) {
-      buyBtn.addEventListener("click", function () {
-        if (buyBtn.disabled) return;
+      // Absenden -> an den Endpoint des E-Mail-Tools posten
+      leadForm.addEventListener("submit", function (e) {
+        var action = CONFIG.NEWSLETTER_ACTION;
 
-        var link = CONFIG.STRIPE_PAYMENT_LINK;
-        // Solange der Platzhalter drinsteht, nicht weiterleiten, sondern Hinweis.
-        if (!link || link.indexOf("PLATZHALTER") === 0) {
-          alert("Hinweis für den Betreiber:\n\nDer Stripe Payment Link ist noch " +
-                "nicht eingetragen.\nTrage ihn in assets/js/config.js unter " +
-                "STRIPE_PAYMENT_LINK ein (siehe README.md).");
+        // Solange der Platzhalter drinsteht: nicht abschicken, sondern Hinweis.
+        if (!action || action.indexOf("PLATZHALTER") === 0) {
+          e.preventDefault();
+          alert("Hinweis für den Betreiber:\n\nDer Newsletter-Endpoint ist noch " +
+                "nicht eingetragen.\nTrage die Form-Action-URL deines E-Mail-Tools " +
+                "in assets/js/config.js unter NEWSLETTER_ACTION ein (siehe README.md).");
           return;
         }
-        // Weiterleitung zur Stripe-Bezahlseite
-        window.location.href = link;
+        // Endpoint setzen und das Formular normal absenden lassen.
+        leadForm.setAttribute("action", action);
+        leadMsg.textContent = "Wird gesendet …";
+        // (kein preventDefault -> Browser sendet an das E-Mail-Tool)
       });
     }
 
-    /* --- 4) FAQ-Accordion ------------------------------------------------ */
+    /* --- 3) FAQ-Accordion ----------------------------------------------- */
     document.querySelectorAll(".faq-q").forEach(function (btn) {
       btn.addEventListener("click", function () {
         btn.parentElement.classList.toggle("open");

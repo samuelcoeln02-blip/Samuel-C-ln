@@ -23,6 +23,33 @@ const CONFIG = {
   STRIPE_PAYMENT_LINK: "PLATZHALTER_STRIPE_PAYMENT_LINK",
 
   /* ---------------------------------------------------------------------------
+     1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
+     ---------------------------------------------------------------------------
+     Die Landingpage sammelt Name + E-Mail für ein kostenloses PDF. Eine
+     statische Seite kann selbst KEINE E-Mails verschicken – dafür brauchst du
+     ein E-Mail-Marketing-Tool (empfohlen: MailerLite, Alternativen: Brevo,
+     ConvertKit, Mailchimp). Dort baust du eine Anmeldung + eine Automation,
+     die das PDF automatisch versendet (Doppel-Opt-in / DSGVO).
+
+     NEWSLETTER_ACTION = die "action"-URL des HTML-Formulars aus deinem Tool.
+     Solange hier der Platzhalter steht, wird das Formular NICHT abgeschickt,
+     sondern zeigt einen Hinweis (praktisch zum Testen).
+
+     >>> HIER DIE FORM-ACTION-URL DEINES E-MAIL-TOOLS EINTRAGEN <<<
+     Anleitung: siehe README.md, Abschnitt "Gratis-PDF & E-Mail-Funnel".
+  --------------------------------------------------------------------------- */
+  NEWSLETTER_ACTION: "PLATZHALTER_NEWSLETTER_ACTION_URL",
+
+  // Namen der Formularfelder – müssen zu den Feldnamen deines E-Mail-Tools
+  // passen (bei MailerLite/Mailchimp heißen sie oft "fields[name]" bzw.
+  // "fields[email]" oder schlicht "name"/"email"). Bei Bedarf hier anpassen.
+  NEWSLETTER_FIELD_NAME:  "name",
+  NEWSLETTER_FIELD_EMAIL: "email",
+
+  // Titel des Gratis-PDFs (wird auf der Seite angezeigt):
+  FREE_PDF_TITEL: "Kettlebell Starter-Guide (PDF)",
+
+  /* ---------------------------------------------------------------------------
      2) ZUGANGSCODE für den Kursbereich (kurs.html)
      ---------------------------------------------------------------------------
      WICHTIG / SICHERHEITSHINWEIS:

@@ -41,7 +41,10 @@ Das ist die einzige Datei, die du normalerweise anfassen musst:
 
 | Wert | Bedeutung |
 |------|-----------|
-| `STRIPE_PAYMENT_LINK` | Link zur Stripe-Bezahlseite (siehe unten) |
+| `NEWSLETTER_ACTION` | Form-Action-URL deines E-Mail-Tools (Gratis-PDF-Anmeldung) |
+| `NEWSLETTER_FIELD_NAME` / `NEWSLETTER_FIELD_EMAIL` | Feldnamen, die dein E-Mail-Tool erwartet |
+| `FREE_PDF_TITEL` | Titel des Gratis-PDFs (auf der Seite angezeigt) |
+| `STRIPE_PAYMENT_LINK` | Link zur Stripe-Bezahlseite (Kursverkauf, später per E-Mail) |
 | `ACCESS_CODE` | Zugangscode für den Kursbereich |
 | `INSTAGRAM_HANDLE` / `TIKTOK_HANDLE` | deine Social-Handles (ohne @) |
 | `PREIS` / `PREIS_ANZEIGE` | Preis des Kurses |
@@ -49,6 +52,34 @@ Das ist die einzige Datei, die du normalerweise anfassen musst:
 | `COACHING_KEYWORD` | Keyword für 1:1-Coaching-DMs (Standard: `LOCK IN`) |
 
 Nach jeder Änderung: Datei speichern und neu deployen (siehe „Deployment“).
+
+---
+
+## Gratis-PDF & E-Mail-Funnel (so funktioniert die Landingpage)
+
+Die Landingpage verkauft den Kurs **nicht mehr direkt**. Stattdessen sammelt sie
+über ein Formular **Vorname + E-Mail** und verschickt ein kostenloses PDF
+(Lead-Magnet). Den Kurs verkaufst du anschließend per E-Mail an diese Leads.
+
+Eine statische Seite kann selbst keine E-Mails senden – dafür brauchst du ein
+**E-Mail-Marketing-Tool**. Empfohlen: **MailerLite** (kostenloser Tarif,
+DSGVO-/EU-freundlich, automatischer PDF-Versand). Alternativen: Brevo,
+ConvertKit, Mailchimp – das Prinzip ist überall gleich.
+
+**Einrichtung (Beispiel MailerLite):**
+1. Kostenloses Konto anlegen und dein **Gratis-PDF** hochladen.
+2. Eine **Automation** erstellen: „Wenn sich jemand einträgt → sende die E-Mail
+   mit dem PDF-Download“ (idealerweise mit Double-Opt-in / Bestätigungsmail).
+3. Ein **Formular** (oder „Embedded form“) erstellen. Du brauchst daraus die
+   **Form-Action-URL** und die **Feldnamen** für Name und E-Mail.
+4. In `assets/js/config.js` eintragen:
+   - `NEWSLETTER_ACTION` = die Form-Action-URL
+   - `NEWSLETTER_FIELD_NAME` / `NEWSLETTER_FIELD_EMAIL` = die Feldnamen deines Tools
+5. `FREE_PDF_TITEL` auf den echten Titel deines PDFs setzen.
+
+Solange `NEWSLETTER_ACTION` noch den Platzhalter enthält, wird das Formular nicht
+abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen). Den Kurs-Verkauf
+(Stripe, Abschnitte unten) baust du danach in deine E-Mail-Strecke ein.
 
 ---
 
