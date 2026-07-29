@@ -210,6 +210,13 @@ p + p { margin-top: 14px; }
   height: 100%;
   object-fit: cover;
 }
+/* Sobald ein echtes Bild vorhanden ist: gestrichelten Platzhalter-Rahmen und
+   Innenabstand entfernen. Fehlt das Bild (onerror entfernt das <img>), greift
+   automatisch wieder der gestrichelte Platzhalter-Look. */
+.media-placeholder:has(img) {
+  border: none;
+  padding: 0;
+}
 .media-placeholder strong { color: var(--schwarz); font-size: 1rem; }
 .media-placeholder span { font-size: 0.85rem; }
 .media-placeholder .ico { font-size: 2rem; }
