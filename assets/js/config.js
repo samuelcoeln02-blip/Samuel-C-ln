@@ -26,25 +26,27 @@ const CONFIG = {
      1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
      ---------------------------------------------------------------------------
      Die Landingpage sammelt Name + E-Mail für ein kostenloses PDF. Eine
-     statische Seite kann selbst KEINE E-Mails verschicken – dafür brauchst du
-     ein E-Mail-Marketing-Tool (empfohlen: MailerLite, Alternativen: Brevo,
-     ConvertKit, Mailchimp). Dort baust du eine Anmeldung + eine Automation,
-     die das PDF automatisch versendet (Doppel-Opt-in / DSGVO).
+     statische Seite kann selbst KEINE E-Mails verschicken – das übernimmt
+     BREVO (dein gewähltes Tool). In Brevo baust du ein Anmeldeformular +
+     eine Automation, die das PDF nach Double-Opt-in automatisch versendet.
 
-     NEWSLETTER_ACTION = die "action"-URL des HTML-Formulars aus deinem Tool.
+     NEWSLETTER_ACTION = die "action"-URL deines Brevo-Formulars. Die findest du
+     im Brevo-Formular unter "Teilen / HTML-Code einbetten"; sie sieht so aus:
+     https://DEINSUBDOMAIN.sibforms.com/serve/XXXXXXXXXXXXXXXX
      Solange hier der Platzhalter steht, wird das Formular NICHT abgeschickt,
      sondern zeigt einen Hinweis (praktisch zum Testen).
 
-     >>> HIER DIE FORM-ACTION-URL DEINES E-MAIL-TOOLS EINTRAGEN <<<
-     Anleitung: siehe README.md, Abschnitt "Gratis-PDF & E-Mail-Funnel".
+     >>> HIER DIE BREVO-FORM-ACTION-URL EINTRAGEN <<<
+     Anleitung: siehe README.md, Abschnitt "Gratis-PDF & E-Mail-Funnel (Brevo)".
   --------------------------------------------------------------------------- */
-  NEWSLETTER_ACTION: "PLATZHALTER_NEWSLETTER_ACTION_URL",
+  NEWSLETTER_ACTION: "PLATZHALTER_BREVO_FORM_ACTION_URL",
 
-  // Namen der Formularfelder – müssen zu den Feldnamen deines E-Mail-Tools
-  // passen (bei MailerLite/Mailchimp heißen sie oft "fields[name]" bzw.
-  // "fields[email]" oder schlicht "name"/"email"). Bei Bedarf hier anpassen.
-  NEWSLETTER_FIELD_NAME:  "name",
-  NEWSLETTER_FIELD_EMAIL: "email",
+  // Feldnamen MÜSSEN zu deinem Brevo-Formular passen. Brevo nutzt standardmäßig
+  // "EMAIL" für die E-Mail und ein Kontakt-Attribut (oft "FIRSTNAME") für den
+  // Vornamen. Prüfe die Namen im HTML-Code deines Brevo-Formulars und passe hier
+  // ggf. an.
+  NEWSLETTER_FIELD_NAME:  "FIRSTNAME",
+  NEWSLETTER_FIELD_EMAIL: "EMAIL",
 
   // Titel des Gratis-PDFs (wird auf der Seite angezeigt):
   FREE_PDF_TITEL: "Kettlebell Starter-Guide (PDF)",

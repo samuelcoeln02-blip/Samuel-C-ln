@@ -70,31 +70,37 @@ Nach jeder Änderung: Datei speichern und neu deployen (siehe „Deployment“).
 
 ---
 
-## Gratis-PDF & E-Mail-Funnel (so funktioniert die Landingpage)
+## Gratis-PDF & E-Mail-Funnel (Brevo)
 
-Die Landingpage verkauft den Kurs **nicht mehr direkt**. Stattdessen sammelt sie
-über ein Formular **Vorname + E-Mail** und verschickt ein kostenloses PDF
-(Lead-Magnet). Den Kurs verkaufst du anschließend per E-Mail an diese Leads.
+Die Landingpage führt mit einem **Gratis-PDF** (Lead-Magnet): sie sammelt über ein
+Formular **Vorname + E-Mail**. Den Kurs kann man am Seitenende direkt kaufen und/
+oder du verkaufst ihn später per E-Mail an die gesammelten Leads.
 
-Eine statische Seite kann selbst keine E-Mails senden – dafür brauchst du ein
-**E-Mail-Marketing-Tool**. Empfohlen: **MailerLite** (kostenloser Tarif,
-DSGVO-/EU-freundlich, automatischer PDF-Versand). Alternativen: Brevo,
-ConvertKit, Mailchimp – das Prinzip ist überall gleich.
+Eine statische Seite kann selbst keine E-Mails senden – das übernimmt **Brevo**
+(EU-Anbieter, Brevo GmbH Köln, DSGVO-freundlich, kostenloser Tarif).
 
-**Einrichtung (Beispiel MailerLite):**
-1. Kostenloses Konto anlegen und dein **Gratis-PDF** hochladen.
-2. Eine **Automation** erstellen: „Wenn sich jemand einträgt → sende die E-Mail
-   mit dem PDF-Download“ (idealerweise mit Double-Opt-in / Bestätigungsmail).
-3. Ein **Formular** (oder „Embedded form“) erstellen. Du brauchst daraus die
-   **Form-Action-URL** und die **Feldnamen** für Name und E-Mail.
-4. In `assets/js/config.js` eintragen:
-   - `NEWSLETTER_ACTION` = die Form-Action-URL
-   - `NEWSLETTER_FIELD_NAME` / `NEWSLETTER_FIELD_EMAIL` = die Feldnamen deines Tools
-5. `FREE_PDF_TITEL` auf den echten Titel deines PDFs setzen.
+**Einrichtung in Brevo:**
+1. Kostenloses Brevo-Konto anlegen.
+2. Eine **Kontaktliste** anlegen und ein **Anmeldeformular** erstellen (mit den
+   Feldern E-Mail und Vorname). **Double-Opt-in** aktivieren.
+3. Eine **Automation** bauen: „Wenn Kontakt Liste beitritt → sende E-Mail mit dem
+   PDF-Download-Link“ (Link auf `…/guide-danke.html` oder direkt auf die PDF).
+4. Im Formular unter **Teilen → HTML-Code einbetten** findest du die
+   **Action-URL** (`https://….sibforms.com/serve/…`) und die **Feldnamen**
+   (meist `EMAIL` und `FIRSTNAME`).
+5. In `assets/js/config.js` eintragen:
+   - `NEWSLETTER_ACTION` = die Brevo-Action-URL
+   - `NEWSLETTER_FIELD_EMAIL` / `NEWSLETTER_FIELD_NAME` = die Feldnamen (Standard
+     bereits `EMAIL` / `FIRSTNAME`)
+   - `FREE_PDF_TITEL` = Titel deines PDFs
+6. **AVV/DPA** mit Brevo abschließen (im Brevo-Konto).
 
-Solange `NEWSLETTER_ACTION` noch den Platzhalter enthält, wird das Formular nicht
-abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen). Den Kurs-Verkauf
-(Stripe, Abschnitte unten) baust du danach in deine E-Mail-Strecke ein.
+Solange `NEWSLETTER_ACTION` den Platzhalter enthält, wird das Formular nicht
+abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
+
+> **Schriftart:** Inter ist lokal selbst-gehostet (`assets/fonts/`) und wird von
+> deiner eigenen Seite ausgeliefert – keine Google-Fonts, keine Datenübertragung
+> an Dritte.
 
 ---
 

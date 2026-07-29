@@ -5,6 +5,28 @@
    danach per Media-Query für größere Screens erweitert.
    ========================================================================== */
 
+/* ---------- Schriftart: Inter, lokal selbst-gehostet ----------------------
+   DSGVO: Die Schrift wird direkt von dieser Website ausgeliefert (aus
+   assets/fonts/), NICHT von Google-Servern. Es werden dadurch keine Daten an
+   Dritte übertragen. font-display:swap zeigt sofort die System-Schrift und
+   tauscht auf Inter, sobald geladen. */
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 400;
+  font-display: swap; src: url("../fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 600;
+  font-display: swap; src: url("../fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 700;
+  font-display: swap; src: url("../fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter"; font-style: normal; font-weight: 800;
+  font-display: swap; src: url("../fonts/inter-800.woff2") format("woff2");
+}
+
 /* ---------- Design-Tokens (Farben, Abstände, Typo) ------------------------ */
 :root {
   /* Farben laut Vorgabe */

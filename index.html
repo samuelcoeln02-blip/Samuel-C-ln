@@ -429,6 +429,53 @@
       </div>
     </section>
 
+    <!-- ==================== 10) KURS-KAUFBEREICH =======================
+         Direktkauf des kompletten Kurses. Steht am Seitenende: der Gratis-PDF-
+         Funnel bleibt der Haupt-CTA, wer will, kann den Kurs aber direkt kaufen.
+         Der Kauf-Button führt auf CONFIG.STRIPE_PAYMENT_LINK. -->
+    <section id="kurs-angebot" class="section-panel">
+      <div class="wrap center">
+        <span class="eyebrow">Der komplette Kurs</span>
+        <h2>Bereit für mehr? Hol dir den ganzen Kurs</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">Einmal zahlen,
+          für immer Zugang. Kein Abo, keine versteckten Kosten.</p>
+
+        <div class="offer-card" style="margin-top:32px; text-align:left">
+          <div class="price-row">
+            <span class="price text-blau" data-price>20 €</span>
+            <span class="price-note">einmalig · lebenslanger Zugang</span>
+          </div>
+
+          <ul class="includes">
+            <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
+            <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
+            <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
+            <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
+            <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
+            <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
+          </ul>
+
+          <!-- PFLICHT-CHECKBOX Widerrufsrecht (digitale Inhalte, Kurs).
+               Kauf-Button erst aktiv, wenn gesetzt (nicht vorangehakt).
+               RECHTLICHER HINWEIS: vor Livegang rechtlich prüfen lassen. -->
+          <div class="consent">
+            <input type="checkbox" id="kaufConsent" aria-describedby="kaufConsent-text">
+            <label for="kaufConsent" id="kaufConsent-text">
+              Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
+              zugegriffen werden kann, und bin mir bewusst, dass mein
+              <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt.
+            </label>
+          </div>
+
+          <button id="buyBtn" class="btn btn-gruen btn-block" disabled>
+            Jetzt für 20 € kaufen
+          </button>
+          <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
+            <a href="widerruf.html">Widerrufsbelehrung</a></p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================= FOOTER ============================= -->
@@ -456,6 +503,7 @@
           <div style="color:#fff; font-weight:700; margin-bottom:10px">Kurs</div>
           <ul class="footer-links">
             <li><a href="#freebie">Gratis-PDF</a></li>
+            <li><a href="#kurs-angebot">Kurs kaufen</a></li>
             <li><a href="kurs.html">Kursbereich</a></li>
           </ul>
         </div>
@@ -502,6 +550,11 @@
     // Titel des Gratis-PDFs einsetzen
     document.querySelectorAll("[data-pdf-title]").forEach(function (el) {
       el.textContent = CONFIG.FREE_PDF_TITEL;
+    });
+
+    // Preis überall einsetzen (Kurs-Kaufbereich)
+    document.querySelectorAll("[data-price]").forEach(function (el) {
+      el.textContent = CONFIG.PREIS_ANZEIGE;
     });
 
     // Social-Links aus den Handles bauen
@@ -554,14 +607,42 @@
       });
     }
 
-    /* --- 3) FAQ-Accordion ----------------------------------------------- */
+    /* --- 3) Kurs-Kauf: Widerruf-Checkbox + Stripe-Button ---------------- */
+    var buyBtn      = document.getElementById("buyBtn");
+    var kaufConsent = document.getElementById("kaufConsent");
+    if (buyBtn) {
+      buyBtn.textContent = "Jetzt für " + CONFIG.PREIS_ANZEIGE + " kaufen";
+
+      // Button erst aktiv, wenn die Widerruf-Checkbox gesetzt ist
+      if (kaufConsent) {
+        kaufConsent.addEventListener("change", function () {
+          buyBtn.disabled = !kaufConsent.checked;
+        });
+      }
+
+      // Kauf -> Stripe Payment Link
+      buyBtn.addEventListener("click", function () {
+        if (buyBtn.disabled) return;
+        var link = CONFIG.STRIPE_PAYMENT_LINK;
+        // Solange der Platzhalter drinsteht: Hinweis statt Weiterleitung
+        if (!link || link.indexOf("PLATZHALTER") === 0) {
+          alert("Hinweis für den Betreiber:\n\nDer Stripe Payment Link ist noch " +
+                "nicht eingetragen.\nTrage ihn in assets/js/config.js unter " +
+                "STRIPE_PAYMENT_LINK ein (siehe README.md).");
+          return;
+        }
+        window.location.href = link;
+      });
+    }
+
+    /* --- 4) FAQ-Accordion ----------------------------------------------- */
     document.querySelectorAll(".faq-q").forEach(function (btn) {
       btn.addEventListener("click", function () {
         btn.parentElement.classList.toggle("open");
       });
     });
 
-    /* --- 4) Reels-Player -------------------------------------------------
+    /* --- 5) Reels-Player -------------------------------------------------
        Spielt 3 eigene MP4-Reels ab: immer eines läuft (Autoplay stumm),
        nach Ende automatisch das nächste. Ton per Button umschaltbar.
        Fehlt eine Datei, wird sie übersprungen; fehlen alle, erscheint der
