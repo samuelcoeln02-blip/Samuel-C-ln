@@ -20,7 +20,7 @@ const CONFIG = {
      Beispiel: "https://buy.stripe.com/abc123..."
      Anleitung: siehe README.md, Abschnitt "Stripe einrichten".
   --------------------------------------------------------------------------- */
-  STRIPE_PAYMENT_LINK: "PLATZHALTER_STRIPE_PAYMENT_LINK",
+  STRIPE_PAYMENT_LINK: "https://buy.stripe.com/4gMbJ19VYghm6kk3YF8N200",
 
   /* ---------------------------------------------------------------------------
      1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
