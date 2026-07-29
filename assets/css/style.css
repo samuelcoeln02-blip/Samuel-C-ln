@@ -642,6 +642,7 @@ p + p { margin-top: 14px; }
 .legal { padding: 48px 0 64px; }
 .legal h1 { font-size: 2rem; margin-bottom: 24px; }
 .legal h2 { font-size: 1.3rem; margin: 30px 0 10px; }
+.legal h3 { font-size: 1.08rem; margin: 20px 0 8px; }
 .legal p, .legal li { color: var(--schwarz); font-size: 0.98rem; }
 .legal p { margin-bottom: 12px; }
 .legal ul { padding-left: 22px; margin-bottom: 12px; }
