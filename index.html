@@ -318,56 +318,101 @@
       </div>
     </section>
 
-    <!-- =================== 8) GRATIS-PDF / ANMELDUNG ===================
-         Conversion-Punkt der Seite: Lead-Magnet. Sammelt Name + E-Mail und
-         verschickt (über dein E-Mail-Tool) automatisch das kostenlose PDF.
-         Das Formular postet an CONFIG.NEWSLETTER_ACTION. -->
+    <!-- =============== 8) ANGEBOT: GRATIS-PDF + KURS NEBENEINANDER =======
+         Zwei Boxen nebeneinander (auf dem Handy untereinander):
+         links der Gratis-PDF-Lead-Magnet, rechts der kostenpflichtige Kurs.
+         IDs (leadForm/leadBtn/leadConsent, buyBtn/kaufConsent, data-price,
+         data-pdf-title) bleiben unverändert, damit das JS weiter greift. -->
     <section id="freebie" class="section-panel">
-      <div class="wrap center">
-        <span class="eyebrow">Gratis für dich</span>
-        <h2>Hol dir den kostenlosen <span class="text-blau" data-pdf-title>Kettlebell Starter-Guide</span></h2>
-        <p class="lead">Trag dich ein und ich schicke dir das PDF direkt per
-          E-Mail – dein sauberer Einstieg ins Kettlebell-Training, ohne einen
-          Cent zu zahlen.</p>
+      <div class="wrap">
+        <div class="center">
+          <span class="eyebrow">Leg los</span>
+          <h2>Kostenlos starten – oder gleich der ganze Kurs</h2>
+        </div>
 
-        <div class="offer-card" style="margin-top:32px; text-align:left">
-          <ul class="includes">
-            <li>Die sechs Grundübungen kompakt erklärt</li>
-            <li>Der saubere Hip-Hinge – Schritt für Schritt</li>
-            <li>Die häufigsten Technik-Fehler und wie du sie vermeidest</li>
-            <li>Empfehlung fürs richtige Einstiegsgewicht</li>
-          </ul>
+        <div class="grid grid-2" style="margin-top:34px; align-items:start">
 
-          <!-- Anmeldeformular. Feldnamen (name/email) werden per JS aus
-               config.js gesetzt, damit sie zu deinem E-Mail-Tool passen.
-               Der Button ist erst aktiv, wenn die DSGVO-Checkbox gesetzt ist. -->
-          <form id="leadForm" method="POST" novalidate>
-            <label class="field-label" for="leadName">Vorname</label>
-            <input class="field" type="text" id="leadName" name="name"
-                   placeholder="Dein Vorname" autocomplete="given-name" required>
+          <!-- BOX 1: Gratis-PDF -->
+          <div class="offer-card" style="text-align:left; margin:0">
+            <span class="eyebrow">Gratis für dich</span>
+            <h3 style="font-size:1.4rem; margin:6px 0 4px">Kostenloser
+              <span class="text-blau" data-pdf-title>Kettlebell Starter-Guide</span></h3>
+            <p style="font-size:0.95rem; margin-bottom:16px">Trag dich ein und ich
+              schicke dir das PDF direkt per E-Mail – dein sauberer Einstieg.</p>
 
-            <label class="field-label" for="leadEmail">E-Mail-Adresse</label>
-            <input class="field" type="email" id="leadEmail" name="email"
-                   placeholder="dein@email.de" autocomplete="email" required>
+            <ul class="includes">
+              <li>Die sechs Grundübungen kompakt erklärt</li>
+              <li>Der saubere Hip-Hinge – Schritt für Schritt</li>
+              <li>Die häufigsten Technik-Fehler und wie du sie vermeidest</li>
+              <li>Empfehlung fürs richtige Einstiegsgewicht</li>
+            </ul>
 
-            <!-- Pflicht-Checkbox (nicht vorangehakt): Zustimmung zur sofortigen
-                 Bereitstellung + Kenntnis vom Erlöschen des Widerrufsrechts.
-                 RECHTLICHER HINWEIS: Einwilligungstext vor Livegang prüfen lassen. -->
-            <div class="consent" style="margin-top:16px">
-              <input type="checkbox" id="leadConsent" aria-describedby="leadConsent-text">
-              <label for="leadConsent" id="leadConsent-text">
-                Ich stimme zu, dass mir der Guide sofort per E-Mail zur Verfügung
-                gestellt wird, und bin mir bewusst, dass mein
-                <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt, sobald
-                ich den Guide erhalten habe.
+            <!-- Anmeldeformular. Feldnamen werden per JS aus config.js gesetzt.
+                 Button erst aktiv, wenn die DSGVO-Checkbox gesetzt ist. -->
+            <form id="leadForm" method="POST" novalidate>
+              <label class="field-label" for="leadName">Vorname</label>
+              <input class="field" type="text" id="leadName" name="name"
+                     placeholder="Dein Vorname" autocomplete="given-name" required>
+
+              <label class="field-label" for="leadEmail">E-Mail-Adresse</label>
+              <input class="field" type="email" id="leadEmail" name="email"
+                     placeholder="dein@email.de" autocomplete="email" required>
+
+              <!-- Pflicht-Checkbox (nicht vorangehakt) -->
+              <div class="consent" style="margin-top:16px">
+                <input type="checkbox" id="leadConsent" aria-describedby="leadConsent-text">
+                <label for="leadConsent" id="leadConsent-text">
+                  Ich stimme zu, dass mir der Guide sofort per E-Mail zur Verfügung
+                  gestellt wird, und bin mir bewusst, dass mein
+                  <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt, sobald
+                  ich den Guide erhalten habe.
+                </label>
+              </div>
+
+              <button type="submit" id="leadBtn" class="btn btn-gruen btn-block" disabled>
+                Gratis-PDF anfordern
+              </button>
+              <p class="buy-hint" id="leadMsg">Kein Spam. Abmeldung jederzeit mit einem Klick.</p>
+            </form>
+          </div>
+
+          <!-- BOX 2: Kompletter Kurs -->
+          <div class="offer-card" style="text-align:left; margin:0">
+            <span class="eyebrow">Der komplette Kurs</span>
+            <h3 style="font-size:1.4rem; margin:6px 0 10px">Der ganze Kurs</h3>
+
+            <div class="price-row">
+              <span class="price text-blau" data-price>20 €</span>
+              <span class="price-note">einmalig · lebenslanger Zugang</span>
+            </div>
+
+            <ul class="includes">
+              <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
+              <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
+              <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
+              <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
+              <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
+              <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
+            </ul>
+
+            <!-- PFLICHT-CHECKBOX Widerrufsrecht (digitale Inhalte, Kurs).
+                 Kauf-Button erst aktiv, wenn gesetzt. -->
+            <div class="consent">
+              <input type="checkbox" id="kaufConsent" aria-describedby="kaufConsent-text">
+              <label for="kaufConsent" id="kaufConsent-text">
+                Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
+                zugegriffen werden kann, und bin mir bewusst, dass mein
+                <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt.
               </label>
             </div>
 
-            <button type="submit" id="leadBtn" class="btn btn-gruen btn-block" disabled>
-              Gratis-PDF anfordern
+            <button id="buyBtn" class="btn btn-primary btn-block" disabled>
+              Jetzt für 20 € kaufen
             </button>
-            <p class="buy-hint" id="leadMsg">Kein Spam. Abmeldung jederzeit mit einem Klick.</p>
-          </form>
+            <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
+              <a href="widerruf.html">Widerrufsbelehrung</a></p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -429,53 +474,6 @@
       </div>
     </section>
 
-    <!-- ==================== 10) KURS-KAUFBEREICH =======================
-         Direktkauf des kompletten Kurses. Steht am Seitenende: der Gratis-PDF-
-         Funnel bleibt der Haupt-CTA, wer will, kann den Kurs aber direkt kaufen.
-         Der Kauf-Button führt auf CONFIG.STRIPE_PAYMENT_LINK. -->
-    <section id="kurs-angebot" class="section-panel">
-      <div class="wrap center">
-        <span class="eyebrow">Der komplette Kurs</span>
-        <h2>Bereit für mehr? Hol dir den ganzen Kurs</h2>
-        <p class="lead" style="margin-left:auto;margin-right:auto">Einmal zahlen,
-          für immer Zugang. Kein Abo, keine versteckten Kosten.</p>
-
-        <div class="offer-card" style="margin-top:32px; text-align:left">
-          <div class="price-row">
-            <span class="price text-blau" data-price>20 €</span>
-            <span class="price-note">einmalig · lebenslanger Zugang</span>
-          </div>
-
-          <ul class="includes">
-            <li>Alle drei Phasen: Fundament, Aufbau, Leistung</li>
-            <li>Die sechs Grundübungen als ausführliche Video-Lektionen</li>
-            <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
-            <li>Klarer Progressionsplan vom Einstieg bis fortgeschritten</li>
-            <li>Rundenbasierte Trainings & Beispiel-Komplexe</li>
-            <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
-          </ul>
-
-          <!-- PFLICHT-CHECKBOX Widerrufsrecht (digitale Inhalte, Kurs).
-               Kauf-Button erst aktiv, wenn gesetzt (nicht vorangehakt).
-               RECHTLICHER HINWEIS: vor Livegang rechtlich prüfen lassen. -->
-          <div class="consent">
-            <input type="checkbox" id="kaufConsent" aria-describedby="kaufConsent-text">
-            <label for="kaufConsent" id="kaufConsent-text">
-              Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
-              zugegriffen werden kann, und bin mir bewusst, dass mein
-              <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt.
-            </label>
-          </div>
-
-          <button id="buyBtn" class="btn btn-gruen btn-block" disabled>
-            Jetzt für 20 € kaufen
-          </button>
-          <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
-            <a href="widerruf.html">Widerrufsbelehrung</a></p>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- ============================= FOOTER ============================= -->
@@ -502,8 +500,7 @@
         <div>
           <div style="color:#fff; font-weight:700; margin-bottom:10px">Kurs</div>
           <ul class="footer-links">
-            <li><a href="#freebie">Gratis-PDF</a></li>
-            <li><a href="#kurs-angebot">Kurs kaufen</a></li>
+            <li><a href="#freebie">Gratis-PDF & Kurs</a></li>
             <li><a href="kurs.html">Kursbereich</a></li>
           </ul>
         </div>
