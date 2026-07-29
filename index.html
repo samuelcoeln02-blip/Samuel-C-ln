@@ -77,6 +77,41 @@
       </div>
     </section>
 
+    <!-- ==================== 2b) REELS / VIDEOS =========================
+         Spielt deine 3 neuesten Reels als eigene MP4-Dateien ab: es läuft
+         immer eines (Autoplay stummgeschaltet, danach automatisch das nächste),
+         der Besucher kann den Ton per Button an-/ausschalten.
+         >>> Lege die Dateien in assets/videos/ ab:
+             reel-1.mp4, reel-2.mp4, reel-3.mp4 (jeweils dein neuestes Reel).
+         Solange sie fehlen, wird ein Platzhalter angezeigt. -->
+    <section class="section-dark reels">
+      <div class="wrap center">
+        <span class="eyebrow">Aus dem Training</span>
+        <h2>Sieh es in Aktion</h2>
+        <p class="lead" style="margin-left:auto;margin-right:auto">Meine neuesten
+          Reels. Es läuft automatisch immer eins – tippe auf das Symbol für Ton.</p>
+
+        <div class="reel-stage">
+          <div class="reel-frame">
+            <video id="reelVideo" playsinline muted autoplay preload="metadata"></video>
+
+            <!-- Platzhalter, solange keine Videos vorhanden sind -->
+            <div class="reel-placeholder" id="reelPlaceholder">
+              <span class="ico">🎬</span>
+              <strong>PLATZHALTER: deine 3 Reels</strong>
+              <span>Lege reel-1.mp4, reel-2.mp4, reel-3.mp4 in assets/videos/ ab</span>
+            </div>
+
+            <!-- Ton an/aus -->
+            <button class="reel-sound" id="reelSound" type="button" aria-label="Ton an- oder ausschalten">🔇</button>
+          </div>
+
+          <!-- Punkte zum manuellen Wechseln -->
+          <div class="reel-dots" id="reelDots" aria-label="Reel auswählen"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ==================== 3) WARUM KETTLEBELL-TRAINING ================ -->
     <section>
       <div class="wrap">
@@ -529,6 +564,86 @@
         btn.parentElement.classList.toggle("open");
       });
     });
+
+    /* --- 4) Reels-Player -------------------------------------------------
+       Spielt 3 eigene MP4-Reels ab: immer eines läuft (Autoplay stumm),
+       nach Ende automatisch das nächste. Ton per Button umschaltbar.
+       Fehlt eine Datei, wird sie übersprungen; fehlen alle, erscheint der
+       Platzhalter. Reihenfolge/Anzahl hier in REELS anpassbar. */
+    (function () {
+      var video       = document.getElementById("reelVideo");
+      if (!video) return;
+      var placeholder = document.getElementById("reelPlaceholder");
+      var soundBtn    = document.getElementById("reelSound");
+      var dotsWrap    = document.getElementById("reelDots");
+
+      // Deine 3 neuesten Reels als MP4 in assets/videos/ ablegen:
+      var REELS = [
+        { src: "assets/videos/reel-1.mp4" },
+        { src: "assets/videos/reel-2.mp4" },
+        { src: "assets/videos/reel-3.mp4" }
+      ];
+
+      var idx = 0;
+      var failCount = 0;
+
+      // Punkte (Dots) aufbauen
+      REELS.forEach(function (_, i) {
+        var d = document.createElement("button");
+        d.className = "reel-dot";
+        d.type = "button";
+        d.setAttribute("aria-label", "Reel " + (i + 1));
+        d.addEventListener("click", function () { play(i); });
+        dotsWrap.appendChild(d);
+      });
+
+      function markDot() {
+        Array.prototype.forEach.call(dotsWrap.children, function (c, i) {
+          c.classList.toggle("active", i === idx);
+        });
+      }
+
+      function play(i) {
+        idx = (i + REELS.length) % REELS.length;
+        video.src = REELS[idx].src;
+        video.play().catch(function () { /* Autoplay ggf. blockiert -> ignorieren */ });
+        markDot();
+      }
+      function next() { play(idx + 1); }
+
+      // Datei nicht ladbar -> nächstes Reel; wenn alle fehlen -> Platzhalter
+      video.addEventListener("error", function () {
+        failCount++;
+        if (failCount >= REELS.length) {
+          video.style.display = "none";
+          soundBtn.style.display = "none";
+          dotsWrap.style.display = "none";
+          placeholder.style.display = "flex";
+          return;
+        }
+        next();
+      });
+
+      // Sobald ein Video wirklich lädt: Platzhalter ausblenden
+      video.addEventListener("loadeddata", function () {
+        failCount = 0;
+        placeholder.style.display = "none";
+        video.style.display = "block";
+      });
+
+      // Ende eines Reels -> automatisch das nächste ("immer läuft eins")
+      video.addEventListener("ended", next);
+
+      // Ton an/aus
+      soundBtn.addEventListener("click", function () {
+        video.muted = !video.muted;
+        soundBtn.textContent = video.muted ? "🔇" : "🔊";
+        // Nach dem Klick (User-Geste) darf mit Ton weitergespielt werden
+        if (!video.muted) video.play().catch(function () {});
+      });
+
+      play(0);
+    })();
 
   })();
   </script>

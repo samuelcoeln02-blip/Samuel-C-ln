@@ -30,6 +30,21 @@ Lege einfach `hero.png` und `ueber-mich.png` in `assets/images/` ab – sie werd
 in `index.html` **automatisch** angezeigt, sobald die Dateien vorhanden sind.
 Willst du andere Dateinamen/Formate (z. B. `.jpg`), passe die zwei `src`-Pfade
 der `<img>`-Tags in `index.html` entsprechend an.
+
+### Reels-Videos (Landingpage)
+
+Zwischen „Das Problem" und „Warum Kettlebell" läuft ein Reel-Player. Er spielt
+**eigene MP4-Dateien** ab: es läuft automatisch immer eines (stummgeschaltetes
+Autoplay – Browser erlauben Ton-Autoplay nicht), danach wechselt er zum nächsten;
+der Besucher kann den Ton per Button an-/ausschalten.
+
+Lege deine 3 neuesten Reels als **`reel-1.mp4`, `reel-2.mp4`, `reel-3.mp4`** in
+`assets/videos/` ab (Hochformat 9:16). Sobald sie da sind, spielt der Player sie
+automatisch; fehlen sie, zeigt er einen Platzhalter. Die Reels lädst du selbst
+hoch (z. B. dein Reel aus der Instagram-App exportieren/speichern) – ein
+automatisches Ziehen der „neuesten" Reels ist auf einer statischen Seite nicht
+möglich (dafür bräuchte es die Instagram-Graph-API mit Business-Account + Server).
+Neue Reels = einfach die Dateien austauschen.
 Fehlt eine Datei, bleibt der jeweilige Platzhalter sichtbar (der `onerror`-Handler
 am `<img>` blendet das fehlende Bild aus). Die Video-/Bild-Platzhalter in
 `kurs.html` bleiben davon unberührt.
