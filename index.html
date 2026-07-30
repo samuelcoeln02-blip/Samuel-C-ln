@@ -93,8 +93,8 @@
             <!-- Platzhalter, solange keine Videos vorhanden sind -->
             <div class="reel-placeholder" id="reelPlaceholder">
               <span class="ico">🎬</span>
-              <strong>PLATZHALTER: deine 3 Reels</strong>
-              <span>Lege reel-1.mp4, reel-2.mp4, reel-3.mp4 in assets/videos/ ab</span>
+              <strong>PLATZHALTER: deine Reels</strong>
+              <span>Lege reel-1.mp4, reel-2.mp4 in assets/videos/ ab</span>
             </div>
 
             <!-- Ton an/aus (SVG-Lautsprechersymbol, YouTube-typisch).
@@ -653,11 +653,11 @@
       var soundBtn    = document.getElementById("reelSound");
       var dotsWrap    = document.getElementById("reelDots");
 
-      // Deine 3 neuesten Reels als MP4 in assets/videos/ ablegen:
+      // Deine Reels als MP4 in assets/videos/ ablegen (hier 2 Stück; weitere
+      // Zeilen einfach ergänzen/entfernen):
       var REELS = [
         { src: "assets/videos/reel-1.mp4" },
-        { src: "assets/videos/reel-2.mp4" },
-        { src: "assets/videos/reel-3.mp4" }
+        { src: "assets/videos/reel-2.mp4" }
       ];
 
       var idx = 0;

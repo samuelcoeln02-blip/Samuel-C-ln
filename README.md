@@ -38,13 +38,17 @@ Zwischen „Das Problem" und „Warum Kettlebell" läuft ein Reel-Player. Er spi
 Autoplay – Browser erlauben Ton-Autoplay nicht), danach wechselt er zum nächsten;
 der Besucher kann den Ton per Button an-/ausschalten.
 
-Lege deine 3 neuesten Reels als **`reel-1.mp4`, `reel-2.mp4`, `reel-3.mp4`** in
-`assets/videos/` ab (Hochformat 9:16). Sobald sie da sind, spielt der Player sie
-automatisch; fehlen sie, zeigt er einen Platzhalter. Die Reels lädst du selbst
-hoch (z. B. dein Reel aus der Instagram-App exportieren/speichern) – ein
-automatisches Ziehen der „neuesten" Reels ist auf einer statischen Seite nicht
-möglich (dafür bräuchte es die Instagram-Graph-API mit Business-Account + Server).
-Neue Reels = einfach die Dateien austauschen.
+Lege deine Reels als **`reel-1.mp4`, `reel-2.mp4`** in `assets/videos/` ab
+(Hochformat 9:16). Sobald sie da sind, spielt der Player sie automatisch; fehlen
+sie, zeigt er einen Platzhalter. Die Liste der Reels steht im `<script>` von
+`index.html` (Konstante `REELS`) – dort kannst du Videos ergänzen/entfernen.
+
+**Wichtig – Dateigröße:** GitHub-Web-Uploads sind auf 25 MB pro Datei begrenzt,
+und große Autoplay-Videos machen die Seite mobil langsam. Komprimiere deine
+Reels vor dem Upload (z. B. CapCut-Export 720p, oder HandBrake „Fast 720p30").
+Ein automatisches Ziehen der „neuesten" Reels ist auf einer statischen Seite
+nicht möglich (dafür bräuchte es die Instagram-Graph-API mit Business-Account +
+Server). Neue Reels = einfach die Dateien austauschen.
 Fehlt eine Datei, bleibt der jeweilige Platzhalter sichtbar (der `onerror`-Handler
 am `<img>` blendet das fehlende Bild aus). Die Video-/Bild-Platzhalter in
 `kurs.html` bleiben davon unberührt.
