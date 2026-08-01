@@ -390,7 +390,8 @@
           <!-- BOX 2: Kompletter Kurs -->
           <div class="offer-card" style="text-align:left; margin:0">
             <span class="eyebrow">Der komplette Kurs</span>
-            <h3 style="font-size:1.4rem; margin:6px 0 6px">Der 6-Wochen-Kurs</h3>
+            <h3 style="font-size:1.4rem; margin:6px 0 6px">Der 6-Wochen-Kurs
+              <span class="pill" id="kursBadge" style="display:none; font-size:0.7rem; vertical-align:middle; white-space:nowrap">Bald verfügbar</span></h3>
             <p style="font-size:0.95rem; margin-bottom:12px">6 Wochen, klar
               strukturiert: jede Woche 2 Übungen – Schritt für Schritt bis zum
               kompletten Komplex.</p>
@@ -423,7 +424,7 @@
             <button id="buyBtn" class="btn btn-primary btn-block" disabled>
               Jetzt für 30 € kaufen
             </button>
-            <p class="buy-hint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
+            <p class="buy-hint" id="buyHint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
               <a href="widerruf.html">Widerrufsbelehrung</a></p>
           </div>
 
@@ -629,32 +630,45 @@
       });
     }
 
-    /* --- 3) Kurs-Kauf: Widerruf-Checkbox + Stripe-Button ---------------- */
+    /* --- 3) Kurs-Kauf: "Bald verfügbar" ODER Widerruf + Stripe-Button ---
+       Gesteuert über CONFIG.KURS_VERFUEGBAR. Sobald der Kurs fertig ist,
+       in config.js einfach auf true stellen. */
     var buyBtn      = document.getElementById("buyBtn");
     var kaufConsent = document.getElementById("kaufConsent");
+    var buyHint     = document.getElementById("buyHint");
+    var kursBadge   = document.getElementById("kursBadge");
+    var kaufConsentBox = kaufConsent ? kaufConsent.closest(".consent") : null;
+
     if (buyBtn) {
-      buyBtn.textContent = "Jetzt für " + CONFIG.PREIS_ANZEIGE + " kaufen";
+      if (CONFIG.KURS_VERFUEGBAR) {
+        /* ---- Normaler Kauf-Flow ---- */
+        buyBtn.textContent = "Jetzt für " + CONFIG.PREIS_ANZEIGE + " kaufen";
 
-      // Button erst aktiv, wenn die Widerruf-Checkbox gesetzt ist
-      if (kaufConsent) {
-        kaufConsent.addEventListener("change", function () {
-          buyBtn.disabled = !kaufConsent.checked;
-        });
-      }
-
-      // Kauf -> Stripe Payment Link
-      buyBtn.addEventListener("click", function () {
-        if (buyBtn.disabled) return;
-        var link = CONFIG.STRIPE_PAYMENT_LINK;
-        // Solange der Platzhalter drinsteht: Hinweis statt Weiterleitung
-        if (!link || link.indexOf("PLATZHALTER") === 0) {
-          alert("Hinweis für den Betreiber:\n\nDer Stripe Payment Link ist noch " +
-                "nicht eingetragen.\nTrage ihn in assets/js/config.js unter " +
-                "STRIPE_PAYMENT_LINK ein (siehe README.md).");
-          return;
+        if (kaufConsent) {
+          kaufConsent.addEventListener("change", function () {
+            buyBtn.disabled = !kaufConsent.checked;
+          });
         }
-        window.location.href = link;
-      });
+        buyBtn.addEventListener("click", function () {
+          if (buyBtn.disabled) return;
+          var link = CONFIG.STRIPE_PAYMENT_LINK;
+          if (!link || link.indexOf("PLATZHALTER") === 0) {
+            alert("Hinweis für den Betreiber:\n\nDer Stripe Payment Link ist noch " +
+                  "nicht eingetragen.\nTrage ihn in assets/js/config.js unter " +
+                  "STRIPE_PAYMENT_LINK ein (siehe README.md).");
+            return;
+          }
+          window.location.href = link;
+        });
+      } else {
+        /* ---- "Bald verfügbar" ---- */
+        if (kursBadge) kursBadge.style.display = "";
+        if (kaufConsentBox) kaufConsentBox.style.display = "none";  // keine Widerruf-Checkbox nötig
+        buyBtn.textContent = "Bald verfügbar";
+        buyBtn.disabled = true;                                     // bleibt inaktiv
+        if (buyHint) buyHint.textContent =
+          "Der Kurs erscheint in Kürze – sichere dir solange den kostenlosen Guide.";
+      }
     }
 
     /* --- 4) FAQ-Accordion ----------------------------------------------- */

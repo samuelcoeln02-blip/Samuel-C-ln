@@ -23,6 +23,17 @@ const CONFIG = {
   STRIPE_PAYMENT_LINK: "https://buy.stripe.com/bJe4gzb024yEaAA3YF8N201",
 
   /* ---------------------------------------------------------------------------
+     1a) KURS SCHON KAUFBAR?  (Schalter für "Bald verfügbar")
+     ---------------------------------------------------------------------------
+     false = der Kurs-Kaufbereich zeigt "Bald verfügbar" (Button inaktiv, keine
+             Widerruf-Checkbox). Nutze das, solange der Kurs noch nicht fertig ist.
+     true  = normaler Kauf-Flow (Widerruf-Checkbox + Kauf-Button -> Stripe).
+
+     >>> Sobald dein Kurs fertig ist, hier einfach auf true stellen. <<<
+  --------------------------------------------------------------------------- */
+  KURS_VERFUEGBAR: false,
+
+  /* ---------------------------------------------------------------------------
      1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
      ---------------------------------------------------------------------------
      Die Landingpage sammelt Name + E-Mail für ein kostenloses PDF. Eine
