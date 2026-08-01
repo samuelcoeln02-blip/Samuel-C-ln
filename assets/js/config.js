@@ -33,8 +33,12 @@ const CONFIG = {
      NEWSLETTER_ACTION = die "action"-URL deines Brevo-Formulars. Die findest du
      im Brevo-Formular unter "Teilen / HTML-Code einbetten"; sie sieht so aus:
      https://DEINSUBDOMAIN.sibforms.com/serve/XXXXXXXXXXXXXXXX
-     Solange hier der Platzhalter steht, wird das Formular NICHT abgeschickt,
-     sondern zeigt einen Hinweis (praktisch zum Testen).
+
+     ABLAUF (neu): Der Gratis-Guide wird nach dem Absenden SOFORT als Download
+     bereitgestellt (Seite guide-download.html). An Brevo werden Name + E-Mail
+     nur DANN im Hintergrund gesendet, wenn der Nutzer die optionale
+     Newsletter-Checkbox anhakt. Solange hier der Platzhalter steht, wird nichts
+     an Brevo geschickt – der Download funktioniert trotzdem.
 
      >>> HIER DIE BREVO-FORM-ACTION-URL EINTRAGEN <<<
      Anleitung: siehe README.md, Abschnitt "Gratis-PDF & E-Mail-Funnel (Brevo)".

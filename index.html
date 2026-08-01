@@ -336,8 +336,8 @@
             <span class="eyebrow">Gratis für dich</span>
             <h3 style="font-size:1.4rem; margin:6px 0 4px">Kostenloser
               <span class="text-blau" data-pdf-title>Kettlebell Starter-Guide</span></h3>
-            <p style="font-size:0.95rem; margin-bottom:16px">Trag dich ein und ich
-              schicke dir das PDF direkt per E-Mail – dein sauberer Einstieg.</p>
+            <p style="font-size:0.95rem; margin-bottom:16px">Trag dich ein und du
+              bekommst das PDF sofort zum Download – dein sauberer Einstieg.</p>
 
             <ul class="includes">
               <li>Die sechs Grundübungen kompakt erklärt</li>
@@ -357,21 +357,33 @@
               <input class="field" type="email" id="leadEmail" name="email"
                      placeholder="dein@email.de" autocomplete="email" required>
 
-              <!-- Pflicht-Checkbox (nicht vorangehakt) -->
+              <!-- Pflicht-Checkbox (nicht vorangehakt): Widerruf-Zustimmung.
+                   Guide wird jetzt sofort zum Download bereitgestellt. -->
               <div class="consent" style="margin-top:16px">
                 <input type="checkbox" id="leadConsent" aria-describedby="leadConsent-text">
                 <label for="leadConsent" id="leadConsent-text">
-                  Ich stimme zu, dass mir der Guide sofort per E-Mail zur Verfügung
-                  gestellt wird, und bin mir bewusst, dass mein
-                  <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt, sobald
-                  ich den Guide erhalten habe.
+                  Ich stimme zu, dass mir der Guide sofort zum Download bereitgestellt
+                  wird, und bin mir bewusst, dass mein
+                  <a href="widerruf.html">Widerrufsrecht</a> damit mit Absenden des
+                  Formulars erlischt.
+                </label>
+              </div>
+
+              <!-- Optionale Newsletter-Checkbox (nicht vorangehakt). Nur wenn
+                   gesetzt, werden die Daten zusätzlich im Hintergrund an Brevo
+                   gesendet (siehe Script). -->
+              <div class="consent" style="margin-top:12px">
+                <input type="checkbox" id="leadNewsletter" aria-describedby="leadNewsletter-text">
+                <label for="leadNewsletter" id="leadNewsletter-text">
+                  Ja, ich möchte künftig E-Mails mit Trainingstipps und Angeboten von
+                  Samuel Coeln erhalten. Abmeldung jederzeit möglich.
                 </label>
               </div>
 
               <button type="submit" id="leadBtn" class="btn btn-gruen btn-block" disabled>
-                Gratis-PDF anfordern
+                Gratis-PDF herunterladen →
               </button>
-              <p class="buy-hint" id="leadMsg">Kein Spam. Abmeldung jederzeit mit einem Klick.</p>
+              <p class="buy-hint" id="leadMsg">Sofort-Download, kein Warten. Newsletter ist optional.</p>
             </form>
           </div>
 
@@ -569,40 +581,51 @@
       el.textContent = new Date().getFullYear();
     });
 
-    /* --- 2) Gratis-PDF-Formular ----------------------------------------- */
-    var leadForm    = document.getElementById("leadForm");
-    var leadBtn     = document.getElementById("leadBtn");
-    var leadConsent = document.getElementById("leadConsent");
-    var leadName    = document.getElementById("leadName");
-    var leadEmail   = document.getElementById("leadEmail");
-    var leadMsg     = document.getElementById("leadMsg");
+    /* --- 2) Gratis-PDF-Formular -----------------------------------------
+       Ablauf:
+       - Beim Absenden wird SOFORT auf guide-download.html weitergeleitet
+         (dort liegt der direkte Download-Button zur PDF).
+       - NUR wenn die optionale Newsletter-Checkbox gesetzt ist UND eine echte
+         Brevo-URL in config.js hinterlegt ist, werden Vorname + E-Mail im
+         Hintergrund an Brevo gesendet (navigator.sendBeacon überlebt die
+         Weiterleitung). Ohne Häkchen wird NICHTS an Brevo geschickt. */
+    var leadForm       = document.getElementById("leadForm");
+    var leadBtn        = document.getElementById("leadBtn");
+    var leadConsent    = document.getElementById("leadConsent");
+    var leadNewsletter = document.getElementById("leadNewsletter");
+    var leadName       = document.getElementById("leadName");
+    var leadEmail      = document.getElementById("leadEmail");
 
     if (leadForm) {
-      // Feldnamen an das E-Mail-Tool anpassen (aus config.js)
-      leadName.setAttribute("name", CONFIG.NEWSLETTER_FIELD_NAME);
-      leadEmail.setAttribute("name", CONFIG.NEWSLETTER_FIELD_EMAIL);
-
-      // Button erst aktiv, wenn die DSGVO-Checkbox gesetzt ist
+      // Button erst aktiv, wenn die Pflicht-Checkbox (Widerruf) gesetzt ist
       leadConsent.addEventListener("change", function () {
         leadBtn.disabled = !leadConsent.checked;
       });
 
-      // Absenden -> an den Endpoint des E-Mail-Tools posten
       leadForm.addEventListener("submit", function (e) {
-        var action = CONFIG.NEWSLETTER_ACTION;
+        e.preventDefault();
+        if (leadConsent && !leadConsent.checked) return;  // Sicherheitsnetz
 
-        // Solange der Platzhalter drinsteht: nicht abschicken, sondern Hinweis.
-        if (!action || action.indexOf("PLATZHALTER") === 0) {
-          e.preventDefault();
-          alert("Hinweis für den Betreiber:\n\nDer Newsletter-Endpoint ist noch " +
-                "nicht eingetragen.\nTrage die Form-Action-URL deines E-Mail-Tools " +
-                "in assets/js/config.js unter NEWSLETTER_ACTION ein (siehe README.md).");
-          return;
+        // Optionaler Newsletter: nur bei gesetzter Checkbox an Brevo senden
+        if (leadNewsletter && leadNewsletter.checked) {
+          var action = CONFIG.NEWSLETTER_ACTION;
+          if (action && action.indexOf("PLATZHALTER") !== 0) {
+            try {
+              var fd = new FormData();
+              fd.append(CONFIG.NEWSLETTER_FIELD_NAME, leadName.value);
+              fd.append(CONFIG.NEWSLETTER_FIELD_EMAIL, leadEmail.value);
+              if (navigator.sendBeacon) {
+                navigator.sendBeacon(action, fd);
+              } else {
+                fetch(action, { method: "POST", body: fd, mode: "no-cors", keepalive: true })
+                  .catch(function () {});
+              }
+            } catch (err) { /* Fehler ignorieren – der Download soll trotzdem passieren */ }
+          }
         }
-        // Endpoint setzen und das Formular normal absenden lassen.
-        leadForm.setAttribute("action", action);
-        leadMsg.textContent = "Wird gesendet …";
-        // (kein preventDefault -> Browser sendet an das E-Mail-Tool)
+
+        // Sofort zur Download-Seite
+        window.location.href = "guide-download.html";
       });
     }
 
