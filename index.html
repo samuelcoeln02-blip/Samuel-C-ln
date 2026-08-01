@@ -94,6 +94,14 @@
               <span>Lege reel-1.mp4, reel-2.mp4 in assets/videos/ ab</span>
             </div>
 
+            <!-- Pfeile zum Wechseln (groß, leicht tappbar) -->
+            <button class="reel-nav reel-prev" id="reelPrev" type="button" aria-label="Vorheriges Reel">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="reel-nav reel-next" id="reelNext" type="button" aria-label="Nächstes Reel">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+
             <!-- Ton an/aus (SVG-Lautsprechersymbol, YouTube-typisch).
                  Startet im Stumm-Zustand; das JS tauscht das Icon beim Klick. -->
             <button class="reel-sound" id="reelSound" type="button" aria-label="Ton einschalten" aria-pressed="false">
@@ -101,7 +109,7 @@
             </button>
           </div>
 
-          <!-- Punkte zum manuellen Wechseln -->
+          <!-- Punkte als Positionsanzeige (weiterhin klickbar) -->
           <div class="reel-dots" id="reelDots" aria-label="Reel auswählen"></div>
         </div>
       </div>
@@ -689,6 +697,8 @@
       var placeholder = document.getElementById("reelPlaceholder");
       var soundBtn    = document.getElementById("reelSound");
       var dotsWrap    = document.getElementById("reelDots");
+      var prevBtn     = document.getElementById("reelPrev");
+      var nextBtn     = document.getElementById("reelNext");
 
       // Deine Reels als MP4 in assets/videos/ ablegen (hier 2 Stück; weitere
       // Zeilen einfach ergänzen/entfernen):
@@ -723,6 +733,11 @@
         markDot();
       }
       function next() { play(idx + 1); }
+      function prev() { play(idx - 1); }
+
+      // Pfeile zum Wechseln
+      if (prevBtn) prevBtn.addEventListener("click", prev);
+      if (nextBtn) nextBtn.addEventListener("click", next);
 
       // Datei nicht ladbar -> nächstes Reel; wenn alle fehlen -> Platzhalter
       video.addEventListener("error", function () {
@@ -731,6 +746,8 @@
           video.style.display = "none";
           soundBtn.style.display = "none";
           dotsWrap.style.display = "none";
+          if (prevBtn) prevBtn.style.display = "none";
+          if (nextBtn) nextBtn.style.display = "none";
           placeholder.style.display = "flex";
           return;
         }

@@ -323,6 +323,30 @@ p + p { margin-top: 14px; }
   border-radius: 5px;
 }
 
+/* Pfeile zum Wechseln (große, gut tappbare Ziele links/rechts im Video) */
+.reel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  transition: background .15s ease;
+}
+.reel-nav:hover { background: rgba(0, 0, 0, 0.72); }
+.reel-nav:active { transform: translateY(-50%) scale(0.94); }
+.reel-prev { left: 10px; }
+.reel-next { right: 10px; }
+
 /* ---------- Benefit-Grid -------------------------------------------------- */
 .grid { display: grid; gap: var(--gap); }
 .grid-2 { grid-template-columns: 1fr; }
@@ -394,8 +418,8 @@ p + p { margin-top: 14px; }
   max-width: 560px;
   margin: 0 auto;
 }
-.price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
-.price { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; }
+.price-row { display: flex; align-items: baseline; gap: 6px 12px; margin-bottom: 4px; flex-wrap: wrap; }
+.price { font-size: 3rem; font-weight: 800; letter-spacing: -0.03em; white-space: nowrap; }
 .price-note { color: var(--text-grau); font-size: 0.95rem; }
 
 .includes { list-style: none; margin: 22px 0; }
