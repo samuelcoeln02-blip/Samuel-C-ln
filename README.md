@@ -108,7 +108,7 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 
 ---
 
-## 1) In Stripe ein Produkt für 20 € anlegen
+## 1) In Stripe ein Produkt für 30 € anlegen
 
 1. Erstelle (falls noch nicht vorhanden) ein kostenloses Konto auf
    [stripe.com](https://stripe.com) und schließe die Kontoeinrichtung ab
@@ -117,7 +117,7 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 3. Trage ein:
    - **Name:** z. B. „Kettlebell-Kurs“
    - **Beschreibung:** kurze Beschreibung des Kurses
-   - **Preis:** `20,00` EUR, Preismodell **Einmalig** (nicht wiederkehrend)
+   - **Preis:** `30,00` EUR, Preismodell **Einmalig** (nicht wiederkehrend)
 4. Speichern.
 
 > Hinweis Kleinunternehmer (§ 19 UStG): Du weist keine Umsatzsteuer aus. In den
@@ -127,7 +127,7 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 ## 2) Einen Payment Link erstellen
 
 1. Im Stripe-Dashboard: **Zahlungslinks (Payment Links) → + Neuer Link**.
-2. Wähle das eben erstellte Produkt „Kettlebell-Kurs“ (20 €) aus.
+2. Wähle das eben erstellte Produkt „Kettlebell-Kurs“ (30 €) aus.
 3. **Wichtig – Success-URL / Weiterleitung nach Zahlung:**
    - Suche in den Einstellungen des Payment Links den Punkt
      **„Nach der Zahlung“** → **„Kunden auf eine Website weiterleiten“**

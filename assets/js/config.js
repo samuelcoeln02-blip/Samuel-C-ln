@@ -20,7 +20,7 @@ const CONFIG = {
      Beispiel: "https://buy.stripe.com/abc123..."
      Anleitung: siehe README.md, Abschnitt "Stripe einrichten".
   --------------------------------------------------------------------------- */
-  STRIPE_PAYMENT_LINK: "https://buy.stripe.com/4gMbJ19VYghm6kk3YF8N200",
+  STRIPE_PAYMENT_LINK: "https://buy.stripe.com/bJe4gzb024yEaAA3YF8N201",
 
   /* ---------------------------------------------------------------------------
      1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
@@ -82,9 +82,9 @@ const CONFIG = {
   /* ---------------------------------------------------------------------------
      4) PREIS
      --------------------------------------------------------------------------- */
-  PREIS: "20",              // nur die Zahl
+  PREIS: "30",              // nur die Zahl
   WAEHRUNG: "€",            // Währungssymbol
-  PREIS_ANZEIGE: "20 €",    // wie es auf der Seite steht
+  PREIS_ANZEIGE: "30 €",    // wie es auf der Seite steht
 
   /* ---------------------------------------------------------------------------
      5) DEINE KONTAKTDATEN
