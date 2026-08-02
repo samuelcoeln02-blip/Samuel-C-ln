@@ -170,6 +170,18 @@ p + p { margin-top: 14px; }
   box-shadow: none;
 }
 
+/* Roter "Bald verfügbar"-Button – bleibt auch inaktiv voll sichtbar (rot) */
+.btn-rot {
+  background: #E5323B;
+  color: var(--weiss);
+  box-shadow: 0 8px 24px rgba(229, 50, 59, 0.28);
+}
+.btn-rot:disabled,
+.btn-rot[disabled] {
+  opacity: 1;          /* nicht ausgrauen – Rot soll klar sichtbar sein */
+  cursor: default;
+}
+
 .btn-block { width: 100%; }
 
 /* ---------- Header / Navigation ------------------------------------------ */
@@ -306,22 +318,6 @@ p + p { margin-top: 14px; }
 }
 .reel-sound:hover { background: rgba(0, 0, 0, 0.78); }
 
-/* Punkte zum Wechseln */
-.reel-dots { display: flex; gap: 8px; }
-.reel-dot {
-  width: 9px; height: 9px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.35);
-  padding: 0;
-  transition: all .15s ease;
-}
-.reel-dot.active {
-  background: var(--gruen);
-  width: 24px;
-  border-radius: 5px;
-}
 
 /* Pfeile zum Wechseln (große, gut tappbare Ziele links/rechts im Video) */
 .reel-nav {
@@ -329,23 +325,24 @@ p + p { margin-top: 14px; }
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   transition: background .15s ease;
 }
-.reel-nav:hover { background: rgba(0, 0, 0, 0.72); }
+.reel-nav:hover { background: rgba(0, 0, 0, 0.78); }
 .reel-nav:active { transform: translateY(-50%) scale(0.94); }
-.reel-prev { left: 10px; }
-.reel-next { right: 10px; }
+.reel-prev { left: 12px; }
+.reel-next { right: 12px; }
 
 /* ---------- Benefit-Grid -------------------------------------------------- */
 .grid { display: grid; gap: var(--gap); }
