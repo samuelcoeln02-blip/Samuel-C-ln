@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 520" width="1020" height="520" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 22px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 15px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Titel -->
+  <text x="40" y="48" font-size="26" font-weight="800" fill="#0B0B0F">Die hintere Kette im Hip-Hinge</text>
+
+  <!-- Boden-Linie -->
+  <line x1="250" y1="474" x2="470" y2="474" stroke="#E3E7EF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ===================== KÖRPER-SILHOUETTE (neutral grau) ===================== -->
+  <g stroke="#D7DCE5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 462 L312 330 L270 262 L440 205" stroke-width="50"/>
+    <path d="M440 208 L452 322" stroke-width="26"/>
+  </g>
+  <path d="M300 466 L346 466" stroke="#D7DCE5" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="478" cy="170" r="31" fill="#D7DCE5"/>
+
+  <!-- Kettlebell in der Hand -->
+  <path d="M446 324 q6 -12 12 0" fill="none" stroke="#0B0B0F" stroke-width="5"/>
+  <circle cx="452" cy="342" r="17" fill="#0B0B0F"/>
+
+  <!-- ===================== HINTERE KETTE (farbig) ===================== -->
+  <!-- Rückenstrecker (Rumpf-Rückseite / Wirbelsäule) -->
+  <path d="M264 247 L433 189" fill="none" stroke="#1552F0" stroke-width="15" stroke-linecap="round"/>
+  <!-- Gesäß -->
+  <ellipse cx="249" cy="256" rx="27" ry="23" fill="#12B76A"/>
+  <!-- Hintere Oberschenkel -->
+  <path d="M258 269 L300 337" fill="none" stroke="#0A2E8F" stroke-width="17" stroke-linecap="round"/>
+
+  <!-- ===================== BESCHRIFTUNGEN ===================== -->
+  <!-- Rückenstrecker (rechts oben) -->
+  <polyline class="lead" points="360,214 360,96 720,96"/>
+  <circle cx="360" cy="214" r="4" fill="#1552F0"/>
+  <text class="label" x="736" y="90">Rückenstrecker</text>
+  <text class="sub"   x="736" y="112">stabilisieren die Wirbelsäule</text>
+
+  <!-- Gesäß (links) -->
+  <polyline class="lead" points="228,262 150,300 60,300"/>
+  <circle cx="228" cy="262" r="4" fill="#12B76A"/>
+  <text class="label" x="40" y="352">Gesäß</text>
+  <text class="sub"   x="40" y="374">der Motor der Hüftstreckung</text>
+
+  <!-- Hintere Oberschenkel (rechts unten) -->
+  <polyline class="lead" points="292,330 240,410 700,410"/>
+  <circle cx="292" cy="330" r="4" fill="#0A2E8F"/>
+  <text class="label" x="716" y="404">Hintere Oberschenkel</text>
+  <text class="sub"   x="716" y="426">übertragen die Kraft aufs Bein</text>
+</svg>
