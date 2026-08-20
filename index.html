@@ -335,7 +335,7 @@
       <div class="wrap">
         <div class="center">
           <span class="eyebrow">Leg los</span>
-          <h2>Kostenlos starten – oder gleich der ganze Kurs</h2>
+          <h2>Kostenlos starten – oder gleich das ganze E-Book</h2>
         </div>
 
         <div class="grid grid-2" style="margin-top:34px; align-items:start">
@@ -396,14 +396,14 @@
             </form>
           </div>
 
-          <!-- BOX 2: Kompletter Kurs -->
+          <!-- BOX 2: Das E-Book -->
           <div id="ebook" class="offer-card" style="text-align:left; margin:0">
-            <span class="eyebrow">Der komplette Kurs</span>
-            <h3 style="font-size:1.4rem; margin:6px 0 6px">Der 6-Wochen-Kurs
+            <span class="eyebrow">Das komplette E-Book</span>
+            <h3 style="font-size:1.4rem; margin:6px 0 6px">Das große Kettlebell-E-Book
               <span class="pill" id="kursBadge" style="display:none; font-size:0.7rem; vertical-align:middle; white-space:nowrap">Bald verfügbar</span></h3>
-            <p style="font-size:0.95rem; margin-bottom:12px">6 Wochen, klar
-              strukturiert: jede Woche 2 Übungen – Schritt für Schritt bis zum
-              kompletten Komplex.</p>
+            <p style="font-size:0.95rem; margin-bottom:12px">Dein komplettes
+              Kettlebell-Wissen in einem E-Book: alle Grundübungen, Technik,
+              Programmierung und Ernährung – von Grund auf erklärt.</p>
 
             <div class="price-row">
               <span class="price text-blau" data-price>30 €</span>
@@ -411,29 +411,30 @@
             </div>
 
             <ul class="includes">
-              <li>6-Wochen-Plan: jede Woche 2 Übungen, klar aufeinander aufgebaut</li>
-              <li>Die sechs Grundübungen als ausführliche Video-Lektionen – plus fortgeschrittene Übungen</li>
-              <li>Ausführungsschritte, häufige Fehler und Coaching-Cues je Übung</li>
-              <li>Vom sauberen Einstieg bis zum kompletten Komplex</li>
-              <li>Du verstehst das Training wirklich – und baust am Ende eigene Komplexe auf</li>
-              <li>Lebenslanger Zugang inklusive späterer Ergänzungen</li>
+              <li>Jede Grundübung in einem eigenen, ausführlichen Kapitel – Swing, Goblet Squat, Clean, Press, Row, Windmill, Snatch &amp; Halo</li>
+              <li>Das Fundament: Hip-Hinge, Atmung, Core-Bracing, Griff &amp; Sicherheit</li>
+              <li>Pro Übung: Setup, Technik Schritt für Schritt, häufige Fehler &amp; Coaching-Cues</li>
+              <li>Progression, Variationen &amp; wie du eigene Komplexe (Flows) baust</li>
+              <li>Ausführlicher 6-Wochen-Plan plus Aufwärmen, Regeneration &amp; Verletzungsprävention</li>
+              <li>Ernährung ohne Kalorienzählen – alltagstauglich erklärt</li>
+              <li>Wissenschaftlich fundiert, rund 50 Seiten – lebenslange Updates inklusive</li>
             </ul>
 
-            <!-- PFLICHT-CHECKBOX Widerrufsrecht (digitale Inhalte, Kurs).
+            <!-- PFLICHT-CHECKBOX Widerrufsrecht (digitale Inhalte, E-Book).
                  Kauf-Button erst aktiv, wenn gesetzt. -->
             <div class="consent">
               <input type="checkbox" id="kaufConsent" aria-describedby="kaufConsent-text">
               <label for="kaufConsent" id="kaufConsent-text">
                 Ich stimme zu, dass mit dem Kauf sofort auf die digitalen Inhalte
-                zugegriffen werden kann, und bin mir bewusst, dass mein
+                (E-Book) zugegriffen werden kann, und bin mir bewusst, dass mein
                 <a href="widerruf.html">Widerrufsrecht</a> dadurch erlischt.
               </label>
             </div>
 
             <button id="buyBtn" class="btn btn-primary btn-block" disabled>
-              Jetzt für 30 € kaufen
+              Kauf dir jetzt dein E-Book →
             </button>
-            <p class="buy-hint" id="buyHint">Sichere Zahlung über Stripe · Zugang direkt nach dem Kauf ·
+            <p class="buy-hint" id="buyHint">Sichere Zahlung über Stripe · PDF sofort nach dem Kauf ·
               <a href="widerruf.html">Widerrufsbelehrung</a></p>
           </div>
 
@@ -716,7 +717,7 @@
     if (buyBtn) {
       if (CONFIG.KURS_VERFUEGBAR) {
         /* ---- Normaler Kauf-Flow ---- */
-        buyBtn.textContent = "Jetzt für " + CONFIG.PREIS_ANZEIGE + " kaufen";
+        buyBtn.textContent = "Kauf dir jetzt dein E-Book →";
 
         if (kaufConsent) {
           kaufConsent.addEventListener("change", function () {
@@ -743,7 +744,7 @@
         buyBtn.classList.add("btn-rot");                            // rot statt blau
         buyBtn.disabled = true;                                     // bleibt inaktiv
         if (buyHint) buyHint.textContent =
-          "Der Kurs erscheint in Kürze – sichere dir solange den kostenlosen Guide.";
+          "Das E-Book erscheint in Kürze – sichere dir solange den kostenlosen Guide.";
       }
     }
 
