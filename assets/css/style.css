@@ -197,7 +197,10 @@ p + p { margin-top: 14px; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 62px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  min-height: 62px;
+  padding: 8px 0;
 }
 .brand {
   font-weight: 800;
@@ -207,28 +210,32 @@ p + p { margin-top: 14px; }
 }
 .brand:hover { text-decoration: none; }
 .brand .dot { color: var(--blau); }
-.nav-cta { font-size: 0.95rem; padding: 10px 18px; }
-
-/* Rechte Header-Gruppe: Textlinks (E-Book, Coaching) + Gratis-PDF-Button */
-.nav-actions { display: flex; align-items: center; gap: 16px; }
-.nav-link {
-  font-size: 0.92rem; font-weight: 600; color: var(--text-grau);
-  white-space: nowrap;
-}
-.nav-link:hover { color: var(--schwarz); text-decoration: none; }
-
-/* Auf schmalen Handys enger setzen, damit alles in eine Zeile passt */
+.nav-cta { font-size: 0.95rem; padding: 10px 18px; white-space: nowrap; }
 .brand { white-space: nowrap; }
-.nav-cta { white-space: nowrap; }
+
+/* Header-CTAs: drei einheitliche blaue Buttons, gleichmäßig verteilt
+   (links / Mitte / rechts). Auf dem Handy eigene volle Zeile unter dem
+   Brand, auf größeren Screens rechts neben dem Brand über die Restbreite. */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1 1 100%;
+}
+
+@media (min-width: 620px) {
+  .nav-actions { flex: 1 1 auto; margin-left: 32px; gap: 18px; }
+}
+
+/* Auf schmalen Handys enger setzen, damit alle drei in eine Zeile passen */
 @media (max-width: 420px) {
   .brand { font-size: 0.9rem; }
-  .nav-actions { gap: 10px; }
-  .nav-link { font-size: 0.8rem; }
-  .nav-cta { font-size: 0.8rem; padding: 8px 11px; }
+  .nav-actions { gap: 8px; }
+  .nav-cta { font-size: 0.8rem; padding: 8px 12px; }
 }
 @media (max-width: 340px) {
-  .nav-actions { gap: 8px; }
-  .nav-link { font-size: 0.76rem; }
+  .nav-cta { font-size: 0.74rem; padding: 7px 10px; }
 }
 
 /* ---------- Hero ---------------------------------------------------------- */
