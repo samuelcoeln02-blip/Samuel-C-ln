@@ -31,3 +31,13 @@ Cover mergen.
 ## Echte Fotos einsetzen
 Die `bild(...)`-Platzhalter durch `<figure><img src="...">…</figure>` ersetzen,
 sobald die Fotos vorliegen (nach `assets/images/ebook/` legen).
+
+## Fotos auf einheitlichen Vibe bringen (`process_photo.py`)
+Stellt die Person frei (rembg/u2net) und setzt sie auf einen einheitlichen
+Marken-Hintergrund – so passen Fotos aus unterschiedlichen Umgebungen zusammen.
+```
+pip install pillow numpy rembg onnxruntime
+python3 tools/ebook/process_photo.py INPUT OUTPUT --bg panel --shadow
+```
+`--bg light|panel|dark`. Beim ersten Lauf lädt rembg einmalig das Modell
+(~176 MB) nach `~/.rembg`.
