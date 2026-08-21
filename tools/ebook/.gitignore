@@ -1,0 +1,5 @@
+# Build-Zwischenstände (werden bei jedem Lauf neu erzeugt)
+cover.pdf
+body1.pdf
+body2.pdf
+node_modules/
