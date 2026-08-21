@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .h{font-size:20px;font-weight:800;fill:#0B0B0F;}
+      .cap{font-size:15px;font-weight:800;fill:#0B0B0F;}
+      .sub{font-size:12.5px;font-weight:600;fill:#6B7280;}
+      .lim{stroke:#D7DCE5;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:44;}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1552F0"/>
+    </marker>
+  </defs>
+
+  <text class="h" x="40" y="40">Hinge ist nicht Squat</text>
+  <line x1="450" y1="70" x2="450" y2="392" stroke="#E3E7EF" stroke-width="2"/>
+
+  <!-- ===================== HINGE (links) ===================== -->
+  <g>
+    <path class="lim" d="M170 340 L176 240"/>              <!-- Schienbein senkrecht -->
+    <path class="lim" d="M176 240 L140 222"/>              <!-- Oberschenkel -->
+    <path class="lim" d="M140 222 L300 204"/>              <!-- Rumpf fast waagerecht -->
+    <path class="lim" d="M300 206 L312 300" stroke-width="22"/> <!-- Arm senkrecht -->
+    <path d="M168 342 L212 342" stroke="#D7DCE5" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="322" cy="186" r="26" fill="#D7DCE5"/>
+    <circle cx="312" cy="316" r="15" fill="#0B0B0F"/>      <!-- Kettlebell -->
+    <circle cx="140" cy="222" r="14" fill="#12B76A"/>      <!-- Hüfte -->
+    <path d="M118 202 q-40 6 -58 26" fill="none" stroke="#1552F0" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
+  <text class="cap" x="150" y="372" text-anchor="middle">HINGE</text>
+  <text class="sub" x="150" y="394" text-anchor="middle">Hüfte nach hinten</text>
+
+  <!-- ===================== SQUAT (rechts) ===================== -->
+  <g>
+    <path class="lim" d="M600 342 L636 282"/>              <!-- Schienbein (Knie vor) -->
+    <path class="lim" d="M636 282 L596 296"/>              <!-- Oberschenkel ~ waagerecht -->
+    <path class="lim" d="M596 296 L612 182"/>              <!-- Rumpf aufrecht -->
+    <path class="lim" d="M612 190 L650 232" stroke-width="22"/> <!-- Arm hält vorne -->
+    <path d="M600 344 L644 344" stroke="#D7DCE5" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="616" cy="160" r="26" fill="#D7DCE5"/>
+    <circle cx="658" cy="242" r="15" fill="#0B0B0F"/>      <!-- Kettlebell -->
+    <circle cx="596" cy="296" r="14" fill="#12B76A"/>      <!-- Hüfte -->
+    <path d="M556 244 L556 306" fill="none" stroke="#1552F0" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
+  <text class="cap" x="620" y="372" text-anchor="middle">SQUAT</text>
+  <text class="sub" x="620" y="394" text-anchor="middle">Hüfte nach unten</text>
+</svg>
