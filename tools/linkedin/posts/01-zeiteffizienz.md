@@ -34,6 +34,9 @@ einzigen Kettlebell in 20 Minuten den ganzen Körper zu treffen:
 3. Flow, für Koordination: 1 Swing, 1 Clean, 1 Press, 1 Squat, 1 Row ohne
    Absetzen, als eine flüssige Kette, mehrere Runden.
 
+Presses und Rows zählst du je Seite. Wer zwei Kettlebells hat, eine pro Hand,
+trainiert beide Seiten gleichzeitig und spart noch einmal Zeit.
+
 Kein Weg, kein Umziehen, keine Ausrede. Nicht mehr Zeit finden, weniger Zeit
 brauchen.
 
