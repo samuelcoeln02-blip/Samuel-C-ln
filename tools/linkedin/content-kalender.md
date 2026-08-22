@@ -9,7 +9,7 @@ gegossen in ein Post Gerüst mit einem verifizierten Beleg.
 
 | Woche | Ebene | Pfeiler | Gerüst | Beleg (Quellenbank) | Ziel | Datei |
 |-------|-------|---------|--------|---------------------|------|-------|
-| Auftakt | Vorstellung | Wer bin ich, warum LinkedIn | Story Arc | Farrar 2010 (leichter Anker) | Meinungsführerschaft | `posts/00-auftakt.md` |
+| Auftakt | Vorstellung | Wer bin ich, warum LinkedIn | Story Arc | Meigh et al. 2022 (BELL) | Meinungsführerschaft | `posts/00-auftakt.md` |
 | 1 | 1 | Zeiteffizienz | Blaupause | Farrar 2010 | Meinungsführerschaft | `posts/01-zeiteffizienz.md` |
 | 2 | 2 | Nervensystem und Explosivkraft | Story Arc | Otto et al. 2012 | Meinungsführerschaft | `posts/02-nervensystem.md` |
 | 3 | 1 | Platzunabhängigkeit | Blaupause | McGill und Marshall 2012 | Erstgespräch (leise) | `posts/03-platzunabhaengigkeit.md` |
@@ -19,7 +19,18 @@ gegossen in ein Post Gerüst mit einem verifizierten Beleg.
 | 7 | 1 | Vorbildfunktion für Väter | Story Arc | Farrar 2010 | Meinungsführerschaft | `posts/07-vaeter.md` |
 | 8 | 2 | Core als Stabilisator | Blaupause | McGill und Marshall 2012 | E-Book (leise) | `posts/08-core.md` |
 
-## Verifizierte Quellenbank (nur diese vier belegen, nichts erfinden)
+## Verifizierte Quellenbank (nur diese belegen, nichts erfinden)
+
+- **Meigh, Keogh, Schram, Hing, Rathbone (2022).** Effects of supervised
+  high-intensity hardstyle kettlebell training on grip strength and
+  health-related physical fitness in insufficiently active older adults: the
+  BELL pragmatic controlled trial. BMC Geriatrics 22: 354. Zuvor inaktive
+  Erwachsene zwischen 59 und 79 Jahren, zwölf Wochen betreutes Kettlebell
+  Training. Griffkraft stieg um rund 6 bis 7 Kilogramm pro Hand, allgemeine
+  Fitness verbesserte sich, Trainingsbeteiligung über 90 Prozent, sicher und
+  gut verträglich. Aktuellste und methodisch solide Quelle. Passt zu:
+  Griffkraft, Alltagskraft, Gesundheit, Zeiteffizienz, Einstieg trotz Inaktivität,
+  Sicherheit. Transparent bleiben: Population sind ältere, zuvor inaktive Menschen.
 
 - **Farrar, Mayhew, Koch (2010).** Oxygen cost of kettlebell swings. J Strength
   Cond Res 24(4): 1034 bis 1036. Belegt hohen aeroben Energieverbrauch beim

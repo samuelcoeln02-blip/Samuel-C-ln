@@ -1,38 +1,36 @@
 ---
-Woche: Auftakt (Vorstellung)
+Woche: Auftakt (Vorstellung), der erste zu veröffentlichende Post
 Gerüst: Story Arc
-Beleg: Farrar, Mayhew, Koch (2010)
+Beleg: Meigh et al. (2022), BELL pragmatic controlled trial
 Ziel: Meinungsführerschaft
 Bestzeit: Dienstag oder Mittwoch, Vormittag
 ---
 
-Ich trainiere seit Jahren mit einem einzigen Stück Eisen.
+Die ehrlichste Ausrede gegen Training ist nicht die Zeit.
 
-Und ich glaube, genau das ist der Grund, warum ich jetzt hier schreibe.
+Es ist der leise Gedanke, schon zu weit weg zu sein. Zu untrainiert, zu
+eingerostet, zu spät dran.
 
-Auf Instagram und TikTok zeige ich, was im Kettlebell Training wirklich
-funktioniert. Ohne Bro Science, ohne Hype. Was ich dort aber selten treffe,
-sind Menschen, deren größtes Problem nicht Ästhetik ist, sondern Zeit.
+Ich trainiere seit Jahren mit einem einzigen Stück Eisen und zeige auf Instagram
+und TikTok, was dabei wirklich funktioniert. Ohne Bro Science, ohne Hype. Hier
+schreibe ich für die, deren größtes Hindernis nicht Ästhetik ist, sondern ein
+voller Kalender und das Gefühl, den Anschluss verloren zu haben.
 
-Menschen mit vollem Kalender, die früher mal sportlich waren. Die das
-Fitnessstudio zweimal probiert und zweimal abgebrochen haben, weil Anfahrt
-plus Umziehen plus Training einfach nicht in den Tag passt.
+Zu diesem Gefühl gibt es klare Daten. In der BELL Studie (Meigh und Kollegen,
+2022) trainierten zuvor inaktive Menschen zwischen 59 und 79 Jahren zwölf Wochen
+lang mit Kettlebells. Das Ergebnis: die Griffkraft stieg im Schnitt um 6 bis 7
+Kilogramm pro Hand, die allgemeine Fitness verbesserte sich, und das bei einer
+Trainingsbeteiligung von über 90 Prozent. Sicher und gut verträglich.
 
-Dabei zeigt die Forschung etwas Unbequemes: Farrar und Kollegen haben 2010
-gemessen, dass schon der Kettlebell Swing einen erheblichen Energieverbrauch
-auslöst, aerob wie Ausdauersport. Kraft und Kondition, in einer Bewegung, auf
-einem Quadratmeter.
+Wenn zwölf Wochen bei inaktiven Menschen jenseits der 60 so viel bewegen, dann
+ist die eigentliche Frage nie, ob es zu spät ist. Die Frage ist die Methode.
 
-Die Erkenntnis, die mein Training verändert hat: Stärke ist keine Frage der
-Zeit. Sie ist eine Frage der Methode.
+Genau darüber schreibe ich hier ab jetzt. Ein Gerät, wenig Raum, wenig Zeit,
+echte Kraft.
 
-Genau darüber schreibe ich hier ab jetzt. Für alle, die stark und belastbar
-bleiben wollen, ohne dass es ihr halbes Wochenende frisst.
+Was hält dich gerade eher zurück, die Zeit oder der Gedanke, zu spät dran zu sein?
 
-Womit trainierst du gerade, und woran scheitert es am ehesten, an der Zeit oder
-am Plan?
-
-#Kettlebell #Fitness #Zeitmanagement #Krafttraining #Gesundheit
+#Kettlebell #Fitness #Gesundheit #Krafttraining #Zeitmanagement
 
 ---
 Erster Kommentar (Link hier, nicht im Beitrag):
@@ -40,7 +38,8 @@ Mein kostenloses Kettlebell PDF und mein 1:1 Erstgespräch verlinke ich hier fü
 alle, die tiefer einsteigen wollen. [Link]
 
 ---
-Notiz: Hook = emotional + spezifisch + ehrlich. Story Arc von Ausgangspunkt
-(Creator) über Tiefpunkt (Zielgruppe scheitert am Studio) zur Erkenntnis
-(Methode vor Zeit). Ein Beleg, transparent. Zielgruppe über Schmerzpunkt
-angesprochen, nicht beim Namen genannt.
+Notiz: Hook = emotional + spezifisch + ehrlich, spricht den Schmerzpunkt an,
+ohne die Zielgruppe zu benennen. Story Arc: Ausgangspunkt (Creator), Zielgruppe
+mit ihrem Zweifel, Transformation belegt durch die BELL Studie, Erkenntnis
+(Methode vor Zeit). Genau ein Beleg, transparent zur Studienpopulation
+(inaktive Ältere), kein Überclaimen. Link im ersten Kommentar.
