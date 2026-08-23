@@ -33,5 +33,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K8-A | 8 Clean | Foto | – | Kapitel-Startbild: Rack-Position – Kettlebell am Unterarm/an der Schulter, Ellbogen dicht an den Rippen, Handgelenk gerade, Körper aufrecht. | offen |
 | K8-B | 8 Clean | Foto-Sequenz | ✔ | Clean-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig zwischen den Beinen, (2) enger Zug am Körper (Ellbogen an die Rippen), (3) weiches Einrollen in die Rack-Position. | offen |
 | K8-C | 8 Clean | Foto-Vergleich | – | Fehler: links falsch (Kettlebell klappt im weiten Bogen über die Hand, schlägt auf den Unterarm), rechts richtig (enger Bogen, weiches Einrollen). | offen |
+| K9-A | 9 Press | Foto | – | Kapitel-Startbild: Lockout über dem Kopf – Kettlebell am gestreckten Arm über der Schulter, Bizeps am Ohr, Handgelenk gerade, Rippen unten, aufrecht. | offen |
+| K9-B | 9 Press | Foto-Sequenz | ✔ | Press-Sequenz, 3 Standbilder: (1) Rack-Position, (2) Kettlebell auf halber Höhe eng am Kopf vorbei, (3) Lockout über der Schulter. | offen |
+| K9-C | 9 Press | Foto-Vergleich | – | Fehler: links falsch (Zurücklehnen ins Hohlkreuz beim Drücken), rechts richtig (aufrecht, Rippen unten, Gesäß fest). | offen |
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
