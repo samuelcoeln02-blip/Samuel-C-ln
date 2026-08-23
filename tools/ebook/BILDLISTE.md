@@ -39,5 +39,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K10-A | 10 Row | Foto | – | Kapitel-Startbild: einarmiger Row in der Topposition – Oberkörper vorgebeugt mit geradem Rücken, Ellbogen nach hinten zur Hüfte, Schulterblatt zusammengezogen. | offen |
 | K10-B | 10 Row | Foto-Sequenz | ✔ | Row-Sequenz, 3 Standbilder: (1) unten in voller Streckung (Kettlebell hängt), (2) Zug (Ellbogen nach hinten), (3) oben (Schulterblatt zusammen). | offen |
 | K10-C | 10 Row | Foto-Vergleich | – | Fehler: links falsch (Oberkörper dreht auf / runder Rücken / Schwung), rechts richtig (flacher Rücken, Schultern gerade, kontrolliert). | offen |
+| K11-A | 11 Windmill | Foto | – | Kapitel-Startbild: untere Position der Windmill – Kettlebell über Kopf am gestreckten senkrechten Arm, Blick zur Kettlebell, freie Hand nahe Boden/Schienbein, Rücken gerade. | offen |
+| K11-B | 11 Windmill | Foto-Sequenz | ✔ | Windmill-Sequenz, 3 Standbilder: (1) Kettlebell über Kopf im Lockout aufrecht, (2) Hüfte schiebt zur Seite / Oberkörper senkt, (3) untere Position (freie Hand nahe Boden, oberer Arm senkrecht). | offen |
+| K11-C | 11 Windmill | Foto-Vergleich | – | Fehler: links falsch (runder Rücken, nach vorne eingerollt), rechts richtig (offene Brust, Seitneigung aus der Hüfte, oberer Arm senkrecht). | offen |
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
