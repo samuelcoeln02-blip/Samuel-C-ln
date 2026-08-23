@@ -42,5 +42,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K11-A | 11 Windmill | Foto | – | Kapitel-Startbild: untere Position der Windmill – Kettlebell über Kopf am gestreckten senkrechten Arm, Blick zur Kettlebell, freie Hand nahe Boden/Schienbein, Rücken gerade. | offen |
 | K11-B | 11 Windmill | Foto-Sequenz | ✔ | Windmill-Sequenz, 3 Standbilder: (1) Kettlebell über Kopf im Lockout aufrecht, (2) Hüfte schiebt zur Seite / Oberkörper senkt, (3) untere Position (freie Hand nahe Boden, oberer Arm senkrecht). | offen |
 | K11-C | 11 Windmill | Foto-Vergleich | – | Fehler: links falsch (runder Rücken, nach vorne eingerollt), rechts richtig (offene Brust, Seitneigung aus der Hüfte, oberer Arm senkrecht). | offen |
+| K12-A | 12 Snatch | Foto | – | Kapitel-Startbild: Snatch-Lockout – Kettlebell am gestreckten Arm über dem Kopf, sanft am Unterarm, Handgelenk gerade, Schulter gepackt, aufrecht. | offen |
+| K12-B | 12 Snatch | Foto-Sequenz | ✔ | Snatch-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig, (2) explosive Hüftstreckung, Kettlebell eng am Körper, Ellbogen hoch, (3) Punch durch den Griff in den Lockout. | offen |
+| K12-C | 12 Snatch | Foto-Vergleich | – | Fehler: links falsch (weiter Bogen, Kettlebell schlägt auf den Unterarm), rechts richtig (enger Weg, sauberer Punch, weicher Lockout). | offen |
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
