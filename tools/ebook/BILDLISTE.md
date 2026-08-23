@@ -30,5 +30,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K7-B | 7 Goblet Squat | Foto | – | Nahaufnahme Halteposition: Kettlebell am Brustbein, beide Hände halten die „Hörner" von unten, Ellbogen nach unten-innen. | offen |
 | K7-C | 7 Goblet Squat | Foto-Sequenz | ✔ | Goblet-Squat-Sequenz, 3 Standbilder: (1) Stand mit Kettlebell an der Brust, (2) tiefe Position, (3) Aufstehen. | offen |
 | K7-D | 7 Goblet Squat | Foto-Vergleich | – | Fehler: links falsch (Knie kippen nach innen), rechts richtig (Knie über den Zehen, nach außen geführt). | offen |
+| K8-A | 8 Clean | Foto | – | Kapitel-Startbild: Rack-Position – Kettlebell am Unterarm/an der Schulter, Ellbogen dicht an den Rippen, Handgelenk gerade, Körper aufrecht. | offen |
+| K8-B | 8 Clean | Foto-Sequenz | ✔ | Clean-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig zwischen den Beinen, (2) enger Zug am Körper (Ellbogen an die Rippen), (3) weiches Einrollen in die Rack-Position. | offen |
+| K8-C | 8 Clean | Foto-Vergleich | – | Fehler: links falsch (Kettlebell klappt im weiten Bogen über die Hand, schlägt auf den Unterarm), rechts richtig (enger Bogen, weiches Einrollen). | offen |
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
