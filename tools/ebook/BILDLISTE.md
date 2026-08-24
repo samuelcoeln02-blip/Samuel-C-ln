@@ -51,6 +51,11 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
 
-> **Kapitel-Reihenfolge (Stand):** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Hip-Hinge → Atmung/Bracing → Griff/Sicherheit → [Übungen: Swing, Goblet Squat, Clean, Press, Row, Windmill, Snatch, Halo & Pullover] → Story-Teil (Mythen, Dranbleiben, Lebensstil) → Training & Umsetzung → Ernährung & Abschluss.
+> **Kapitel-Reihenfolge (Stand, neu geordnet):**
+> **Teil 1 – Warum & Vorbereitung:** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Mythen → Dranbleiben (Mindset) → Kettlebell als Lebensstil
+> **Teil 2 – Das Fundament:** Hip-Hinge → Atmung/Bracing → Griff, Sicherheit & Gewicht
+> **Teil 3 – Die Übungen:** Swing → Goblet Squat → Clean → Press → Row → Windmill → Snatch → Halo & Pullover
+> **Teil 4 – Training & Umsetzung:** Komplexe bauen → Trainingsprinzipien → Aufwärmen & Mobility → Regeneration → 6-Wochen-Plan
+> **Teil 5 – Ernährung & Abschluss:** Ernährung ohne Zählen → FAQ → Glossar → Abschluss
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
