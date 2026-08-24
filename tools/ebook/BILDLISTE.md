@@ -45,5 +45,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K12-A | 12 Snatch | Foto | – | Kapitel-Startbild: Snatch-Lockout – Kettlebell am gestreckten Arm über dem Kopf, sanft am Unterarm, Handgelenk gerade, Schulter gepackt, aufrecht. | offen |
 | K12-B | 12 Snatch | Foto-Sequenz | ✔ | Snatch-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig, (2) explosive Hüftstreckung, Kettlebell eng am Körper, Ellbogen hoch, (3) Punch durch den Griff in den Lockout. | offen |
 | K12-C | 12 Snatch | Foto-Vergleich | – | Fehler: links falsch (weiter Bogen, Kettlebell schlägt auf den Unterarm), rechts richtig (enger Weg, sauberer Punch, weicher Lockout). | offen |
+| K13-A | 13 Halo & Pullover | Foto | – | Kapitel-Startbild: Halo – Kettlebell (Kugel oben, an den Hörnern) dicht um den Kopf geführt, Oberkörper aufrecht und ruhig. | offen |
+| K13-B | 13 Halo & Pullover | Foto-Sequenz | ✔ | Halo-Sequenz, 3 Standbilder: (1) Kettlebell vor der Brust, (2) dicht hinter dem Kopf, (3) auf der anderen Seite zurück nach vorne. | offen |
+| K13-C | 13 Halo & Pullover | Foto-Sequenz | ✔ | Pullover-Sequenz, 2 Standbilder: (1) Rückenlage, Kettlebell über der Brust, (2) kontrolliert nach hinten über den Kopf abgesenkt, unterer Rücken flach am Boden. | offen |
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
