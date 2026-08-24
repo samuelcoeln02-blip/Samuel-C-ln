@@ -1,0 +1,16 @@
+# Netlify-Konfiguration
+#
+# Ziel: Deploys (und damit Build-Guthaben) NUR verbrauchen, wenn sich echte
+# Website-Dateien ändern. Reine E-Book-Arbeit (tools/ebook/**) und die
+# E-Book-PDFs lösen KEINEN Deploy mehr aus.
+#
+# Die "ignore"-Regel wird von Netlify vor jedem Build ausgeführt:
+#   Exit-Code 0  -> Build wird ÜBERSPRUNGEN (keine Änderung außerhalb der Ausnahmen)
+#   Exit-Code !0 -> Build läuft normal (echte Website-Änderung vorhanden)
+#
+# git diff --quiet liefert 0, wenn es KEINE Unterschiede gibt – hier bezogen
+# auf alles AUSSER den ausgeschlossenen Pfaden.
+
+[build]
+  publish = "."
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)tools/ebook' ':(exclude)assets/downloads/kettlebell-mastery*'"
