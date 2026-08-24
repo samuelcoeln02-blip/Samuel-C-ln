@@ -51,6 +51,8 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
 | KOMPLEX-A | Komplexe bauen | Foto-Sequenz | ✔ | Beispiel-Komplex, 3 Standbilder: (1) Clean in die Rack, (2) Front Squat unten, (3) Press im Lockout. | offen |
+| ERN-A | Ernährung ohne Zählen | Illustration | – | (optional) Handportionen: Handfläche = Protein, hohle Hand/Faust = Kohlenhydrate, Fäuste = Gemüse, Daumen = Fett. Baue ich als SVG. | offen |
+| ABSCHLUSS-A | Abschluss | Foto | – | (optional) Abschluss-Foto: Samuel, ruhig und positiv, mit Kettlebell – ein guter Schlusspunkt. | offen |
 
 > **Kapitel-Reihenfolge (Stand, neu geordnet):**
 > **Teil 1 – Warum & Vorbereitung:** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Mythen → Dranbleiben (Mindset) → Kettlebell als Lebensstil
