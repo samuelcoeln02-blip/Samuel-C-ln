@@ -1,0 +1,23 @@
+{
+  "_hinweis": "Regeln werden von oben nach unten geprueft. Die erste passende Regel gewinnt. 'keywords' wird case-insensitive geprueft; leeres Array = matcht auf jeden Kommentar (Catch-All, ans Ende stellen).",
+  "rules": [
+    {
+      "id": "guide",
+      "keywords": ["guide", "pdf", "kettlebell", "training", "ich", "start"],
+      "publicReply": "Check deine DMs 📩 Der Guide ist unterwegs! 💪",
+      "dm": {
+        "text": "Hey! Danke fuer deinen Kommentar 🙌 Hier ist dein kostenloser Kettlebell-Guide. Viel Spass beim Training! 🔥",
+        "sendPdf": true
+      }
+    },
+    {
+      "id": "fallback",
+      "keywords": [],
+      "publicReply": "Danke fuer deinen Kommentar! 🙏",
+      "dm": {
+        "text": "Hey, danke dass du dabei bist! Schreib mir gern, wenn du Fragen hast. 💬",
+        "sendPdf": false
+      }
+    }
+  ]
+}
