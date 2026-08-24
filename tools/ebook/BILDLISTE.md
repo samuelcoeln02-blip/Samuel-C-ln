@@ -50,6 +50,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K13-C | 13 Halo & Pullover | Foto-Sequenz | ✔ | Pullover-Sequenz, 2 Standbilder: (1) Rückenlage, Kettlebell über der Brust, (2) kontrolliert nach hinten über den Kopf abgesenkt, unterer Rücken flach am Boden. | offen |
 | MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
+| KOMPLEX-A | Komplexe bauen | Foto-Sequenz | ✔ | Beispiel-Komplex, 3 Standbilder: (1) Clean in die Rack, (2) Front Squat unten, (3) Press im Lockout. | offen |
 
 > **Kapitel-Reihenfolge (Stand, neu geordnet):**
 > **Teil 1 – Warum & Vorbereitung:** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Mythen → Dranbleiben (Mindset) → Kettlebell als Lebensstil
