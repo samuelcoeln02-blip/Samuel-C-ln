@@ -48,5 +48,9 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K13-A | 13 Halo & Pullover | Foto | – | Kapitel-Startbild: Halo – Kettlebell (Kugel oben, an den Hörnern) dicht um den Kopf geführt, Oberkörper aufrecht und ruhig. | offen |
 | K13-B | 13 Halo & Pullover | Foto-Sequenz | ✔ | Halo-Sequenz, 3 Standbilder: (1) Kettlebell vor der Brust, (2) dicht hinter dem Kopf, (3) auf der anderen Seite zurück nach vorne. | offen |
 | K13-C | 13 Halo & Pullover | Foto-Sequenz | ✔ | Pullover-Sequenz, 2 Standbilder: (1) Rückenlage, Kettlebell über der Brust, (2) kontrolliert nach hinten über den Kopf abgesenkt, unterer Rücken flach am Boden. | offen |
+| MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
+| FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
+
+> **Kapitel-Reihenfolge (Stand):** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Hip-Hinge → Atmung/Bracing → Griff/Sicherheit → [Übungen: Swing, Goblet Squat, Clean, Press, Row, Windmill, Snatch, Halo & Pullover] → Story-Teil (Mythen, Dranbleiben, Lebensstil) → Training & Umsetzung → Ernährung & Abschluss.
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
