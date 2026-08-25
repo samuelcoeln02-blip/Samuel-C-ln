@@ -12,8 +12,6 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 
 | Code | Kapitel | Typ | Animierbar | Beschreibung | Status |
 |------|---------|-----|:---------:|--------------|--------|
-| K1-A | 1 Vorwort | Foto | – | Kapitel-Startbild: Samuel in ruhiger, kontrollierter Kettlebell-Position, aufgeräumter Hintergrund, hochwertig. | offen |
-| K1-B | 1 Vorwort | Foto-Sequenz | ✔ | Beispiel-Bildsequenz einer Übung: 3 Standbilder (Start/Übergang/Ende), sauber beschriftet – zeigt, wie Sequenzen im Buch aussehen. | offen |
 | K2-A | 2 Warum Kettlebell | Foto | – | Action-Foto Swing in der Hüftstreckung (Endposition), seitlich; gestreckte Hüfte + gerade Wirbelsäule klar erkennbar. | offen |
 | K2-B | 2 Warum Kettlebell | Illustration | – | Hintere Kette im Hip-Hinge (Gesäß, hintere Oberschenkel, Rückenstrecker markiert). Datei: assets/images/hintere-kette.svg | **fertig** |
 | K3-A | 3 Hip-Hinge | Foto-Vergleich | – | Seitenansicht Hip-Hinge-Endposition, daneben Squat zum Vergleich (Unterschied hinten vs. unten). | offen |
