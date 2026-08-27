@@ -97,9 +97,9 @@ const CONFIG = {
   /* ---------------------------------------------------------------------------
      4) PREIS
      --------------------------------------------------------------------------- */
-  PREIS: "30",              // nur die Zahl
+  PREIS: "20",              // nur die Zahl
   WAEHRUNG: "€",            // Währungssymbol
-  PREIS_ANZEIGE: "30 €",    // wie es auf der Seite steht
+  PREIS_ANZEIGE: "20 €",    // wie es auf der Seite steht
 
   /* ---------------------------------------------------------------------------
      5) DEINE KONTAKTDATEN
