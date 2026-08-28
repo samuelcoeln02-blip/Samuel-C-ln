@@ -16,7 +16,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K2-B | 2 Warum Kettlebell | Illustration | – | Hintere Kette im Hip-Hinge (Gesäß, hintere Oberschenkel, Rückenstrecker markiert). Datei: assets/images/hintere-kette.svg | **fertig** |
 | K3-A | 3 Hip-Hinge | Foto-Vergleich | – | Seitenansicht Hip-Hinge-Endposition, daneben Squat zum Vergleich (Unterschied hinten vs. unten). | offen |
 | K3-B | 3 Hip-Hinge | Foto | – | Wand-Drill: Person tippt mit dem Gesäß nach hinten an die Wand (ca. eine Fußlänge Abstand). | offen |
-| K3-C | 3 Hip-Hinge | Foto-Vergleich | – | Fehler-Gegenüberstellung: links falsch (runder unterer Rücken), rechts richtig (langer, gerader Rücken). | offen |
+| K3-C | 3 Hip-Hinge | Foto-Vergleich | – | Rücken gerade (richtig, grün) vs. rund (falsch, rot) – Wirbelsäulen-Linie. | **fertig** |
 | K4-A | 4 Atmung/Bracing | Foto | – | Nahaufnahme Rumpf seitlich: Hand an unterer Bauchwand, 360°-Spannung; Pfeile deuten das Weiten rundum an. (Alternativ Illustration.) | offen |
 | K5-A | 5 Griff/Sicherheit | Foto | – | Nahaufnahme Hand am Griff (Stange diagonal über der Handfläche) + Rack-Position (Kettlebell am Unterarm). | offen |
 | K5-B | 5 Griff/Sicherheit | Illustration | – | Draufsicht sicherer Trainingsplatz: Person auf Matte, 1,5–2 m Freiraum rundum. | offen |
@@ -28,7 +28,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K7-B | 7 Goblet Squat | Foto | – | Nahaufnahme Halteposition: Kettlebell am Brustbein, beide Hände halten die „Hörner" von unten, Ellbogen nach unten-innen. | offen |
 | K7-C | 7 Goblet Squat | Foto-Sequenz | ✔ | Goblet-Squat-Sequenz, 3 Standbilder: (1) Stand mit Kettlebell an der Brust, (2) tiefe Position, (3) Aufstehen. | offen |
 | K7-D | 7 Goblet Squat | Foto-Vergleich | – | Fehler: links falsch (Knie kippen nach innen), rechts richtig (Knie über den Zehen, nach außen geführt). | offen |
-| K8-A | 8 Clean | Foto | – | Kapitel-Startbild: Rack-Position – Kettlebell am Unterarm/an der Schulter, Ellbogen dicht an den Rippen, Handgelenk gerade, Körper aufrecht. | offen |
+| K8-A | 8 Clean | Foto | – | Rack-Position seitlich + frontal (Kettlebell am Unterarm, Ellbogen an den Rippen, Handgelenk gerade). | **fertig** |
 | K8-B | 8 Clean | Foto-Sequenz | ✔ | Clean-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig zwischen den Beinen, (2) enger Zug am Körper (Ellbogen an die Rippen), (3) weiches Einrollen in die Rack-Position. | offen |
 | K8-C | 8 Clean | Foto-Vergleich | – | Fehler: links falsch (Kettlebell klappt im weiten Bogen über die Hand, schlägt auf den Unterarm), rechts richtig (enger Bogen, weiches Einrollen). | offen |
 | K9-A | 9 Press | Foto | – | Kapitel-Startbild: Lockout über dem Kopf – Kettlebell am gestreckten Arm über der Schulter, Bizeps am Ohr, Handgelenk gerade, Rippen unten, aufrecht. | offen |
