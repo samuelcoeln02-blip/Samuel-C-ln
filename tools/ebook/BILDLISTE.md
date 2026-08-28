@@ -23,7 +23,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K6-A | 6 Swing | Foto | – | Kapitel-Startbild: Swing-Endposition (Float) – aufrecht, Hüfte gestreckt, Gesäß fest, Kettlebell auf Brusthöhe, Arme locker. | offen |
 | K6-B | 6 Swing | Foto | – | Setup von der Seite: Kettlebell ca. eine Unterarmlänge vor den Füßen, Person im Hinge, gerader Rücken, beide Hände am Griff. | offen |
 | K6-C | 6 Swing | Foto-Sequenz | ✔ | Swing-Sequenz, 3 Standbilder: (1) Hike/Ladung zwischen den Beinen, (2) explosive Hüftstreckung Mitte, (3) Float auf Brusthöhe. | offen |
-| K6-D | 6 Swing | Foto-Vergleich | – | Fehler (Arm oben): links richtig (Arm gestreckt, Kettlebell schwebt frei – roter Winkel Arm/Rumpf), rechts falsch (Ellenbogen gebeugt, KB mit dem Arm hochgezogen – roter Kreis am Ellenbogen). | **fertig** |
+| K6-D | 6 Swing | Foto-Vergleich | – | Fehler (Arm oben): links richtig (Ellenbogen leicht angewinkelt, eng am Körper – grüner Kreis am Ellenbogen), rechts falsch (Arm durchgestreckt, KB aus der Schulter projiziert/Frontheben – roter Kreis am Ellenbogen). | **fertig** |
 | K7-A | 7 Goblet Squat | Foto | – | Kapitel-Startbild: Goblet Squat in der tiefen Position – Kettlebell vor der Brust, Oberkörper aufrecht, Oberschenkel mind. parallel, Fersen am Boden. | offen |
 | K7-B | 7 Goblet Squat | Foto | – | Nahaufnahme Halteposition: Kettlebell am Brustbein, beide Hände halten die „Hörner" von unten, Ellbogen nach unten-innen. | offen |
 | K7-C | 7 Goblet Squat | Foto-Sequenz | ✔ | Goblet-Squat-Sequenz, 3 Standbilder: (1) Stand mit Kettlebell an der Brust, (2) tiefe Position, (3) Aufstehen. | offen |
