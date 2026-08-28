@@ -30,7 +30,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K7-D | 7 Goblet Squat | Foto-Vergleich | – | Fehler: links falsch (Knie kippen nach innen), rechts richtig (Knie über den Zehen, nach außen geführt). | offen |
 | K8-A | 8 Clean | Foto | – | Rack-Position seitlich + frontal (Kettlebell am Unterarm, Ellbogen an den Rippen, Handgelenk gerade). | **fertig** |
 | K8-B | 8 Clean | Foto-Sequenz | ✔ | Clean-Sequenz, 3 Standbilder: (1) Hike/Ladung einarmig zwischen den Beinen, (2) enger Zug am Körper (Ellbogen an die Rippen), (3) weiches Einrollen in die Rack-Position. | offen |
-| K8-C | 8 Clean | Foto-Vergleich | – | Fehler: links falsch (Kettlebell klappt im weiten Bogen über die Hand, schlägt auf den Unterarm), rechts richtig (enger Bogen, weiches Einrollen). | offen |
+| K8-C | 8 Clean | Foto-Vergleich | – | Fehler (Handgelenk frontal): links richtig (Handgelenk gerade/innen, Kettlebell rollt sanft ein, grüner Kreis), rechts falsch (Handgelenk nach außen geknickt, Kugel fällt auf den Unterarm, roter Kreis). | **fertig** |
 | K9-A | 9 Press | Foto | – | Kapitel-Startbild: Lockout über dem Kopf – Kettlebell am gestreckten Arm über der Schulter, Bizeps am Ohr, Handgelenk gerade, Rippen unten, aufrecht. | offen |
 | K9-B | 9 Press | Foto-Sequenz | ✔ | Press-Sequenz, 3 Standbilder: (1) Rack-Position, (2) Kettlebell auf halber Höhe eng am Kopf vorbei, (3) Lockout über der Schulter. | offen |
 | K9-C | 9 Press | Foto-Vergleich | – | Fehler: links falsch (Zurücklehnen ins Hohlkreuz beim Drücken), rechts richtig (aufrecht, Rippen unten, Gesäß fest). | offen |
