@@ -17,6 +17,7 @@ tools/linkedin/
 ├── STRATEGIE.md           # die Blaupause: alle Frameworks auf die Nische gemünzt
 ├── content-kalender.md    # 8 Wochen Rotation als ausgefüllte Content Matrix
 ├── hook-bank.md           # Hooks und 35 Ideenfragen für die Nische
+├── SKILL-linkedin-kettlebell.md  # durable Masterkopie des Skills (siehe unten)
 └── posts/                 # 9 fertige Posts (Auftakt + Woche 1 bis 8)
     ├── 00-auftakt.md
     ├── 01-zeiteffizienz.md
@@ -32,6 +33,14 @@ tools/linkedin/
 Die formalen Markenregeln und die Quellenbank liegen zusätzlich im Skill
 `linkedin-kettlebell` (der "Motor" fürs Schreiben neuer Posts). Dieses Kit ist
 die versionierte, ausgespielte Anwendung davon.
+
+Der Skill ist vollständig (alle Frameworks aus den fünf Leitfäden: Hook Formel,
+Blaupause, Story Arc, Autoritäts Formel, drei Säulen, Persona, Markenstimme,
+Quellenbank). Da der Skill über die Skill Synchronisierung verwaltet wird und
+dabei zurückgesetzt werden kann, liegt hier mit `SKILL-linkedin-kettlebell.md`
+eine durable Masterkopie. Sie ist die Quelle der Wahrheit: bei einem Reset des
+Skills daraus wiederherstellen, oder sie als Projektwissen in ein claude.ai
+Projekt einfügen.
 
 ## So läuft die Automation (wöchentlich)
 
