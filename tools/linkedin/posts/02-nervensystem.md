@@ -2,45 +2,52 @@
 Woche: 2
 Ebene: 2 (technische Tiefe)
 Pfeiler: Nervensystem und Explosivkraft
-Gerüst: Story Arc
+Gerüst: Blaupause
 Beleg: Otto, Coburn, Brown, Spiering (2012)
 Ziel: Meinungsführerschaft
 Bestzeit: Dienstag oder Mittwoch, Vormittag
 ---
 
-Ich habe eine Studie gelesen, die meiner eigenen Methode widerspricht. Und
-genau deshalb teile ich sie.
+Was zuerst nachlässt, ist nicht die Ausdauer. Es ist die Schnelligkeit.
 
-Lange dachte ich, für explosive Kraft brauche es die Langhantel und sonst
-nichts. Schnellkraft galt als Sache der Gewichtheber, nicht der Kettlebell.
+Wer den ganzen Tag arbeitet, merkt den Unterschied selten an der Puste. Er
+merkt ihn am Antritt. Am zähen Aufstehen nach einem langen Meeting. Am Moment,
+in dem der Zug oder das Kind schneller ist. Nicht müde, sondern träge.
 
-Dann kam der Moment, in dem ich meine Überzeugung geprüft habe, statt sie zu
-verteidigen. Otto und Kollegen haben 2012 sechs Wochen Gewichtheben gegen
-sechs Wochen Kettlebell Training verglichen. Das Ergebnis ist ehrlich
-gemischt: Beim reinen Maximalkraftzuwachs lag das Gewichtheben vorn, 13,6
-gegenüber 4,5 Prozent. Aber bei der Sprunghöhe, dem Maß für Explosivkraft, gab
-es keinen signifikanten Unterschied.
+Das ist keine Frage der Motivation, sondern der Ansteuerung. Explosivkraft
+entsteht im Nervensystem, in der Fähigkeit, schnell viele Muskelfasern auf einmal
+zu aktivieren. Und genau diese Schnellkraft baut mit den Jahren früher ab als die
+Ausdauer.
 
-Das hat meinen Blick verschoben. Explosivkraft entsteht nicht nur über schweres
-Eisen, sondern über die Ansteuerung durch das Nervensystem. Über die Fähigkeit,
-schnell viele motorische Einheiten zu aktivieren. Der Swing trainiert genau
-das, und zwar auf einem Quadratmeter.
+Die meisten reagieren falsch:
+- Sie legen noch einen Lauf drauf, noch eine Runde auf dem Rad.
+- Das hält das Herz fit, trainiert aber nicht die Schnelligkeit.
+- Der Antritt bleibt weg, die Trägheit bleibt.
 
-Heute weiß ich: Wer nur Maximalkraft will, greift zur Langhantel. Wer explosiv,
-schnell und belastbar sein will, ohne ein Studio zu betreten, kommt mit der
-Kettlebell erstaunlich weit.
+Was Schnellkraft zurückholt, ist Qualität statt Dauer. Otto und Kollegen haben
+2012 sechs Wochen Kettlebell Training gegen Gewichtheben verglichen. Bei der
+reinen Maximalkraft lag Gewichtheben vorn, 13,6 gegenüber 4,5 Prozent. Bei der
+Sprunghöhe, dem Maß für Explosivkraft, gab es keinen signifikanten Unterschied.
+Für Schnellkraft reichen also ein Gerät und wenig Zeit.
 
-Die Erkenntnis: Kraft ist nicht nur Muskel. Kraft ist Ansteuerung.
+So trainierst du sie, auch mit vollem Kalender:
+- Explosive Swings: jede Wiederholung schnell und maximal, nicht viele, sondern
+  scharfe.
+- Kurze Sätze mit voller Erholung. Qualität vor Ermüdung.
+- Zwei bis drei kurze Einheiten pro Woche reichen als Reiz.
 
-Prüfst du deine Trainingsüberzeugungen, oder verteidigst du sie eher?
+Belastbar bleiben heißt nicht, länger durchzuhalten. Es heißt, schnell zu bleiben.
 
-#Kettlebell #Sportwissenschaft #Krafttraining #Explosivkraft #Athletik
+Woran merkst du zuerst, dass ein Tag zu lang war, an der Ausdauer oder am Antritt?
+
+#Kettlebell #Explosivkraft #Sportwissenschaft #Leistungsfähigkeit #Krafttraining
 
 ---
-Erster Kommentar (Studie hier, nicht im Beitrag):
+Erster Kommentar (Quelle hier, nicht im Beitrag):
 Quelle: Otto et al. (2012), J Strength Cond Res 26(5): 1199 bis 1202.
 
 ---
-Notiz: Plot Twist als Hook (Studie widerspricht mir). Story Arc mit ehrlicher,
-transparenter Quelle, die Kettlebell nicht als überlegen darstellt. Erkenntnis
-am Ende. Baut Autorität über Ehrlichkeit.
+Notiz: Blaupause statt Haltungs-Monolog. Berufsbezug über konkrete Alltagsbilder
+(Meeting, Antritt, Kind), nicht über Namensnennung der Zielgruppe. Otto 2012
+transparent, ein Beleg. Schnellkraft-Abbau mit dem Alter als anerkanntes
+Allgemeinwissen formuliert, ohne erfundene Zahl. Konkrete To-do-Liste.
