@@ -21,7 +21,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K5-A | 5 Griff/Sicherheit | Foto | – | Nahaufnahme Hand am Griff (Stange diagonal über der Handfläche) + Rack-Position (Kettlebell am Unterarm). | offen |
 | K5-B | 5 Griff/Sicherheit | Illustration | – | Draufsicht sicherer Trainingsplatz: Person auf Matte, 1,5–2 m Freiraum rundum. | offen |
 | K6-A | 6 Swing | Foto | – | Kapitel-Startbild: Swing-Endposition (Float) – aufrecht, Hüfte gestreckt, Gesäß fest, Kettlebell auf Brusthöhe, Arme locker. | offen |
-| K6-B | 6 Swing | Foto | – | Setup von der Seite: Kettlebell ca. eine Unterarmlänge vor den Füßen, Person im Hinge, gerader Rücken, beide Hände am Griff. | offen |
+| K6-B | 6 Swing | Foto-Sequenz | ✔ | Start-Sequenz (4 Standbilder, nummeriert): (1) Hip-Hinge, (2) Kettlebell greifen, (3) Hike nach hinten zwischen die Beine, (4) Aufrichten/Hüfte strecken. Seitlich, feste Kamera. | **fertig** |
 | K6-C | 6 Swing | Foto-Sequenz | ✔ | Swing-Sequenz, 3 Standbilder: (1) Hike/Ladung zwischen den Beinen, (2) explosive Hüftstreckung Mitte, (3) Float auf Brusthöhe. | offen |
 | K6-D | 6 Swing | Foto-Vergleich | – | Fehler (Arm oben): links richtig (Ellenbogen leicht angewinkelt, eng am Körper – grüner Kreis am Ellenbogen), rechts falsch (Arm durchgestreckt, KB aus der Schulter projiziert/Frontheben – roter Winkel zwischen Arm und Körper). | **fertig** |
 | K7-A | 7 Goblet Squat | Foto | – | Kapitel-Startbild: Goblet Squat in der tiefen Position – Kettlebell vor der Brust, Oberkörper aufrecht, Oberschenkel mind. parallel, Fersen am Boden. | offen |
