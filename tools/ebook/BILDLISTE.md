@@ -47,7 +47,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K12-C | 12 Snatch | Foto-Vergleich | – | Fehler: links falsch (weiter Bogen, Kettlebell schlägt auf den Unterarm), rechts richtig (enger Weg, sauberer Punch, weicher Lockout). | offen |
 | K13-A | 13 Halo & Pullover | Foto | – | Kapitel-Startbild: Halo – Kettlebell (Kugel oben, an den Hörnern) dicht um den Kopf geführt, Oberkörper aufrecht und ruhig. | offen |
 | K13-B | 13 Halo & Pullover | Foto-Sequenz | ✔ | Halo-Sequenz (3 nummerierte Standbilder, frontal): (1) vor dem Gesicht, (2) seitlich um den Kopf, (3) hinter dem Kopf. | **fertig** |
-| K13-C | 13 Halo & Pullover | Foto-Sequenz | ✔ | Pullover-Sequenz, 2 Standbilder: (1) Rückenlage, Kettlebell über der Brust, (2) kontrolliert nach hinten über den Kopf abgesenkt, unterer Rücken flach am Boden. | offen |
+| K13-C | 13 Halo & Pullover | Foto-Sequenz | ✔ | Pullover STEHEND (2 nummerierte Standbilder, seitlich): (1) Start – Kettlebell vor der Brust, (2) Ende – hinter dem Kopf abgesenkt. Buchtext auf stehende Version umgestellt. | **fertig** |
 | MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
 | KOMPLEX-A | Komplexe bauen | Foto-Sequenz | ✔ | Beispiel-Komplex, 3 Standbilder: (1) Clean in die Rack, (2) Front Squat unten, (3) Press im Lockout. | offen |
