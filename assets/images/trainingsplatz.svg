@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 660" width="1040" height="660" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 22px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 15px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+      .warn   { font-size: 14px; font-weight: 700; fill: #E5323B; }
+    </style>
+  </defs>
+
+  <!-- Titel -->
+  <text x="40" y="48" font-size="26" font-weight="800" fill="#0B0B0F">Dein sicherer Trainingsplatz</text>
+  <text x="40" y="72" font-size="15" font-weight="600" fill="#6B7280">Draufsicht – so viel Freiraum brauchst du rundum</text>
+
+  <!-- ===================== SICHERHEITSRADIUS ===================== -->
+  <circle cx="520" cy="390" r="205" fill="#F4F6FA" stroke="#1552F0" stroke-width="3" stroke-dasharray="11 9"/>
+
+  <!-- Matte -->
+  <rect x="420" y="345" width="200" height="90" rx="16" fill="#EEF1F6" stroke="#D7DCE5" stroke-width="2"/>
+
+  <!-- Person von oben (Schultern + Kopf + Arme + Kettlebell) -->
+  <ellipse cx="520" cy="400" rx="29" ry="23" fill="#D7DCE5"/>
+  <circle cx="520" cy="364" r="11" fill="#D7DCE5"/>
+  <line x1="503" y1="386" x2="514" y2="349" stroke="#D7DCE5" stroke-width="8" stroke-linecap="round"/>
+  <line x1="537" y1="386" x2="526" y2="349" stroke="#D7DCE5" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="520" cy="343" r="10" fill="#0B0B0F"/>
+
+  <!-- ===================== CALLOUT 1: Radius (oben rechts) ===================== -->
+  <polyline class="lead" points="520,180 520,96 720,96"/>
+  <circle cx="520" cy="180" r="4" fill="#1552F0"/>
+  <text class="label" x="736" y="90">1,5–2 m Freiraum</text>
+  <text class="sub"   x="736" y="112">rundum, in jede Richtung</text>
+
+  <!-- ===================== CALLOUT 2: Untergrund (links) ===================== -->
+  <polyline class="lead" points="420,392 260,392 60,392"/>
+  <circle cx="420" cy="392" r="4" fill="#6B7280"/>
+  <text class="label" x="40" y="358">Fester, ebener</text>
+  <text class="label" x="40" y="384">Untergrund</text>
+  <text class="sub"   x="40" y="406">rutschfest, keine Teppichkante</text>
+
+  <!-- ===================== CALLOUT 3: Personen/Tiere (unten links) ===================== -->
+  <polyline class="lead" points="356,478 300,560 60,560"/>
+  <circle cx="356" cy="478" r="4" fill="#E5323B"/>
+  <circle cx="356" cy="478" r="15" fill="none" stroke="#E5323B" stroke-width="3"/>
+  <line x1="345" y1="467" x2="367" y2="489" stroke="#E5323B" stroke-width="3"/>
+  <text class="label" x="40" y="590">Keine Personen</text>
+  <text class="label" x="40" y="616">oder Haustiere im Radius</text>
+
+  <!-- ===================== CALLOUT 4: Möbel/Kanten (unten rechts) ===================== -->
+  <polyline class="lead" points="684,478 740,560 980,560"/>
+  <circle cx="684" cy="478" r="4" fill="#E5323B"/>
+  <circle cx="684" cy="478" r="15" fill="none" stroke="#E5323B" stroke-width="3"/>
+  <line x1="673" y1="467" x2="695" y2="489" stroke="#E5323B" stroke-width="3"/>
+  <text class="label" x="700" y="590">Keine Möbel oder Kanten</text>
+  <text class="label" x="700" y="616">in Wurfweite</text>
+</svg>

@@ -19,7 +19,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K3-C | 3 Hip-Hinge | Foto-Vergleich | – | Rücken gerade (richtig, grün) vs. rund (falsch, rot) – Wirbelsäulen-Linie. | **fertig** |
 | K4-A | 4 Atmung/Bracing | Foto | – | Nahaufnahme Rumpf seitlich: Hand an unterer Bauchwand, 360°-Spannung; Pfeile deuten das Weiten rundum an. (Alternativ Illustration.) | offen |
 | K5-A | 5 Griff/Sicherheit | Foto | – | Nahaufnahme Hand am Griff (Stange diagonal über der Handfläche) + Rack-Position (Kettlebell am Unterarm). Ausschnitt aus dem Clean-Rack-Foto. | **fertig** |
-| K5-B | 5 Griff/Sicherheit | Illustration | – | Draufsicht sicherer Trainingsplatz: Person auf Matte, 1,5–2 m Freiraum rundum. | offen |
+| K5-B | 5 Griff/Sicherheit | Illustration | – | Draufsicht sicherer Trainingsplatz: Person + Kettlebell auf Matte, gestrichelter 1,5–2 m Freiraum-Radius, 4 beschriftete Sicherheitsregeln. Datei: assets/images/trainingsplatz.svg | **fertig** |
 | K6-A | 6 Swing | Foto | – | Kapitel-Startbild: Swing-Endposition (Float) – aufrecht, Hüfte gestreckt, Gesäß fest, Kettlebell auf Brusthöhe, Arme locker. Wiederverwendung (auch K2-A). | **fertig** |
 | K6-B | 6 Swing | Foto-Sequenz | ✔ | Start-Sequenz (4 Standbilder, nummeriert): (1) Hip-Hinge, (2) Kettlebell greifen, (3) Hike nach hinten zwischen die Beine, (4) Aufrichten/Hüfte strecken. Seitlich, feste Kamera. | **fertig** |
 | K6-C | 6 Swing | Foto-Sequenz | ✔ | Swing-Sequenz, 3 Standbilder: (1) Hike/Ladung zwischen den Beinen, (2) explosive Hüftstreckung Mitte, (3) Float auf Brusthöhe. | offen |
@@ -51,7 +51,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | MG-A | Meine Geschichte (vorne) | Foto | – | Persönliches Foto – Samuel beim Kettlebell-Training oder Portrait mit Persönlichkeit (kein reines Technik-Foto). | offen |
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto – Kettlebell und Matte zuhause/draußen, kein Studio. | offen |
 | KOMPLEX-A | Komplexe bauen | Foto-Sequenz | ✔ | Beispiel-Komplex (3 nummerierte Standbilder): (1) Clean in die Rack, (2) Front Squat unten (Doppel-Rack), (3) Press im Lockout. Aus vorhandenen Fotos zusammengesetzt. | **fertig** |
-| ERN-A | Ernährung ohne Zählen | Illustration | – | (optional) Handportionen: Handfläche = Protein, hohle Hand/Faust = Kohlenhydrate, Fäuste = Gemüse, Daumen = Fett. Baue ich als SVG. | offen |
+| ERN-A | Ernährung ohne Zählen | Illustration | – | Handportionen: 4 Icons (flache Hand=Protein, hohle Hand=Kohlenhydrate, Faust=Gemüse, Daumen=Fett) mit Mengenangabe. Datei: assets/images/handportionen.svg | **fertig** |
 | ABSCHLUSS-A | Abschluss | Foto | – | (optional) Abschluss-Foto: Samuel, ruhig und positiv, mit Kettlebell – ein guter Schlusspunkt. | offen |
 
 > **Kapitel-Reihenfolge (Stand, neu geordnet):**
