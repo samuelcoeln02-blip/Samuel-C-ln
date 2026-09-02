@@ -328,8 +328,8 @@
 
     <!-- =============== 8) ANGEBOT: GRATIS-PDF + KURS NEBENEINANDER =======
          Zwei Boxen nebeneinander (auf dem Handy untereinander):
-         links der Gratis-PDF-Lead-Magnet, rechts der kostenpflichtige Kurs.
-         IDs (leadForm/leadBtn/leadConsent, buyBtn/kaufConsent, data-price,
+         links das Gratis-PDF (direkter Download, keine Anmeldung), rechts
+         der kostenpflichtige Kurs. IDs (buyBtn/kaufConsent, data-price,
          data-pdf-title) bleiben unverändert, damit das JS weiter greift. -->
     <section id="freebie" class="section-panel">
       <div class="wrap">
@@ -345,8 +345,8 @@
             <span class="eyebrow">Gratis für dich</span>
             <h3 style="font-size:1.4rem; margin:6px 0 4px">Kostenlose
               <span class="text-blau" data-pdf-title>Kettlebell Mastery – Leseprobe</span></h3>
-            <p style="font-size:0.95rem; margin-bottom:16px">Trag dich ein und du
-              bekommst das PDF sofort zum Download – dein sauberer Einstieg.</p>
+            <p style="font-size:0.95rem; margin-bottom:16px">Direkt herunterladen,
+              ganz ohne Anmeldung – dein sauberer Einstieg.</p>
 
             <ul class="includes">
               <li>Der saubere Hip-Hinge – das Fundament fast jeder Übung</li>
@@ -355,45 +355,11 @@
               <li>3 Trainingsprinzipien für echten Fortschritt</li>
             </ul>
 
-            <!-- Anmeldeformular. Feldnamen werden per JS aus config.js gesetzt.
-                 Button erst aktiv, wenn die DSGVO-Checkbox gesetzt ist. -->
-            <form id="leadForm" method="POST" novalidate>
-              <label class="field-label" for="leadName">Vorname</label>
-              <input class="field" type="text" id="leadName" name="name"
-                     placeholder="Dein Vorname" autocomplete="given-name" required>
-
-              <label class="field-label" for="leadEmail">E-Mail-Adresse</label>
-              <input class="field" type="email" id="leadEmail" name="email"
-                     placeholder="dein@email.de" autocomplete="email" required>
-
-              <!-- Pflicht-Checkbox (nicht vorangehakt): Widerruf-Zustimmung.
-                   Guide wird jetzt sofort zum Download bereitgestellt. -->
-              <div class="consent" style="margin-top:16px">
-                <input type="checkbox" id="leadConsent" aria-describedby="leadConsent-text">
-                <label for="leadConsent" id="leadConsent-text">
-                  Ich stimme zu, dass mir der Guide sofort zum Download bereitgestellt
-                  wird, und bin mir bewusst, dass mein
-                  <a href="widerruf.html">Widerrufsrecht</a> damit mit Absenden des
-                  Formulars erlischt.
-                </label>
-              </div>
-
-              <!-- Optionale Newsletter-Checkbox (nicht vorangehakt). Nur wenn
-                   gesetzt, werden die Daten zusätzlich im Hintergrund an Brevo
-                   gesendet (siehe Script). -->
-              <div class="consent" style="margin-top:12px">
-                <input type="checkbox" id="leadNewsletter" aria-describedby="leadNewsletter-text">
-                <label for="leadNewsletter" id="leadNewsletter-text">
-                  Ja, ich möchte künftig E-Mails mit Trainingstipps und Angeboten von
-                  Samuel Coeln erhalten. Abmeldung jederzeit möglich.
-                </label>
-              </div>
-
-              <button type="submit" id="leadBtn" class="btn btn-gruen btn-block" disabled>
-                Gratis-PDF herunterladen →
-              </button>
-              <p class="buy-hint" id="leadMsg">Sofort-Download, kein Warten. Newsletter ist optional.</p>
-            </form>
+            <!-- Direkter Download, keine Anmeldung, keine Datenerfassung. -->
+            <a href="guide-download.html" id="leadBtn" class="btn btn-gruen btn-block">
+              Gratis-PDF herunterladen →
+            </a>
+            <p class="buy-hint">Sofort-Download, kein Formular, keine E-Mail nötig.</p>
           </div>
 
           <!-- BOX 2: Das E-Book -->
@@ -525,27 +491,11 @@
             </div></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q">Ist das wirklich kostenlos? <span class="chev">+</span></button>
+            <button class="faq-q">Ist das wirklich kostenlos, und wie bekomme ich das PDF? <span class="chev">+</span></button>
             <div class="faq-a"><div class="faq-a-inner">
-              Ja, das PDF ist komplett gratis. Du trägst nur deinen Vornamen und
-              deine E-Mail-Adresse ein, damit ich dir den Guide zusenden kann.
-            </div></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Wie bekomme ich das PDF? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Nach dem Eintragen erhältst du eine E-Mail zur Bestätigung
-              (Double-Opt-in). Sobald du bestätigt hast, landet das PDF direkt in
-              deinem Postfach. Schau im Zweifel auch im Spam-Ordner nach.
-            </div></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q">Was passiert mit meiner E-Mail-Adresse? <span class="chev">+</span></button>
-            <div class="faq-a"><div class="faq-a-inner">
-              Deine Adresse nutze ich nur, um dir den Guide und gelegentlich
-              hilfreiche E-Mails rund ums Kettlebell-Training zu schicken. Kein
-              Spam, keine Weitergabe an Dritte – abmelden kannst du dich jederzeit
-              mit einem Klick. Details in der Datenschutzerklärung.
+              Ja, komplett gratis – und ganz ohne Anmeldung. Klick einfach auf
+              "Gratis-PDF herunterladen", die Datei lädt sich sofort herunter.
+              Kein Formular, keine E-Mail-Adresse nötig.
             </div></div>
           </div>
           <div class="faq-item">
@@ -656,54 +606,6 @@
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();
     });
-
-    /* --- 2) Gratis-PDF-Formular -----------------------------------------
-       Ablauf:
-       - Beim Absenden wird SOFORT auf guide-download.html weitergeleitet
-         (dort liegt der direkte Download-Button zur PDF).
-       - NUR wenn die optionale Newsletter-Checkbox gesetzt ist UND eine echte
-         Brevo-URL in config.js hinterlegt ist, werden Vorname + E-Mail im
-         Hintergrund an Brevo gesendet (navigator.sendBeacon überlebt die
-         Weiterleitung). Ohne Häkchen wird NICHTS an Brevo geschickt. */
-    var leadForm       = document.getElementById("leadForm");
-    var leadBtn        = document.getElementById("leadBtn");
-    var leadConsent    = document.getElementById("leadConsent");
-    var leadNewsletter = document.getElementById("leadNewsletter");
-    var leadName       = document.getElementById("leadName");
-    var leadEmail      = document.getElementById("leadEmail");
-
-    if (leadForm) {
-      // Button erst aktiv, wenn die Pflicht-Checkbox (Widerruf) gesetzt ist
-      leadConsent.addEventListener("change", function () {
-        leadBtn.disabled = !leadConsent.checked;
-      });
-
-      leadForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (leadConsent && !leadConsent.checked) return;  // Sicherheitsnetz
-
-        // Optionaler Newsletter: nur bei gesetzter Checkbox an Brevo senden
-        if (leadNewsletter && leadNewsletter.checked) {
-          var action = CONFIG.NEWSLETTER_ACTION;
-          if (action && action.indexOf("PLATZHALTER") !== 0) {
-            try {
-              var fd = new FormData();
-              fd.append(CONFIG.NEWSLETTER_FIELD_NAME, leadName.value);
-              fd.append(CONFIG.NEWSLETTER_FIELD_EMAIL, leadEmail.value);
-              if (navigator.sendBeacon) {
-                navigator.sendBeacon(action, fd);
-              } else {
-                fetch(action, { method: "POST", body: fd, mode: "no-cors", keepalive: true })
-                  .catch(function () {});
-              }
-            } catch (err) { /* Fehler ignorieren – der Download soll trotzdem passieren */ }
-          }
-        }
-
-        // Sofort zur Download-Seite
-        window.location.href = "guide-download.html";
-      });
-    }
 
     /* --- 3) Kurs-Kauf: "Bald verfügbar" ODER Widerruf + Stripe-Button ---
        Gesteuert über CONFIG.KURS_VERFUEGBAR. Sobald der Kurs fertig ist,
