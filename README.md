@@ -108,16 +108,16 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 
 ---
 
-## 1) In Stripe ein Produkt für 30 € anlegen
+## 1) In Stripe ein Produkt für 20 € anlegen
 
 1. Erstelle (falls noch nicht vorhanden) ein kostenloses Konto auf
    [stripe.com](https://stripe.com) und schließe die Kontoeinrichtung ab
    (Bankverbindung etc.), damit du echte Zahlungen empfangen kannst.
 2. Gehe im Stripe-Dashboard auf **Produktkatalog → Produkte → + Produkt hinzufügen**.
 3. Trage ein:
-   - **Name:** z. B. „Kettlebell-Kurs“
-   - **Beschreibung:** kurze Beschreibung des Kurses
-   - **Preis:** `30,00` EUR, Preismodell **Einmalig** (nicht wiederkehrend)
+   - **Name:** z. B. „Kettlebell Mastery E-Book“
+   - **Beschreibung:** kurze Beschreibung des E-Books
+   - **Preis:** `20,00` EUR, Preismodell **Einmalig** (nicht wiederkehrend)
 4. Speichern.
 
 > Hinweis Kleinunternehmer (§ 19 UStG): Du weist keine Umsatzsteuer aus. In den
@@ -127,35 +127,33 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 ## 2) Einen Payment Link erstellen
 
 1. Im Stripe-Dashboard: **Zahlungslinks (Payment Links) → + Neuer Link**.
-2. Wähle das eben erstellte Produkt „Kettlebell-Kurs“ (30 €) aus.
+2. Wähle das eben erstellte Produkt „Kettlebell Mastery E-Book“ (20 €) aus.
 3. **Wichtig – Success-URL / Weiterleitung nach Zahlung:**
    - Suche in den Einstellungen des Payment Links den Punkt
      **„Nach der Zahlung“** → **„Kunden auf eine Website weiterleiten“**
      (bzw. „Confirmation page → Redirect to your website“).
-   - Trage dort die URL deiner **kurs.html** ein, z. B.:
+   - Trage dort die URL deiner **ebook-download.html** ein, z. B.:
      ```
-     https://DEINE-DOMAIN.de/kurs.html
+     https://DEINE-DOMAIN.de/ebook-download.html
      ```
      (Deine echte Netlify-URL bekommst du in Schritt 5.)
 4. Link erstellen und die generierte URL kopieren
    (Format: `https://buy.stripe.com/....`).
 
-## 3) Wo du die Success-URL auf kurs.html setzt
+## 3) Wie die Auslieferung funktioniert
 
 Die Success-URL wird **in Stripe** gesetzt (siehe Schritt 2, Punkt 3) – nicht im
-Code. Sie muss auf deine `kurs.html` zeigen. Nach der Zahlung landet der Käufer
-dann automatisch im Kursbereich.
+Code. Sie muss auf deine `ebook-download.html` zeigen. Nach der Zahlung landet
+der Käufer dort automatisch und kann die PDF (`assets/downloads/kettlebell-mastery.pdf`)
+direkt herunterladen – kein Zugangscode, kein Login nötig.
 
-Den **Zugangscode** teilst du dem Käufer mit – z. B.:
-- direkt auf der Stripe-Bestätigungsseite (Text „Dein Zugangscode lautet: …“), und/oder
-- in der automatischen Stripe-Bestätigungs-E-Mail.
-
-Den Code selbst legst du in `assets/js/config.js` unter `ACCESS_CODE` fest.
-
-> ⚠️ **Sicherheitshinweis:** Der Zugangscode steht im ausgelieferten JavaScript
-> und ist im Browser-Quelltext lesbar. Das ist **keine echte Sicherheit**,
-> sondern nur eine leichte Hürde – bewusst so gewählt für einen einfachen,
-> kostenlosen Start. Für echten Schutz bräuchtest du eine serverseitige Lösung.
+> ⚠️ **Sicherheitshinweis:** Das Repository ist öffentlich auf GitHub. Die PDF
+> liegt als normale Datei im Repo und ist damit über den GitHub-Dateibrowser
+> theoretisch von jedem auffindbar, nicht nur über den Kauf-Flow – das ist
+> **keine echte Zugriffskontrolle**, sondern nur „ohne Link nicht auffindbar".
+> Für echten Schutz (z. B. signierte, zeitlich begrenzte Download-Links)
+> brauchst du einen spezialisierten Dienst für digitale Produkte
+> (z. B. Gumroad, SendOwl) statt eines direkten PDF-Links im Repo.
 
 ## 4) Wo du den Stripe-Link im Code einträgst
 
@@ -174,10 +172,10 @@ Hinweis an, statt weiterzuleiten (praktisch zum Testen).
 **Variante A – ganz ohne Git (Drag & Drop):**
 1. Auf [app.netlify.com](https://app.netlify.com) einloggen.
 2. **„Add new site“ → „Deploy manually“**.
-3. Den gesamten Projektordner (mit `index.html`, `kurs.html`, `assets/` …) in
+3. Den gesamten Projektordner (mit `index.html`, `ebook-download.html`, `assets/` …) in
    das Upload-Feld ziehen.
 4. Netlify vergibt eine URL wie `https://dein-name.netlify.app`.
-5. Diese URL (mit `/kurs.html`) trägst du als Success-URL in Stripe ein
+5. Diese URL (mit `/ebook-download.html`) trägst du als Success-URL in Stripe ein
    (Schritt 2).
 
 **Variante B – mit Git (empfohlen für Updates):**
@@ -194,11 +192,11 @@ Success-URL.
 
 ## Testen vor dem Livegang
 
-- [ ] `config.js` vollständig ausgefüllt (Stripe-Link, Code, Handles, Kontakt)
+- [ ] `config.js` vollständig ausgefüllt (Stripe-Link, Handles, Kontakt)
 - [ ] Kauf-Button: Checkbox „Widerrufsrecht“ muss gesetzt sein, damit der Button aktiv wird
 - [ ] Kauf-Button leitet zum Stripe-Link weiter
-- [ ] Stripe Success-URL zeigt auf `kurs.html`
-- [ ] Zugangscode schaltet den Kursbereich frei und bleibt gespeichert (localStorage)
+- [ ] Stripe Success-URL zeigt auf `ebook-download.html`
+- [ ] Download-Button auf `ebook-download.html` liefert die richtige PDF aus
 - [ ] Impressum & Datenschutz mit echten Daten gefüllt und geprüft
 - [ ] Auf dem Handy getestet (Großteil des Traffics kommt mobil)
 

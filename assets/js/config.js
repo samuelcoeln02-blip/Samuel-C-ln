@@ -31,7 +31,7 @@ const CONFIG = {
 
      >>> Sobald dein Kurs fertig ist, hier einfach auf true stellen. <<<
   --------------------------------------------------------------------------- */
-  KURS_VERFUEGBAR: false,
+  KURS_VERFUEGBAR: true,
 
   /* ---------------------------------------------------------------------------
      1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
