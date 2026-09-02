@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 640" width="1040" height="640" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 20px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 14px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="a2" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto">
+      <path d="M0,0 L16,8 L0,16 Z" fill="#1552F0"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="46" font-size="26" font-weight="800" fill="#0B0B0F">Bracing – Spannung rundum</text>
+  <text x="40" y="70" font-size="15" font-weight="600" fill="#6B7280">Draufsicht auf den Rumpf, wie ein Korsett aus eigener Muskulatur</text>
+
+  <!-- 360-Ring -->
+  <circle cx="520" cy="380" r="192" fill="none" stroke="#C3C9D6" stroke-width="2" stroke-dasharray="9 8"/>
+
+  <!-- Rumpf-Querschnitt -->
+  <ellipse cx="520" cy="380" rx="118" ry="92" fill="#EEF1F6" stroke="#D7DCE5" stroke-width="2"/>
+  <!-- Wirbelsaeule (hinten) -->
+  <circle cx="520" cy="296" r="12" fill="#0B0B0F"/>
+
+  <!-- Pfeile rundum (8 Richtungen) -->
+  <g stroke="#1552F0" stroke-width="6" stroke-linecap="round" marker-end="url(#a2)">
+    <line x1="520" y1="286" x2="520" y2="240"/>
+    <line x1="520" y1="474" x2="520" y2="520"/>
+    <line x1="400" y1="380" x2="356" y2="380"/>
+    <line x1="640" y1="380" x2="684" y2="380"/>
+    <line x1="454" y1="298" x2="424" y2="266"/>
+    <line x1="586" y1="298" x2="616" y2="266"/>
+    <line x1="454" y1="462" x2="424" y2="494"/>
+    <line x1="586" y1="462" x2="616" y2="494"/>
+  </g>
+
+  <!-- Callouts -->
+  <polyline class="lead" points="520,522 520,578 700,578"/>
+  <circle cx="520" cy="522" r="4" fill="#1552F0"/>
+  <text class="label" x="716" y="572">Vorne</text>
+  <text class="sub"   x="716" y="594">Bauchwand fest, nicht einziehen</text>
+
+  <polyline class="lead" points="686,380 800,380 800,340"/>
+  <circle cx="686" cy="380" r="4" fill="#1552F0"/>
+  <text class="label" x="816" y="310" text-anchor="start">Seitlich</text>
+  <text class="sub"   x="816" y="332" text-anchor="start">schräge Bauchmuskeln</text>
+
+  <polyline class="lead" points="520,284 520,146 300,146"/>
+  <circle cx="520" cy="284" r="5" fill="#0B0B0F"/>
+  <text class="label" x="40" y="140" text-anchor="start">Hinten</text>
+  <text class="sub"   x="40" y="162" text-anchor="start">unterer Rücken, mitgespannt</text>
+
+  <!-- Fussnote -->
+  <text class="sub" x="520" y="624" text-anchor="middle">Druck baut sich im ganzen Bauchraum auf – nicht nur vorne.</text>
+</svg>

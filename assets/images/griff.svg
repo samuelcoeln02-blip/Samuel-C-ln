@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 440" width="1160" height="440" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 20px; font-weight: 800; fill: #0B0B0F; }
+      .sub    { font-size: 14px; font-weight: 600; fill: #6B7280; }
+    </style>
+  </defs>
+
+  <text x="40" y="46" font-size="26" font-weight="800" fill="#0B0B0F">Drei Griffe, drei Aufgaben</text>
+  <text x="40" y="70" font-size="15" font-weight="600" fill="#6B7280">Wo die Kettlebell in der Hand liegt, ändert sich je nach Übung</text>
+
+  <!-- Karten-Hintergrund -->
+  <g fill="#F4F6FA" stroke="#E3E7EF" stroke-width="1.5">
+    <rect x="40"  y="92" width="346" height="300" rx="18"/>
+    <rect x="407" y="92" width="346" height="300" rx="18"/>
+    <rect x="774" y="92" width="346" height="300" rx="18"/>
+  </g>
+
+  <!-- ============ ICON A: SWING - locker im Haken ============ -->
+  <g transform="translate(213,220)">
+    <!-- Unterarm -->
+    <path d="M-20,-95 L18,-10" stroke="#D7DCE5" stroke-width="30" stroke-linecap="round"/>
+    <!-- Hand -->
+    <ellipse cx="28" cy="10" rx="24" ry="20" fill="#D7DCE5" transform="rotate(24 28 10)"/>
+    <!-- Finger-Haken (offen, locker) -->
+    <path d="M18,26 q22,20 46,4" fill="none" stroke="#D7DCE5" stroke-width="16" stroke-linecap="round"/>
+    <!-- Kettlebell haengt im Fingerhaken -->
+    <path d="M52,20 q4,-10 10,0" fill="none" stroke="#0B0B0F" stroke-width="4"/>
+    <circle cx="58" cy="42" r="17" fill="#0B0B0F"/>
+    <!-- Highlight: Kontaktzone Finger -->
+    <path d="M34,30 q16,14 30,2" fill="none" stroke="#1552F0" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text class="label" x="213" y="352" text-anchor="middle">Beim Swing</text>
+  <text class="sub" x="213" y="376" text-anchor="middle">locker im Haken der Finger</text>
+
+  <!-- ============ ICON B: PRESS - diagonal ueber die Handflaeche ============ -->
+  <g transform="translate(580,235)">
+    <!-- Unterarm -->
+    <path d="M-16,75 L4,22" stroke="#D7DCE5" stroke-width="30" stroke-linecap="round"/>
+    <!-- Handflaeche -->
+    <rect x="-16" y="-32" width="56" height="52" rx="15" fill="#D7DCE5"/>
+    <!-- Finger oben -->
+    <g fill="#D7DCE5">
+      <rect x="-13" y="-70" width="13" height="42" rx="6.5"/>
+      <rect x="3"   y="-78" width="13" height="50" rx="6.5"/>
+      <rect x="19"  y="-74" width="13" height="46" rx="6.5"/>
+      <rect x="35"  y="-64" width="13" height="36" rx="6.5"/>
+    </g>
+    <!-- Griffstange diagonal ueber die Handflaeche -->
+    <line x1="-9" y1="14" x2="33" y2="-25" stroke="#1552F0" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="-9" cy="14" r="6" fill="#1552F0"/>
+    <circle cx="33" cy="-25" r="6" fill="#1552F0"/>
+  </g>
+  <text class="label" x="580" y="352" text-anchor="middle">Beim Press</text>
+  <text class="sub" x="580" y="376" text-anchor="middle">diagonal über die Handfläche</text>
+
+  <!-- ============ ICON C: RACK - Kugel liegt am Unterarm ============ -->
+  <g transform="translate(947,225)">
+    <!-- Unterarm (diagonal, wie in der Rack) -->
+    <path d="M-55,55 L35,-45" stroke="#D7DCE5" stroke-width="34" stroke-linecap="round"/>
+    <!-- Hand am Griff -->
+    <ellipse cx="46" cy="-56" rx="18" ry="15" fill="#D7DCE5" transform="rotate(-40 46 -56)"/>
+    <!-- Kettlebell-Kugel ruht auf dem Unterarm -->
+    <circle cx="-4" cy="-8" r="30" fill="#0B0B0F"/>
+    <!-- Highlight: Kontaktzone am Unterarm -->
+    <ellipse cx="10" cy="8" rx="20" ry="10" fill="none" stroke="#12B76A" stroke-width="6" transform="rotate(-38 10 8)"/>
+  </g>
+  <text class="label" x="947" y="352" text-anchor="middle">In der Rack</text>
+  <text class="sub" x="947" y="376" text-anchor="middle">Kugel ruht auf dem Unterarm</text>
+</svg>

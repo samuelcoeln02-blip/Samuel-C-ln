@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="1000" height="480" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 20px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 14px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <text x="40" y="46" font-size="26" font-weight="800" fill="#0B0B0F">Die Halteposition</text>
+  <text x="40" y="70" font-size="15" font-weight="600" fill="#6B7280">So hältst du die Kettlebell beim Goblet Squat</text>
+
+  <!-- Torso (frontal, Block) -->
+  <path d="M420 440 L420 300 Q420 210 500 210 Q580 210 580 300 L580 440 Z" fill="#D7DCE5"/>
+  <!-- Kopf -->
+  <circle cx="500" cy="176" r="32" fill="#D7DCE5"/>
+
+  <!-- Oberarme (von der Schulter schraeg nach unten-innen zu den Ellbogen) -->
+  <path d="M424 250 L462 330" stroke="#D7DCE5" stroke-width="26" stroke-linecap="round"/>
+  <path d="M576 250 L538 330" stroke="#D7DCE5" stroke-width="26" stroke-linecap="round"/>
+  <!-- Unterarme (Ellbogen nach oben zu den Haenden am Griff) -->
+  <path d="M462 330 L470 268" stroke="#D7DCE5" stroke-width="22" stroke-linecap="round"/>
+  <path d="M538 330 L530 268" stroke="#D7DCE5" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- Ellbogen-Markierung -->
+  <circle cx="462" cy="330" r="11" fill="#1552F0"/>
+  <circle cx="538" cy="330" r="11" fill="#1552F0"/>
+
+  <!-- Kettlebell an der Brust: Hoerner + Kugel -->
+  <path d="M462 262 Q500 240 538 262" fill="none" stroke="#0B0B0F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="500" cy="292" r="38" fill="#0B0B0F"/>
+
+  <!-- Haende an den Hoernern -->
+  <ellipse cx="466" cy="266" rx="15" ry="12" fill="#D7DCE5"/>
+  <ellipse cx="534" cy="266" rx="15" ry="12" fill="#D7DCE5"/>
+
+  <!-- Callouts -->
+  <polyline class="lead" points="462,330 300,330 300,300"/>
+  <circle cx="462" cy="330" r="0" fill="none"/>
+  <text class="label" x="40" y="270" text-anchor="start">Ellbogen</text>
+  <text class="sub"   x="40" y="292" text-anchor="start">zeigen nach unten-innen</text>
+
+  <polyline class="lead" points="500,254 500,120 700,120"/>
+  <circle cx="500" cy="254" r="4" fill="#0B0B0F"/>
+  <text class="label" x="716" y="114">Am Brustbein</text>
+  <text class="sub"   x="716" y="136">Hände halten die „Hörner" von unten</text>
+
+  <polyline class="lead" points="500,440 500,410"/>
+  <text class="sub" x="500" y="464" text-anchor="middle">Je näher die Kettlebell am Körper, desto aufrechter bleibst du.</text>
+</svg>

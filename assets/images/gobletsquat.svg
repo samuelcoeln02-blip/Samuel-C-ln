@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 20px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 14px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <text x="40" y="46" font-size="26" font-weight="800" fill="#0B0B0F">Die tiefe Position</text>
+  <text x="40" y="70" font-size="15" font-weight="600" fill="#6B7280">Darauf kommt es beim Absenken an</text>
+
+  <!-- Boden -->
+  <line x1="230" y1="486" x2="640" y2="486" stroke="#E3E7EF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tiefe Squat-Silhouette -->
+  <g stroke="#D7DCE5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- hinteres Bein: Fuss - Knie - Huefte -->
+    <path d="M330 470 L400 380 L392 330" stroke-width="42"/>
+    <!-- Rumpf: Huefte - Schulter (aufrecht, leicht vorgeneigt) -->
+    <path d="M392 330 L410 232" stroke-width="46"/>
+    <!-- vorderes Bein -->
+    <path d="M470 470 L412 380" stroke-width="42"/>
+  </g>
+  <!-- Fuesse -->
+  <path d="M312 474 L354 474" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+  <path d="M452 474 L494 474" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+  <!-- Kopf -->
+  <circle cx="418" cy="204" r="27" fill="#D7DCE5"/>
+
+  <!-- Oberarme zur Kettlebell -->
+  <path d="M400 260 L380 300" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+  <path d="M424 262 L400 296" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+  <!-- Kettlebell an der Brust -->
+  <path d="M368 300 Q392 282 416 300" fill="none" stroke="#0B0B0F" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="392" cy="322" r="27" fill="#0B0B0F"/>
+
+  <!-- Knie-Markierung (faellt ueber die Zehen, nach aussen) -->
+  <circle cx="400" cy="380" r="10" fill="#1552F0"/>
+  <circle cx="412" cy="380" r="10" fill="#1552F0"/>
+
+  <!-- Fersen-Markierung -->
+  <ellipse cx="333" cy="474" rx="16" ry="7" fill="none" stroke="#12B76A" stroke-width="5"/>
+  <ellipse cx="473" cy="474" rx="16" ry="7" fill="none" stroke="#12B76A" stroke-width="5"/>
+
+  <!-- Callouts -->
+  <polyline class="lead" points="418,232 418,110 640,110"/>
+  <circle cx="418" cy="232" r="4" fill="#6B7280"/>
+  <text class="label" x="656" y="104">Brust so aufrecht</text>
+  <text class="label" x="656" y="128">wie möglich</text>
+
+  <polyline class="lead" points="406,380 230,380 230,340"/>
+  <circle cx="406" cy="380" r="4" fill="#1552F0"/>
+  <text class="label" x="40" y="334" text-anchor="start">Knie</text>
+  <text class="sub"   x="40" y="356" text-anchor="start">folgen den Zehen, nach außen</text>
+
+  <polyline class="lead" points="473,478 700,478 700,440"/>
+  <circle cx="473" cy="478" r="4" fill="#12B76A"/>
+  <text class="label" x="656" y="410" text-anchor="middle">Fersen</text>
+  <text class="sub"   x="656" y="432" text-anchor="middle">bleiben am Boden</text>
+
+  <text class="sub" x="500" y="530" text-anchor="middle">So tief, wie du Fersen unten und Rücken gerade hältst – Tiefe kommt mit der Zeit.</text>
+</svg>

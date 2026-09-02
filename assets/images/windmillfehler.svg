@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 500" width="1040" height="500" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .tag{font-size:16px;font-weight:800;letter-spacing:.04em;fill:#fff;}
+      .cap{font-size:14px;font-weight:600;fill:#6B7280;}
+    </style>
+  </defs>
+
+  <text x="40" y="40" font-size="26" font-weight="800" fill="#0B0B0F">Häufiger Fehler bei der Windmill</text>
+
+  <!-- Panels -->
+  <rect x="40"  y="70" width="460" height="400" rx="18" fill="#F4F6FA" stroke="#E3E7EF" stroke-width="1.5"/>
+  <rect x="540" y="70" width="460" height="400" rx="18" fill="#F4F6FA" stroke="#E3E7EF" stroke-width="1.5"/>
+
+  <!-- ================= RICHTIG ================= -->
+  <rect x="72" y="94" width="108" height="32" rx="16" fill="#12B76A"/>
+  <text class="tag" x="126" y="115" text-anchor="middle">✓ RICHTIG</text>
+
+  <g transform="translate(270,90)">
+    <!-- Boden -->
+    <line x1="-90" y1="330" x2="90" y2="330" stroke="#E3E7EF" stroke-width="4" stroke-linecap="round"/>
+    <!-- Beine (fast gestreckt) -->
+    <path d="M-10 330 L10 205" stroke="#D7DCE5" stroke-width="32" stroke-linecap="round"/>
+    <!-- Rumpf: gerade Seitneigung, Brust offen -->
+    <path d="M10 205 L58 92" stroke="#D7DCE5" stroke-width="42" stroke-linecap="round"/>
+    <!-- Kopf, Blick zur Kettlebell -->
+    <circle cx="66" cy="66" r="24" fill="#D7DCE5"/>
+    <!-- Hebender Arm, senkrecht nach oben -->
+    <path d="M56 96 L60 8" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="61" cy="-4" r="18" fill="#0B0B0F"/>
+    <!-- Freie Hand Richtung Schienbein -->
+    <!-- Brust-Indikator (offen, nach vorne) -->
+    <path d="M30 150 L58 132 L48 168 Z" fill="#12B76A"/>
+  </g>
+  <text class="cap" x="270" y="446" text-anchor="middle">Brust offen, Seitneigung sauber aus der Hüfte</text>
+  <text class="cap" x="270" y="466" text-anchor="middle">oberer Arm senkrecht, Blick zur Kettlebell</text>
+
+  <!-- ================= FALSCH ================= -->
+  <rect x="572" y="94" width="102" height="32" rx="16" fill="#E5323B"/>
+  <text class="tag" x="623" y="115" text-anchor="middle">✗ FALSCH</text>
+
+  <g transform="translate(770,90)">
+    <line x1="-90" y1="330" x2="90" y2="330" stroke="#E3E7EF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-10 330 L10 205" stroke="#D7DCE5" stroke-width="32" stroke-linecap="round"/>
+    <!-- Rumpf: rollt nach vorne, runder Ruecken -->
+    <path d="M10 205 C 34,155 24,115 66,90" stroke="#D7DCE5" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <circle cx="90" cy="78" r="24" fill="#D7DCE5"/>
+    <path d="M56 100 L46 10" stroke="#D7DCE5" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="45" cy="-2" r="18" fill="#0B0B0F"/>
+    <!-- Brust-Indikator (eingerollt, nach unten) -->
+    <path d="M40 150 L64 158 L48 182 Z" fill="#E5323B"/>
+  </g>
+  <text class="cap" x="770" y="446" text-anchor="middle">Oberkörper rollt nach vorne, runder Rücken</text>
+  <text class="cap" x="770" y="466" text-anchor="middle">Brust schließt sich, Kraftverlust in der Schulter</text>
+</svg>
