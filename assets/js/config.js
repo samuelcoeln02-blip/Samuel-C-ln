@@ -64,7 +64,7 @@ const CONFIG = {
   NEWSLETTER_FIELD_EMAIL: "EMAIL",
 
   // Titel des Gratis-PDFs (wird auf der Seite angezeigt):
-  FREE_PDF_TITEL: "Kettlebell Starter-Guide (PDF)",
+  FREE_PDF_TITEL: "Kettlebell Mastery – Leseprobe (PDF)",
 
   /* ---------------------------------------------------------------------------
      2) ZUGANGSCODE für den Kursbereich (kurs.html)

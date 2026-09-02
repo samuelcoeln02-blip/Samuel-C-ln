@@ -1,3 +1,3 @@
-# Hier kommt dein Gratis-PDF rein:
-# - kettlebell-guide.pdf
-# Die Danke-Seite (guide-danke.html) verlinkt automatisch auf diese Datei.
+# Hier liegen die PDFs:
+# - kettlebell-mastery-lite.pdf   -> Gratis-Leseprobe, verlinkt von guide-download.html / guide-danke.html
+# - kettlebell-mastery.pdf        -> das vollständige, kostenpflichtige E-Book, verlinkt von ebook-download.html
