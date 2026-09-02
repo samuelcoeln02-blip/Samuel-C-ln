@@ -59,6 +59,6 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 > **Teil 2 – Das Fundament:** Hip-Hinge → Atmung/Bracing → Griff, Sicherheit & Gewicht
 > **Teil 3 – Die Übungen:** Swing → Goblet Squat → Clean → Press → Row → Windmill → Snatch → Halo & Pullover
 > **Teil 4 – Training & Umsetzung:** Komplexe bauen → Trainingsprinzipien → Aufwärmen & Mobility → Regeneration → 6-Wochen-Plan
-> **Teil 5 – Ernährung & Abschluss:** Ernährung, die du durchhältst → FAQ → Glossar → Abschluss → Quellenverzeichnis
+> **Teil 5 – Ernährung & Abschluss:** Ernährung, die du durchhältst → Abschluss → FAQ → Glossar → Quellenverzeichnis
 
 > Hinweis: Das frühere Strichmännchen-Diagramm „Hinge vs. Squat" (assets/images/ebook/hinge-vs-squat.svg) wird **verworfen** und durch das Foto-Vergleich K3-A ersetzt.
