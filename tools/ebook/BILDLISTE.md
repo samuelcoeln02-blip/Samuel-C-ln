@@ -42,7 +42,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | K11-A | 11 Windmill | Foto | – | Kapitel-Startbild: untere Position der Windmill – Kettlebell über Kopf am gestreckten senkrechten Arm, Blick zur Kettlebell, freie Hand nahe Boden, Rücken gerade. Frontal. | **fertig** |
 | K11-B | 11 Windmill | Foto-Sequenz | ✔ | Windmill-Sequenz. | **entfernt** (auf Wunsch weggelassen, kein Bild an der Stelle) |
 | K11-C | 11 Windmill | Illustration | – | Fehler richtig/falsch: links Brust offen + Seitneigung sauber, rechts runder Rücken/rollt nach vorne. Datei: assets/images/windmillfehler.svg | **fertig** |
-| K12-A | 12 Snatch | Foto | – | Kapitel-Startbild: Snatch-Lockout – Kettlebell am gestreckten Arm über dem Kopf, sanft am Unterarm, Handgelenk gerade, Schulter gepackt, aufrecht. **Bild folgt noch (offen merken).** | offen |
+| K12-A | 12 Snatch | Illustration | ✔ | Kapitel-Startbild ersetzt durch Illustration `snatchlockout.svg` (hintere-kette-Stil): Lockout-Position mit Callouts Handgelenk/Schulter/aufrecht gestapelt. | fertig |
 | K12-B | 12 Snatch | Foto-Sequenz | ✔ | Snatch-Sequenz. | **entfernt** (auf Wunsch weggelassen, kein Bild an der Stelle) |
 | K12-C | 12 Snatch | Foto-Vergleich | – | Fehler beim Snatch. | **entfernt** (auf Wunsch weggelassen, kein Bild an der Stelle) |
 | K13-A | 13 Halo & Pullover | Foto | – | Kapitel-Startbild: Halo. Wiederverwendung von Bild 2 der Halo-Sequenz (K13-B), kleiner dargestellt. | **fertig** |
@@ -52,7 +52,7 @@ Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 | FW-A | Für wen ist das? (vorne) | Foto | – | (optional) Ruhiges Lifestyle-Foto. | **entfernt** (auf Wunsch weggelassen, kein Bild an der Stelle) |
 | KOMPLEX-A | Komplexe bauen | Foto-Sequenz | ✔ | Beispiel-Komplex (3 nummerierte Standbilder): (1) Clean in die Rack, (2) Front Squat unten (Doppel-Rack), (3) Press im Lockout. Aus vorhandenen Fotos zusammengesetzt. | **fertig** |
 | ERN-A | Ernährung ohne Zählen | Illustration | – | Handportionen-Illustration. Datei bleibt: assets/images/handportionen.svg | **entfernt** (Kapitel komplett neu geschrieben – ehrlicher Kalorien-Ansatz statt Handportionen) |
-| ABSCHLUSS-A | Abschluss | Foto | – | (optional) Abschluss-Foto: Samuel, ruhig und positiv, mit Kettlebell – ein guter Schlusspunkt. | offen |
+| ABSCHLUSS-A | Abschluss | Foto | – | (optional) Abschluss-Foto: Samuel, ruhig und positiv, mit Kettlebell – ein guter Schlusspunkt. | **entfernt** (kein Platzhalter im PDF, war optional) |
 
 > **Kapitel-Reihenfolge (Stand, neu geordnet):**
 > **Teil 1 – Warum & Vorbereitung:** Vorwort → Meine Geschichte → Für wen ist dieses Training? → Warum Kettlebell wirkt → Mythen → Dranbleiben (Mindset) → Kettlebell als Lebensstil

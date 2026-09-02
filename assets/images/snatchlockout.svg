@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <style>
+      .label { font-size: 20px; font-weight: 700; fill: #0B0B0F; }
+      .sub    { font-size: 14px; font-weight: 600; fill: #6B7280; }
+      .lead   { stroke: #C3C9D6; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <text x="40" y="46" font-size="26" font-weight="800" fill="#0B0B0F">Der Lockout</text>
+  <text x="40" y="70" font-size="15" font-weight="600" fill="#6B7280">So endet ein sauberer Snatch</text>
+
+  <!-- Boden -->
+  <line x1="330" y1="486" x2="660" y2="486" stroke="#E3E7EF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Lotlinie: Hand ueber Schulter ueber Huefte gestapelt -->
+  <line x1="560" y1="96" x2="560" y2="480" stroke="#C3C9D6" stroke-width="2" stroke-dasharray="6 7"/>
+
+  <!-- Silhouette: Beine, Ruecken, Kopf -->
+  <g stroke="#D7DCE5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- linkes Bein -->
+    <path d="M478 472 L488 380" stroke-width="38"/>
+    <!-- rechtes Bein -->
+    <path d="M530 472 L512 380" stroke-width="38"/>
+    <!-- Ruecken/Rumpf: Huefte bis Schulter, aufrecht -->
+    <path d="M500 378 L520 190" stroke-width="46"/>
+    <!-- ruhender Arm an der Seite -->
+    <path d="M496 210 L470 300" stroke-width="20"/>
+  </g>
+  <!-- Fuesse -->
+  <path d="M460 476 L496 476" stroke="#D7DCE5" stroke-width="16" stroke-linecap="round"/>
+  <path d="M512 476 L548 476" stroke="#D7DCE5" stroke-width="16" stroke-linecap="round"/>
+  <!-- Kopf -->
+  <circle cx="524" cy="160" r="26" fill="#D7DCE5"/>
+
+  <!-- gestreckter Arm nach oben zum Lockout -->
+  <path d="M528 186 L560 100" stroke="#D7DCE5" stroke-width="24" stroke-linecap="round" fill="none"/>
+  <!-- Hand -->
+  <ellipse cx="562" cy="92" rx="15" ry="13" fill="#D7DCE5" transform="rotate(-18 562 92)"/>
+
+  <!-- Kettlebell: Kugel ruht am Unterarm, Griff um das Handgelenk -->
+  <path d="M566 100 q18 10 16 34" fill="none" stroke="#0B0B0F" stroke-width="5"/>
+  <circle cx="586" cy="150" r="26" fill="#0B0B0F"/>
+
+  <!-- Markierung Handgelenk (gerade) -->
+  <circle cx="562" cy="92" r="7" fill="none" stroke="#12B76A" stroke-width="5"/>
+  <!-- Markierung Schulter (gepackt) -->
+  <circle cx="528" cy="186" r="9" fill="#1552F0"/>
+
+  <!-- Callouts -->
+  <polyline class="lead" points="562,92 700,92 700,132"/>
+  <text class="label" x="716" y="98">Handgelenk gerade</text>
+  <text class="sub"   x="716" y="120">Kugel ruht sanft am Unterarm</text>
+
+  <polyline class="lead" points="528,186 700,186 700,226"/>
+  <text class="label" x="716" y="192">Schulter gepackt</text>
+  <text class="sub"   x="716" y="214">nicht am Ohr hochgezogen</text>
+
+  <polyline class="lead" points="560,340 700,340 700,380"/>
+  <text class="label" x="716" y="346">Aufrecht gestapelt</text>
+  <text class="sub"   x="716" y="368">Hand über Schulter über Hüfte</text>
+
+  <text class="sub" x="500" y="530" text-anchor="middle">Arm gestreckt, Gesäß fest, Rippen unten – kein Zurücklehnen im Lockout.</text>
+</svg>
