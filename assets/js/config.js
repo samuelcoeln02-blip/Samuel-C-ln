@@ -34,39 +34,6 @@ const CONFIG = {
   KURS_VERFUEGBAR: true,
 
   /* ---------------------------------------------------------------------------
-     1b) GRATIS-PDF / NEWSLETTER-ANMELDUNG (Lead-Magnet)
-     ---------------------------------------------------------------------------
-     Die Landingpage sammelt Name + E-Mail für ein kostenloses PDF. Eine
-     statische Seite kann selbst KEINE E-Mails verschicken – das übernimmt
-     BREVO (dein gewähltes Tool). In Brevo baust du ein Anmeldeformular +
-     eine Automation, die das PDF nach Double-Opt-in automatisch versendet.
-
-     NEWSLETTER_ACTION = die "action"-URL deines Brevo-Formulars. Die findest du
-     im Brevo-Formular unter "Teilen / HTML-Code einbetten"; sie sieht so aus:
-     https://DEINSUBDOMAIN.sibforms.com/serve/XXXXXXXXXXXXXXXX
-
-     ABLAUF (neu): Der Gratis-Guide wird nach dem Absenden SOFORT als Download
-     bereitgestellt (Seite guide-download.html). An Brevo werden Name + E-Mail
-     nur DANN im Hintergrund gesendet, wenn der Nutzer die optionale
-     Newsletter-Checkbox anhakt. Solange hier der Platzhalter steht, wird nichts
-     an Brevo geschickt – der Download funktioniert trotzdem.
-
-     >>> HIER DIE BREVO-FORM-ACTION-URL EINTRAGEN <<<
-     Anleitung: siehe README.md, Abschnitt "Gratis-PDF & E-Mail-Funnel (Brevo)".
-  --------------------------------------------------------------------------- */
-  NEWSLETTER_ACTION: "PLATZHALTER_BREVO_FORM_ACTION_URL",
-
-  // Feldnamen MÜSSEN zu deinem Brevo-Formular passen. Brevo nutzt standardmäßig
-  // "EMAIL" für die E-Mail und ein Kontakt-Attribut (oft "FIRSTNAME") für den
-  // Vornamen. Prüfe die Namen im HTML-Code deines Brevo-Formulars und passe hier
-  // ggf. an.
-  NEWSLETTER_FIELD_NAME:  "FIRSTNAME",
-  NEWSLETTER_FIELD_EMAIL: "EMAIL",
-
-  // Titel des Gratis-PDFs (wird auf der Seite angezeigt):
-  FREE_PDF_TITEL: "Kettlebell Mastery – Leseprobe (PDF)",
-
-  /* ---------------------------------------------------------------------------
      2) ZUGANGSCODE für den Kursbereich (kurs.html)
      ---------------------------------------------------------------------------
      WICHTIG / SICHERHEITSHINWEIS:
@@ -100,6 +67,9 @@ const CONFIG = {
   PREIS: "20",              // nur die Zahl
   WAEHRUNG: "€",            // Währungssymbol
   PREIS_ANZEIGE: "20 €",    // wie es auf der Seite steht
+
+  // Durchgestrichener Vergleichspreis (E-Commerce-Anker-Effekt):
+  PREIS_ALT_ANZEIGE: "45 €",
 
   /* ---------------------------------------------------------------------------
      5) DEINE KONTAKTDATEN
