@@ -20,7 +20,7 @@ const CONFIG = {
      Beispiel: "https://buy.stripe.com/abc123..."
      Anleitung: siehe README.md, Abschnitt "Stripe einrichten".
   --------------------------------------------------------------------------- */
-  STRIPE_PAYMENT_LINK: "https://buy.stripe.com/bJe4gzb024yEaAA3YF8N201",
+  STRIPE_PAYMENT_LINK: "https://buy.stripe.com/5kQeVd9VY6GMeQQ0Mt8N203",
 
   /* ---------------------------------------------------------------------------
      1a) KURS SCHON KAUFBAR?  (Schalter für "Bald verfügbar")
