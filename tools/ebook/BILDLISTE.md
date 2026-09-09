@@ -1,5 +1,12 @@
 # Bildregister – Kettlebell Mastery
 
+> **Hinweis (Stand 09.09.2026):** Das live verkaufte E-Book
+> (`assets/downloads/kettlebell-mastery.pdf`) wurde in Claude Design neu
+> gestaltet (elegantes Serif-Layout) und ersetzt die über `tools/ebook/build.js`
+> gebaute Version. Alle Fotos und Illustrationen unten wurden 1:1 in das neue
+> Design übernommen; dieses Register dokumentiert weiterhin, welches Bild wo
+> herkommt, spiegelt aber nicht mehr das aktuelle Layout.
+
 Quelle der Wahrheit für alle Bilder im E-Book. Wird pro Kapitel ergänzt.
 
 **Typen:**
