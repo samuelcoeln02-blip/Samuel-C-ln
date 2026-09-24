@@ -1,15 +1,15 @@
-# Kettlebell-Kurs – Verkaufsfunnel (Samuel Coeln)
+# Kettlebell E-Book (kostenlos) & Coaching – Website (Samuel Coeln)
 
-Zweiseitige, statische Website als Verkaufsfunnel für einen digitalen
-Kettlebell-Kurs. Kein Framework, kein Build-Step – reines HTML/CSS/JS.
-Gehostet auf Netlify.
+Statische Website: kostenloses Kettlebell-E-Book zum Direkt-Download plus
+Buchungs-CTA für 1:1-Coaching (Calendly). Kein Framework, kein Build-Step –
+reines HTML/CSS/JS. Gehostet auf Netlify.
 
 ## Projektstruktur
 
 ```
 .
-├── index.html            # Landingpage / Funnel
-├── kurs.html             # Kursbereich (Success-URL nach Stripe-Zahlung)
+├── index.html            # Landingpage
+├── ebook-download.html   # Direkter Download des kostenlosen E-Books
 ├── impressum.html        # Rechtsseite
 ├── datenschutz.html      # Rechtsseite (Grundgerüst mit Platzhaltern)
 ├── widerruf.html         # Rechtsseite: Widerrufsbelehrung
@@ -50,8 +50,7 @@ Ein automatisches Ziehen der „neuesten" Reels ist auf einer statischen Seite
 nicht möglich (dafür bräuchte es die Instagram-Graph-API mit Business-Account +
 Server). Neue Reels = einfach die Dateien austauschen.
 Fehlt eine Datei, bleibt der jeweilige Platzhalter sichtbar (der `onerror`-Handler
-am `<img>` blendet das fehlende Bild aus). Die Video-/Bild-Platzhalter in
-`kurs.html` bleiben davon unberührt.
+am `<img>` blendet das fehlende Bild aus).
 
 ## ⭐ Wichtigste Datei zuerst: `assets/js/config.js`
 
@@ -63,12 +62,8 @@ Das ist die einzige Datei, die du normalerweise anfassen musst:
 | `NEWSLETTER_ACTION` | Form-Action-URL deines E-Mail-Tools (Gratis-PDF-Anmeldung) |
 | `NEWSLETTER_FIELD_NAME` / `NEWSLETTER_FIELD_EMAIL` | Feldnamen, die dein E-Mail-Tool erwartet |
 | `FREE_PDF_TITEL` | Titel des Gratis-PDFs (auf der Seite angezeigt) |
-| `STRIPE_PAYMENT_LINK` | Link zur Stripe-Bezahlseite (Kursverkauf, später per E-Mail) |
-| `ACCESS_CODE` | Zugangscode für den Kursbereich |
 | `INSTAGRAM_HANDLE` / `TIKTOK_HANDLE` | deine Social-Handles (ohne @) |
-| `PREIS` / `PREIS_ANZEIGE` | Preis des Kurses |
 | `NAME` / `KONTAKT_EMAIL` | deine Kontaktdaten |
-| `COACHING_KEYWORD` | Keyword für 1:1-Coaching-DMs (Standard: `LOCK IN`) |
 
 Nach jeder Änderung: Datei speichern und neu deployen (siehe „Deployment“).
 
@@ -108,66 +103,17 @@ abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
 
 ---
 
-## 1) In Stripe ein Produkt für 20 € anlegen
+## Wie die Auslieferung des E-Books funktioniert
 
-1. Erstelle (falls noch nicht vorhanden) ein kostenloses Konto auf
-   [stripe.com](https://stripe.com) und schließe die Kontoeinrichtung ab
-   (Bankverbindung etc.), damit du echte Zahlungen empfangen kannst.
-2. Gehe im Stripe-Dashboard auf **Produktkatalog → Produkte → + Produkt hinzufügen**.
-3. Trage ein:
-   - **Name:** z. B. „Kettlebell Mastery E-Book“
-   - **Beschreibung:** kurze Beschreibung des E-Books
-   - **Preis:** `20,00` EUR, Preismodell **Einmalig** (nicht wiederkehrend)
-4. Speichern.
+Das E-Book ist **kostenlos**. Der Button auf der Startseite führt direkt auf
+`ebook-download.html`, dort kann die PDF (`assets/downloads/kettlebell-mastery.pdf`)
+sofort heruntergeladen werden – kein Kauf, kein Zugangscode, kein Login nötig.
 
-> Hinweis Kleinunternehmer (§ 19 UStG): Du weist keine Umsatzsteuer aus. In den
-> Stripe-Steuereinstellungen musst du entsprechend **keine** Steuer aufschlagen.
-> Kläre die korrekte Konfiguration im Zweifel mit deinem Steuerberater.
+> ⚠️ **Hinweis:** Das Repository ist öffentlich auf GitHub. Die PDF liegt als
+> normale Datei im Repo und ist damit über den GitHub-Dateibrowser theoretisch
+> von jedem auffindbar – das ist bei einem kostenlosen Download unproblematisch.
 
-## 2) Einen Payment Link erstellen
-
-1. Im Stripe-Dashboard: **Zahlungslinks (Payment Links) → + Neuer Link**.
-2. Wähle das eben erstellte Produkt „Kettlebell Mastery E-Book“ (20 €) aus.
-3. **Wichtig – Success-URL / Weiterleitung nach Zahlung:**
-   - Suche in den Einstellungen des Payment Links den Punkt
-     **„Nach der Zahlung“** → **„Kunden auf eine Website weiterleiten“**
-     (bzw. „Confirmation page → Redirect to your website“).
-   - Trage dort die URL deiner **ebook-download.html** ein, z. B.:
-     ```
-     https://DEINE-DOMAIN.de/ebook-download.html
-     ```
-     (Deine echte Netlify-URL bekommst du in Schritt 5.)
-4. Link erstellen und die generierte URL kopieren
-   (Format: `https://buy.stripe.com/....`).
-
-## 3) Wie die Auslieferung funktioniert
-
-Die Success-URL wird **in Stripe** gesetzt (siehe Schritt 2, Punkt 3) – nicht im
-Code. Sie muss auf deine `ebook-download.html` zeigen. Nach der Zahlung landet
-der Käufer dort automatisch und kann die PDF (`assets/downloads/kettlebell-mastery.pdf`)
-direkt herunterladen – kein Zugangscode, kein Login nötig.
-
-> ⚠️ **Sicherheitshinweis:** Das Repository ist öffentlich auf GitHub. Die PDF
-> liegt als normale Datei im Repo und ist damit über den GitHub-Dateibrowser
-> theoretisch von jedem auffindbar, nicht nur über den Kauf-Flow – das ist
-> **keine echte Zugriffskontrolle**, sondern nur „ohne Link nicht auffindbar".
-> Für echten Schutz (z. B. signierte, zeitlich begrenzte Download-Links)
-> brauchst du einen spezialisierten Dienst für digitale Produkte
-> (z. B. Gumroad, SendOwl) statt eines direkten PDF-Links im Repo.
-
-## 4) Wo du den Stripe-Link im Code einträgst
-
-1. Öffne `assets/js/config.js`.
-2. Ersetze den Platzhalter bei `STRIPE_PAYMENT_LINK`:
-   ```js
-   STRIPE_PAYMENT_LINK: "https://buy.stripe.com/dein-echter-link",
-   ```
-3. Speichern.
-
-Solange dort noch `PLATZHALTER_...` steht, zeigt der Kauf-Button beim Klick einen
-Hinweis an, statt weiterzuleiten (praktisch zum Testen).
-
-## 5) Deployment auf Netlify
+## 1) Deployment auf Netlify
 
 **Variante A – ganz ohne Git (Drag & Drop):**
 1. Auf [app.netlify.com](https://app.netlify.com) einloggen.
@@ -175,8 +121,6 @@ Hinweis an, statt weiterzuleiten (praktisch zum Testen).
 3. Den gesamten Projektordner (mit `index.html`, `ebook-download.html`, `assets/` …) in
    das Upload-Feld ziehen.
 4. Netlify vergibt eine URL wie `https://dein-name.netlify.app`.
-5. Diese URL (mit `/ebook-download.html`) trägst du als Success-URL in Stripe ein
-   (Schritt 2).
 
 **Variante B – mit Git (empfohlen für Updates):**
 1. Dieses Repository zu GitHub pushen.
@@ -185,17 +129,14 @@ Hinweis an, statt weiterzuleiten (praktisch zum Testen).
 4. Deploy starten. Bei jedem `git push` deployt Netlify automatisch neu.
 
 **Eigene Domain (optional):** In Netlify unter **Domain management** kannst du
-eine eigene Domain verbinden. Dann verwendest du diese Domain in der Stripe
-Success-URL.
+eine eigene Domain verbinden.
 
 ---
 
 ## Testen vor dem Livegang
 
-- [ ] `config.js` vollständig ausgefüllt (Stripe-Link, Handles, Kontakt)
-- [ ] Kauf-Button: Checkbox „Widerrufsrecht“ muss gesetzt sein, damit der Button aktiv wird
-- [ ] Kauf-Button leitet zum Stripe-Link weiter
-- [ ] Stripe Success-URL zeigt auf `ebook-download.html`
+- [ ] `config.js` vollständig ausgefüllt (Handles, Kontakt)
+- [ ] Download-Button auf der Startseite führt zu `ebook-download.html`
 - [ ] Download-Button auf `ebook-download.html` liefert die richtige PDF aus
 - [ ] Impressum & Datenschutz mit echten Daten gefüllt und geprüft
 - [ ] Auf dem Handy getestet (Großteil des Traffics kommt mobil)
@@ -205,16 +146,12 @@ Success-URL.
 Diese Seite enthält vorbereitete, aber **nicht rechtsverbindliche** Vorlagen:
 - **Impressum** (`impressum.html`) mit Hinweis auf Kleinunternehmerregelung § 19 UStG
 - **Datenschutzerklärung** (`datenschutz.html`) für eine statische Seite
-- **Widerrufsbelehrung** (`widerruf.html`) inkl. vorzeitigem Erlöschen bei digitalen Inhalten
-- **Pflicht-Checkbox** beim Kauf zum Erlöschen des Widerrufsrechts bei digitalen Inhalten
 
-➡️ **Lass Impressum, Datenschutz, Widerrufsbelehrung und die Kauf-Checkbox vor dem
-Livegang rechtlich prüfen** (Anwalt oder seriöser Generator).
+➡️ **Lass Impressum und Datenschutz vor dem Livegang rechtlich prüfen**
+(Anwalt oder seriöser Generator).
 
 ## Anpassen von Inhalten
 
 - **Texte/Design:** direkt in den HTML-Dateien bzw. `assets/css/style.css`.
 - **Bilder (Landingpage):** `hero.png` und `ueber-mich.png` in `assets/images/`
   ablegen – sie erscheinen in `index.html` automatisch (siehe oben).
-- **Kurs-Videos:** In `kurs.html` sind 16:9-`video-placeholder`-Container
-  vorbereitet. Ersetze sie später durch YouTube-unlisted- oder Vimeo-`<iframe>`s.
