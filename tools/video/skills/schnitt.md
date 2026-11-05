@@ -11,6 +11,9 @@ Status: Grundgerüst, wird durch Learnings geschärft.
 
 ## Regeln (vorläufig)
 
+* Jeweils letzten vollständigen Take nehmen, Schnitte an Wortgrenzen
+* Bei Short Form: spätestens alle 3 s passiert etwas im Bild (Schnitt, Zoom, Einblendung); noch nicht bestätigt, bei erstem Video prüfen
+
 * Hook in den ersten 3 Sekunden
 * Pausen und Versprecher entfernen
 * Tempo: offen

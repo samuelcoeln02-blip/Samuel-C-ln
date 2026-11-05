@@ -1,18 +1,25 @@
 # Referenz: <Titel>
 
-* **Link / Datei:** (Drive Link)
+* **Drive Link / Datei:**
 * **Account:**
-* **Plattform und Format:** (Reel 9:16, YouTube 16:9, ...)
-* **Länge:**
+* **Format und Länge:**
+* **Gespeichert wegen:** (Hook, Untertitel, Pacing, Einblendungen, Look, Sound, Inhalt)
 
-## Was mir gefällt (konkret)
+## Analyse
 
-* Hook (erste 3 s):
-* Schnitt Tempo:
-* Untertitel (Schrift, Größe, Position, Animation):
-* Bildsprache (Farben, Licht, Kamera):
-* Ton und Musik:
+| Aspekt | Beobachtung |
+|---|---|
+| Hook (erste 3 s) | |
+| Untertitel (Schrift, Größe, Position, Umbruch, Hervorhebung) | |
+| Pacing (Schnitte pro 10 s, Länge der Einstellungen) | |
+| Schnitt (Jump Cuts, Wortgrenzen, Zooms) | |
+| Einblendungen (Aussehen, Zeitpunkt) | |
+| Look und Farben | |
+| Sound (Effekte, Musik) | |
+| CTA | |
 
-## Was ich übernehmen will
+## Was Samuel gefällt (wörtlich)
 
-## Was ich nicht will
+## Übernehmen
+
+## Nicht übernehmen

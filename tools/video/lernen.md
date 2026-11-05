@@ -10,3 +10,5 @@ Format: Datum | Video | Feedback | Ableitung | Status (`offen` = nur dieses Vide
 | 2026-11-05 | (Setup) | Ablage über Google Drive | Drive als fester Ort für Material und Ergebnisse | übernommen in CLAUDE.md |
 | 2026-11-05 | (Setup) | Fokus Short Form, immer Kettlebell; Referenzen kommen aus Drive statt YouTube | Format 9:16, 15 bis 60 s als Standard | übernommen in .claude/skills/video |
 | 2026-11-05 | (Setup) | Neuer Chat soll mit einem Befehl den ganzen Ablauf kennen | Skill `/video` mit allen Etappen | übernommen in .claude/skills/video |
+| 2026-11-05 | (Setup) | Methodik aus Community Call: Referenzkarten, Modus Yap oder Skript, Go 1 und Go 2, Kostenleiter Storyboard → Standbild → Probe → Vorschau, Feedback als Stelle/Beobachtung/Wunsch, Abschluss Routine | in Skill eingebaut | übernommen in .claude/skills/video |
+| 2026-11-05 | (Setup) | Drive Struktur: Kettlebell Content Room mit 01 Referenzen, 02 Eingang, 03 Videos | IDs im Skill hinterlegt | übernommen in .claude/skills/video |
