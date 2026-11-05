@@ -275,19 +275,9 @@
             <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px;">
               <span style="font-family: var(--font-heading); font-size: clamp(36px, 4.4vw, 52px); font-weight: 500; letter-spacing: -0.035em;">Kostenlos</span>
             </div>
-            <p style="margin: 0 0 22px; font-size: 13.5px; color: var(--color-neutral-400);">über 75 Seiten · Download direkt nach dem Eintragen</p>
-            <!-- Netlify Forms: Eintragungen landen im Netlify-Dashboard unter Forms → "ebook".
-                 Nach dem Absenden leitet Netlify auf /ebook-download weiter. -->
-            <form name="ebook" method="POST" action="/ebook-download" data-netlify="true" netlify-honeypot="bot-field" style="display: grid; gap: 14px;">
-              <p hidden><label>Nicht ausfüllen: <input name="bot-field"></label></p>
-              <div class="field"><label for="ebook-vorname">Vorname (optional)</label><input class="input" id="ebook-vorname" type="text" name="vorname" autocomplete="given-name"></div>
-              <div class="field"><label for="ebook-email">E-Mail-Adresse</label><input class="input" id="ebook-email" type="email" name="email" autocomplete="email" required></div>
-              <label style="display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; font-size: 12.5px; line-height: 1.55; color: var(--color-neutral-400); cursor: pointer;">
-                <input type="checkbox" name="einwilligung" value="ja" required style="width: 16px; height: 16px; margin-top: 2px; accent-color: var(--color-accent);">
-                <span>Ich möchte gelegentlich E-Mails von Samuel mit Trainingstipps und Infos zum Coaching erhalten. Abmelden kann ich mich jederzeit. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span>
-              </label>
-              <button type="submit" class="btn btn-primary btn-block" style="justify-content: center;">E-Book kostenlos herunterladen →</button>
-            </form>
+            <p style="margin: 0 0 22px; font-size: 13.5px; color: var(--color-neutral-400);">sofortiger Download · über 75 Seiten</p>
+            <a href="ebook-download.html" class="btn btn-primary btn-block" style="justify-content: center;">E-Book kostenlos herunterladen →</a>
+            <p style="margin: 14px 0 0; font-size: 12.5px; color: var(--color-neutral-500); line-height: 1.5;">Direkter PDF-Download · keine Anmeldung, keine Daten</p>
           </aside>
         </div>
       </div>
@@ -356,7 +346,7 @@
         <div>
           <div style="padding: 24px 0; border-top: 1px solid var(--color-neutral-800);">
             <h3 style="font-family: var(--font-heading); font-weight: 500; font-size: 17px; margin: 0 0 10px;">Wie bekomme ich das E-Book?</h3>
-            <p style="margin: 0; color: var(--color-neutral-400); line-height: 1.62; font-size: 15px; max-width: 60ch;">Trag deine E-Mail-Adresse ein – danach landest du direkt auf der Download-Seite und kannst das PDF sofort herunterladen. Kostenlos, ohne Kauf.</p>
+            <p style="margin: 0; color: var(--color-neutral-400); line-height: 1.62; font-size: 15px; max-width: 60ch;">Klick einfach auf den Download-Button – das PDF lädt sofort herunter. Kostenlos, ohne Anmeldung und ohne Datenabfrage.</p>
           </div>
           <div style="padding: 24px 0; border-top: 1px solid var(--color-neutral-800); border-bottom: 1px solid var(--color-neutral-800);">
             <h3 style="font-family: var(--font-heading); font-weight: 500; font-size: 17px; margin: 0 0 10px;">Brauche ich eine eigene Kettlebell?</h3>

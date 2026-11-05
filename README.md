@@ -66,19 +66,11 @@ Nach jeder Änderung: Datei speichern und neu deployen (siehe „Deployment“).
 
 ---
 
-## E-Book-Formular (Netlify Forms, ohne Zusatzplattform)
+## E-Book-Download
 
-Vor dem E-Book-Download fragt das Formular im Abschnitt `#ebook` die E-Mail-Adresse
-(Vorname optional) plus Einwilligung für E-Mails ab. Das läuft über **Netlify Forms**,
-also direkt beim bestehenden Hosting – kein weiteres Tool, kein weiteres Konto.
-
-- Die Eintragungen findest du im Netlify-Dashboard unter **Forms → „ebook“**
-  (auch als CSV exportierbar).
-- Nach dem Absenden leitet Netlify auf `/ebook-download` weiter.
-- **Optional:** Unter **Forms → Submission notifications** eine E-Mail-Benachrichtigung
-  an dich einrichten. Weil das Feld `email` heißt, ist die Antwort-Adresse
-  automatisch die der eingetragenen Person – zum Nachfassen einfach antworten.
-- Voraussetzung: In Netlify ist die Formularerkennung (Form detection) aktiviert.
+Das E-Book gibt es ohne Anmeldung und ohne Datenabfrage: Der Button führt auf
+`ebook-download.html`, dort liegt der PDF-Download plus ein Hinweis auf Instagram
+und das 1:1-Coaching.
 
 > **Schriftart:** Inter ist lokal selbst-gehostet (`assets/fonts/`) und wird von
 > deiner eigenen Seite ausgeliefert – keine Google-Fonts, keine Datenübertragung
