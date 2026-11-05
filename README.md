@@ -59,9 +59,6 @@ Das ist die einzige Datei, die du normalerweise anfassen musst:
 
 | Wert | Bedeutung |
 |------|-----------|
-| `NEWSLETTER_ACTION` | Form-Action-URL deines E-Mail-Tools (Gratis-PDF-Anmeldung) |
-| `NEWSLETTER_FIELD_NAME` / `NEWSLETTER_FIELD_EMAIL` | Feldnamen, die dein E-Mail-Tool erwartet |
-| `FREE_PDF_TITEL` | Titel des Gratis-PDFs (auf der Seite angezeigt) |
 | `INSTAGRAM_HANDLE` / `TIKTOK_HANDLE` | deine Social-Handles (ohne @) |
 | `NAME` / `KONTAKT_EMAIL` | deine Kontaktdaten |
 
@@ -69,33 +66,19 @@ Nach jeder Änderung: Datei speichern und neu deployen (siehe „Deployment“).
 
 ---
 
-## Gratis-PDF & E-Mail-Funnel (Brevo)
+## E-Book-Formular (Netlify Forms, ohne Zusatzplattform)
 
-Die Landingpage führt mit einem **Gratis-PDF** (Lead-Magnet): sie sammelt über ein
-Formular **Vorname + E-Mail**. Den Kurs kann man am Seitenende direkt kaufen und/
-oder du verkaufst ihn später per E-Mail an die gesammelten Leads.
+Vor dem E-Book-Download fragt das Formular im Abschnitt `#ebook` die E-Mail-Adresse
+(Vorname optional) plus Einwilligung für E-Mails ab. Das läuft über **Netlify Forms**,
+also direkt beim bestehenden Hosting – kein weiteres Tool, kein weiteres Konto.
 
-Eine statische Seite kann selbst keine E-Mails senden – das übernimmt **Brevo**
-(EU-Anbieter, Brevo GmbH Köln, DSGVO-freundlich, kostenloser Tarif).
-
-**Einrichtung in Brevo:**
-1. Kostenloses Brevo-Konto anlegen.
-2. Eine **Kontaktliste** anlegen und ein **Anmeldeformular** erstellen (mit den
-   Feldern E-Mail und Vorname). **Double-Opt-in** aktivieren.
-3. Eine **Automation** bauen: „Wenn Kontakt Liste beitritt → sende E-Mail mit dem
-   PDF-Download-Link“ (Link auf `…/guide-danke.html` oder direkt auf die PDF).
-4. Im Formular unter **Teilen → HTML-Code einbetten** findest du die
-   **Action-URL** (`https://….sibforms.com/serve/…`) und die **Feldnamen**
-   (meist `EMAIL` und `FIRSTNAME`).
-5. In `assets/js/config.js` eintragen:
-   - `NEWSLETTER_ACTION` = die Brevo-Action-URL
-   - `NEWSLETTER_FIELD_EMAIL` / `NEWSLETTER_FIELD_NAME` = die Feldnamen (Standard
-     bereits `EMAIL` / `FIRSTNAME`)
-   - `FREE_PDF_TITEL` = Titel deines PDFs
-6. **AVV/DPA** mit Brevo abschließen (im Brevo-Konto).
-
-Solange `NEWSLETTER_ACTION` den Platzhalter enthält, wird das Formular nicht
-abgeschickt, sondern zeigt einen Hinweis (praktisch zum Testen).
+- Die Eintragungen findest du im Netlify-Dashboard unter **Forms → „ebook“**
+  (auch als CSV exportierbar).
+- Nach dem Absenden leitet Netlify auf `/ebook-download` weiter.
+- **Optional:** Unter **Forms → Submission notifications** eine E-Mail-Benachrichtigung
+  an dich einrichten. Weil das Feld `email` heißt, ist die Antwort-Adresse
+  automatisch die der eingetragenen Person – zum Nachfassen einfach antworten.
+- Voraussetzung: In Netlify ist die Formularerkennung (Form detection) aktiviert.
 
 > **Schriftart:** Inter ist lokal selbst-gehostet (`assets/fonts/`) und wird von
 > deiner eigenen Seite ausgeliefert – keine Google-Fonts, keine Datenübertragung
