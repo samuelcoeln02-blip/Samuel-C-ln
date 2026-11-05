@@ -12,6 +12,10 @@ Ziel: Ein eigener Schnitt Workflow, der mit jedem Video besser wird. Wissen wird
 | `skills/` | Wiederverwendbare Abläufe (Untertitel, Schnitt, Bildsprache) |
 | `lernen.md` | Jedes Learning aus der Zusammenarbeit, mit Datum |
 
+## Einstieg
+
+In jedem neuen Chat reicht `/video` (Skill `.claude/skills/video/SKILL.md`). Er enthält den kompletten Ablauf: Referenzen, Skript, Material, Rohschnitt, Feinausarbeitung (Typografie, Schnittfarbe), Vorschau, Final.
+
 ## Arbeitsregeln
 
 1. **Vor jeder Aufgabe lesen:** passende Skills in `skills/`, relevante `referenzen/`, komplette `lernen.md`. Kurz bestätigen, was davon angewendet wird.

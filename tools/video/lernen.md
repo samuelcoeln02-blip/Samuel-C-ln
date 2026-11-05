@@ -8,3 +8,5 @@ Format: Datum | Video | Feedback | Ableitung | Status (`offen` = nur dieses Vide
 | 2026-11-05 | (Setup) | Transkription: lokal statt externer Dienst | faster-whisper, Modell small, Skript `scripts/transkribieren.py` | übernommen in skills/untertitel.md |
 | 2026-11-05 | (Setup) | Referenzen dürfen von YouTube geladen werden | yt-dlp für Analyse von Referenzen | übernommen in CLAUDE.md |
 | 2026-11-05 | (Setup) | Ablage über Google Drive | Drive als fester Ort für Material und Ergebnisse | übernommen in CLAUDE.md |
+| 2026-11-05 | (Setup) | Fokus Short Form, immer Kettlebell; Referenzen kommen aus Drive statt YouTube | Format 9:16, 15 bis 60 s als Standard | übernommen in .claude/skills/video |
+| 2026-11-05 | (Setup) | Neuer Chat soll mit einem Befehl den ganzen Ablauf kennen | Skill `/video` mit allen Etappen | übernommen in .claude/skills/video |
