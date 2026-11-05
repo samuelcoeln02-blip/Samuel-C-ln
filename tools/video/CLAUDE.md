@@ -23,6 +23,7 @@ Ziel: Ein eigener Schnitt Workflow, der mit jedem Video besser wird. Wissen wird
 ## Technik
 
 * Rohmaterial und Renderings liegen nicht in Git (zu groß, und die Website veröffentlicht das Repo). Nur `.md`, Schnittlisten, Untertitel (`.srt`) und kleine Standbilder werden versioniert.
-* Die Cloud Session ist flüchtig: Material kommt per Upload oder Google Drive, Ergebnisse gehen zurück nach Drive oder als Download.
+* Die Cloud Session ist flüchtig. Fester Ablageort ist Google Drive: Rohmaterial kommt von dort, Vorschauen und Finals gehen dorthin zurück. Struktur, Skills und Learnings liegen in Git.
+* Werkzeuge: ffmpeg, Python, faster-whisper (lokale Transkription, `scripts/transkribieren.py`), yt-dlp (Referenzen von YouTube).
 * Schnitt wird als Datei beschrieben (`schnittliste.md` bzw. ffmpeg Befehle), damit jeder Schritt reproduzierbar ist.
 * Schreibstil in allen Dateien: knapp, sachlich, ohne Gedankenstriche.
