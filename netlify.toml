@@ -18,4 +18,4 @@
 
 [build]
   publish = "."
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)tools/ebook'"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)tools/ebook' ':(exclude)tools/video' ':(exclude)CLAUDE.md'"
